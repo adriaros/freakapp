@@ -17,6 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
+        let launch = LaunchRouter.create() as! LaunchViewController
+        let navigationController = UINavigationController(rootViewController: launch)
+        navigationController.viewControllers = [launch]
+        window = UIWindow(frame: UIScreen.main.bounds);
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible();
     }
 
     // Called as the scene is being released by the system.
