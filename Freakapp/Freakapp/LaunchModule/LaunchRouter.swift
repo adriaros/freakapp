@@ -10,6 +10,8 @@ import UIKit
 
 class LaunchRouter: LaunchPresenterToRouterProtocol {
     
+    var coordinator: CoordinatorProtocol?
+    
     class func create() -> UIViewController {
         
         let view = LaunchViewController()

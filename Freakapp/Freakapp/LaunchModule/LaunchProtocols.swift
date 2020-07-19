@@ -27,5 +27,6 @@ protocol LaunchViewToPresenterProtocol: class {
 }
 
 protocol LaunchPresenterToRouterProtocol: class {
+    var coordinator: CoordinatorProtocol? { get set }
     static func create() -> UIViewController
 }
