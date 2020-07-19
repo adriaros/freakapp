@@ -11,18 +11,20 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var coordinator: CoordinatorProtocol?
+    
+    override init() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        coordinator = Coordinator(window)
+    }
 
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
-        let launch = LaunchRouter.create() as! LaunchViewController
-        let navigationController = UINavigationController(rootViewController: launch)
-        navigationController.viewControllers = [launch]
-        window = UIWindow(frame: UIScreen.main.bounds);
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible();
+        let launcher = LaunchRouter.create() as! LaunchViewController
+        coordinator?.transition(type: .launch(launcher))
     }
 
     // Called as the scene is being released by the system.

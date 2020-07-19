@@ -19,6 +19,8 @@
 		11A5341324C20FFA00528DAA /* LaunchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5340D24C20FFA00528DAA /* LaunchInteractor.swift */; };
 		11A5341424C20FFA00528DAA /* LaunchEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5340E24C20FFA00528DAA /* LaunchEntities.swift */; };
 		11A5341724C4B37B00528DAA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5341624C4B37B00528DAA /* main.swift */; };
+		11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5341924C4BB3D00528DAA /* Coordinator.swift */; };
+		11A5341C24C4BB5000528DAA /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5341B24C4BB5000528DAA /* CoordinatorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		11A5340D24C20FFA00528DAA /* LaunchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInteractor.swift; sourceTree = "<group>"; };
 		11A5340E24C20FFA00528DAA /* LaunchEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchEntities.swift; sourceTree = "<group>"; };
 		11A5341624C4B37B00528DAA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		11A5341924C4BB3D00528DAA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		11A5341B24C4BB5000528DAA /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		11A533D124C206D200528DAA /* Freakapp */ = {
 			isa = PBXGroup;
 			children = (
+				11A5341824C4BB1C00528DAA /* Coordinator */,
 				11A5341524C4B29000528DAA /* AppCore */,
 				11A5340824C20FAB00528DAA /* LaunchModule */,
 				11A533DB24C206D400528DAA /* Assets.xcassets */,
@@ -128,6 +133,15 @@
 				11A5341624C4B37B00528DAA /* main.swift */,
 			);
 			path = AppCore;
+			sourceTree = "<group>";
+		};
+		11A5341824C4BB1C00528DAA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				11A5341B24C4BB5000528DAA /* CoordinatorProtocol.swift */,
+				11A5341924C4BB3D00528DAA /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +246,11 @@
 			files = (
 				11A5341424C20FFA00528DAA /* LaunchEntities.swift in Sources */,
 				11A5341124C20FFA00528DAA /* LaunchViewController.swift in Sources */,
+				11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */,
 				11A5341724C4B37B00528DAA /* main.swift in Sources */,
 				11A533D324C206D200528DAA /* AppDelegate.swift in Sources */,
 				11A5341224C20FFA00528DAA /* LaunchProtocols.swift in Sources */,
+				11A5341C24C4BB5000528DAA /* CoordinatorProtocol.swift in Sources */,
 				11A5341024C20FFA00528DAA /* LaunchRouter.swift in Sources */,
 				11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */,
 				11A5340F24C20FFA00528DAA /* LaunchPresenter.swift in Sources */,
