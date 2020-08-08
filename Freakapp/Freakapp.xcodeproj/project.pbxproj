@@ -21,6 +21,15 @@
 		11A5341724C4B37B00528DAA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5341624C4B37B00528DAA /* main.swift */; };
 		11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5341924C4BB3D00528DAA /* Coordinator.swift */; };
 		11A5341C24C4BB5000528DAA /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5341B24C4BB5000528DAA /* CoordinatorProtocol.swift */; };
+		11CBCA4F24DEB105004A90D7 /* HomeModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4924DEB105004A90D7 /* HomeModulePresenter.swift */; };
+		11CBCA5024DEB105004A90D7 /* HomeModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4A24DEB105004A90D7 /* HomeModuleRouter.swift */; };
+		11CBCA5124DEB105004A90D7 /* HomeModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4B24DEB105004A90D7 /* HomeModuleViewController.swift */; };
+		11CBCA5224DEB105004A90D7 /* HomeModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4C24DEB105004A90D7 /* HomeModuleProtocols.swift */; };
+		11CBCA5324DEB105004A90D7 /* HomeModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4D24DEB105004A90D7 /* HomeModuleInteractor.swift */; };
+		11CBCA5424DEB105004A90D7 /* HomeModuleEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4E24DEB105004A90D7 /* HomeModuleEntities.swift */; };
+		11CBCA5624DEB11E004A90D7 /* HomeModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11CBCA5524DEB11E004A90D7 /* HomeModuleViewController.xib */; };
+		11CBCA5A24DEBD10004A90D7 /* MockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA5924DEBD10004A90D7 /* MockCoordinator.swift */; };
+		11CBCA5D24DEC6F6004A90D7 /* LaunchModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA5C24DEC6F6004A90D7 /* LaunchModuleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +61,15 @@
 		11A5341624C4B37B00528DAA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		11A5341924C4BB3D00528DAA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		11A5341B24C4BB5000528DAA /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		11CBCA4924DEB105004A90D7 /* HomeModulePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModulePresenter.swift; sourceTree = "<group>"; };
+		11CBCA4A24DEB105004A90D7 /* HomeModuleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleRouter.swift; sourceTree = "<group>"; };
+		11CBCA4B24DEB105004A90D7 /* HomeModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleViewController.swift; sourceTree = "<group>"; };
+		11CBCA4C24DEB105004A90D7 /* HomeModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleProtocols.swift; sourceTree = "<group>"; };
+		11CBCA4D24DEB105004A90D7 /* HomeModuleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleInteractor.swift; sourceTree = "<group>"; };
+		11CBCA4E24DEB105004A90D7 /* HomeModuleEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleEntities.swift; sourceTree = "<group>"; };
+		11CBCA5524DEB11E004A90D7 /* HomeModuleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeModuleViewController.xib; sourceTree = "<group>"; };
+		11CBCA5924DEBD10004A90D7 /* MockCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoordinator.swift; sourceTree = "<group>"; };
+		11CBCA5C24DEC6F6004A90D7 /* LaunchModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModuleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +114,7 @@
 				11A5341824C4BB1C00528DAA /* Coordinator */,
 				11A5341524C4B29000528DAA /* AppCore */,
 				11A5340824C20FAB00528DAA /* LaunchModule */,
+				11CBCA4724DEB0DA004A90D7 /* Modules */,
 				11A533DB24C206D400528DAA /* Assets.xcassets */,
 				11A533E024C206D400528DAA /* Info.plist */,
 			);
@@ -106,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				11A533E924C206D400528DAA /* FreakappTests.swift */,
+				11CBCA5824DEBCD5004A90D7 /* Coordinator */,
+				11CBCA5B24DEBF1A004A90D7 /* LaunchModule */,
 				11A533EB24C206D400528DAA /* Info.plist */,
 			);
 			path = FreakappTests;
@@ -142,6 +163,44 @@
 				11A5341924C4BB3D00528DAA /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		11CBCA4724DEB0DA004A90D7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				11CBCA4824DEB0EE004A90D7 /* HomeModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		11CBCA4824DEB0EE004A90D7 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				11CBCA4B24DEB105004A90D7 /* HomeModuleViewController.swift */,
+				11CBCA4924DEB105004A90D7 /* HomeModulePresenter.swift */,
+				11CBCA4D24DEB105004A90D7 /* HomeModuleInteractor.swift */,
+				11CBCA4A24DEB105004A90D7 /* HomeModuleRouter.swift */,
+				11CBCA4C24DEB105004A90D7 /* HomeModuleProtocols.swift */,
+				11CBCA4E24DEB105004A90D7 /* HomeModuleEntities.swift */,
+				11CBCA5524DEB11E004A90D7 /* HomeModuleViewController.xib */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		11CBCA5824DEBCD5004A90D7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				11CBCA5924DEBD10004A90D7 /* MockCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		11CBCA5B24DEBF1A004A90D7 /* LaunchModule */ = {
+			isa = PBXGroup;
+			children = (
+				11CBCA5C24DEC6F6004A90D7 /* LaunchModuleTests.swift */,
+			);
+			path = LaunchModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CBCA5624DEB11E004A90D7 /* HomeModuleViewController.xib in Resources */,
 				11A533DF24C206D400528DAA /* LaunchViewController.storyboard in Resources */,
 				11A533DC24C206D400528DAA /* Assets.xcassets in Resources */,
 			);
@@ -244,17 +304,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CBCA5224DEB105004A90D7 /* HomeModuleProtocols.swift in Sources */,
 				11A5341424C20FFA00528DAA /* LaunchEntities.swift in Sources */,
 				11A5341124C20FFA00528DAA /* LaunchViewController.swift in Sources */,
 				11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */,
+				11CBCA4F24DEB105004A90D7 /* HomeModulePresenter.swift in Sources */,
 				11A5341724C4B37B00528DAA /* main.swift in Sources */,
 				11A533D324C206D200528DAA /* AppDelegate.swift in Sources */,
 				11A5341224C20FFA00528DAA /* LaunchProtocols.swift in Sources */,
+				11CBCA5124DEB105004A90D7 /* HomeModuleViewController.swift in Sources */,
 				11A5341C24C4BB5000528DAA /* CoordinatorProtocol.swift in Sources */,
 				11A5341024C20FFA00528DAA /* LaunchRouter.swift in Sources */,
 				11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */,
+				11CBCA5024DEB105004A90D7 /* HomeModuleRouter.swift in Sources */,
 				11A5340F24C20FFA00528DAA /* LaunchPresenter.swift in Sources */,
+				11CBCA5424DEB105004A90D7 /* HomeModuleEntities.swift in Sources */,
 				11A5341324C20FFA00528DAA /* LaunchInteractor.swift in Sources */,
+				11CBCA5324DEB105004A90D7 /* HomeModuleInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +328,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11CBCA5A24DEBD10004A90D7 /* MockCoordinator.swift in Sources */,
 				11A533EA24C206D400528DAA /* FreakappTests.swift in Sources */,
+				11CBCA5D24DEC6F6004A90D7 /* LaunchModuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

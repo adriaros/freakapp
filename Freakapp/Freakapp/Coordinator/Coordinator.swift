@@ -20,10 +20,14 @@ final class Coordinator: CoordinatorProtocol {
     func transition(type: CoorindatorTransitionType) {
         switch type {
         case .launch(let controller):
-            let navigationController = UINavigationController(rootViewController: controller)
-            navigationController.viewControllers = [controller]
-            window?.rootViewController = navigationController
-            window?.makeKeyAndVisible();
+            currentViewController = controller
+            let navigation = UINavigationController(rootViewController: controller)
+            window?.rootViewController = navigation
+            window?.makeKeyAndVisible()
+        case .present(let controller, let animated):
+            controller.modalPresentationStyle = .fullScreen
+            currentViewController?.present(controller, animated: animated, completion: nil)
+            currentViewController = controller
         }
     }
 }

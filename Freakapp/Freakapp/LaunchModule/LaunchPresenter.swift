@@ -15,7 +15,8 @@ class LaunchPresenter: LaunchViewToPresenterProtocol {
     var interactor: LaunchPresenterToInteractorProtocol?
     var router: LaunchPresenterToRouterProtocol?
     
-    func setupView() {
+    func setup() {
+        router?.presentHome()
     }
 }
 

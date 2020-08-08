@@ -10,6 +10,7 @@ import UIKit
 
 enum CoorindatorTransitionType {
     case launch(UIViewController)
+    case present(UIViewController, Bool)
 }
 
 protocol CoordinatorProtocol {

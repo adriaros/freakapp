@@ -12,7 +12,7 @@ class LaunchRouter: LaunchPresenterToRouterProtocol {
     
     var coordinator: CoordinatorProtocol?
     
-    class func create() -> UIViewController {
+    class func create(coordinator: CoordinatorProtocol?) -> UIViewController {
         
         let view = LaunchViewController()
         let presenter = LaunchPresenter()
@@ -25,6 +25,13 @@ class LaunchRouter: LaunchPresenterToRouterProtocol {
         presenter.interactor = interactor
         interactor.presenter = presenter
         
+        router.coordinator = coordinator
+        
         return view
+    }
+    
+    func presentHome() {
+        let vc = HomeModuleRouter.createModule(coordinator: coordinator) as! HomeModuleViewController
+        coordinator?.transition(type: .present(vc, false))
     }
 }
