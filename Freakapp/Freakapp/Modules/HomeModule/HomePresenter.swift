@@ -16,8 +16,9 @@ class HomePresenter: HomeViewToPresenterProtocol {
     var router: HomePresenterToRouterProtocol?
     
     func setupView() {
-        let vc = view as! UIViewController
-        vc.view.backgroundColor = .red
+        view?.backgroundImage.contentMode = .scaleAspectFill
+        view?.backgroundImage.alpha = 0.5
+        view?.backgroundImage.image = UIImage(named: "LaunchImage")
     }
 }
 

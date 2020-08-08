@@ -11,6 +11,7 @@ import UIKit
 
 protocol HomePresenterToViewProtocol: class {
     var presenter: HomeViewToPresenterProtocol? { get set }
+    var backgroundImage: UIImageView! { get set }
 }
 
 protocol HomeInteractorToPresenterProtocol: class {

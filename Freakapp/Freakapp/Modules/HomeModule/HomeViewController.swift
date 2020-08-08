@@ -12,6 +12,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     var presenter: HomeViewToPresenterProtocol?
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
