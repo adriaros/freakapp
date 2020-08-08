@@ -13,9 +13,9 @@ class LaunchViewController: UIViewController {
     
     var presenter: LaunchViewToPresenterProtocol?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        presenter?.setupView()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter?.setup()
     }
 }
 

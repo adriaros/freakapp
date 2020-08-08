@@ -1,23 +1,23 @@
 //
-//  LaunchRouter.swift
+//  HomeRouter.swift
 //  Freakapp
 //
-//  Created by Adrià Ros on 17/07/2020.
+//  Created by Adrià Ros on 08/08/2020.
 //  Copyright © 2020 adria.engineer.ios. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class LaunchRouter: LaunchPresenterToRouterProtocol {
+class HomeRouter: HomePresenterToRouterProtocol {
     
     var coordinator: CoordinatorProtocol?
     
     class func create(coordinator: CoordinatorProtocol?) -> UIViewController {
-        
-        let view = LaunchViewController()
-        let presenter = LaunchPresenter()
-        let interactor = LaunchInteractor()
-        let router = LaunchRouter()
+        let view = HomeViewController()
+        let presenter = HomePresenter()
+        let interactor = HomeInteractor()
+        let router = HomeRouter()
         
         view.presenter = presenter
         presenter.view = view
@@ -28,10 +28,5 @@ class LaunchRouter: LaunchPresenterToRouterProtocol {
         router.coordinator = coordinator
         
         return view
-    }
-    
-    func presentHome() {
-        let vc = HomeRouter.create(coordinator: coordinator) as! HomeViewController
-        coordinator?.transition(type: .present(vc, false))
     }
 }

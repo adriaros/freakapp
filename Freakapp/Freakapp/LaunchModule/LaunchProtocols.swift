@@ -23,10 +23,11 @@ protocol LaunchViewToPresenterProtocol: class {
     var view: LaunchPresenterToViewProtocol? { get set }
     var interactor: LaunchPresenterToInteractorProtocol? { get set }
     var router: LaunchPresenterToRouterProtocol? { get set }
-    func setupView()
+    func setup()
 }
 
 protocol LaunchPresenterToRouterProtocol: class {
     var coordinator: CoordinatorProtocol? { get set }
-    static func create() -> UIViewController
+    static func create(coordinator: CoordinatorProtocol?) -> UIViewController
+    func presentHome()
 }

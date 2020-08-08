@@ -23,9 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
-        let launcher = LaunchRouter.create() as! LaunchViewController
-        let router = launcher.presenter?.router as! LaunchRouter
-        router.coordinator = coordinator
+        let launcher = LaunchRouter.create(coordinator: coordinator) as! LaunchViewController
         coordinator?.transition(type: .launch(launcher))
     }
 
