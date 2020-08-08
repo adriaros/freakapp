@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum CoorindatorTransitionType {
+enum CoorindatorTransitionType: Equatable {
     case launch(UIViewController)
     case present(UIViewController, Bool)
 }

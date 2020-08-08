@@ -11,7 +11,7 @@ import UIKit
 final class Coordinator: CoordinatorProtocol {
     
     private var window: UIWindow?
-    private var currentViewController: UIViewController?
+    var currentViewController: UIViewController?
     
     init(_ window: UIWindow?) {
         self.window = window
@@ -19,12 +19,12 @@ final class Coordinator: CoordinatorProtocol {
     
     func transition(type: CoorindatorTransitionType) {
         switch type {
-        case .launch(let controller):
+        case let .launch(controller):
             currentViewController = controller
             let navigation = UINavigationController(rootViewController: controller)
             window?.rootViewController = navigation
             window?.makeKeyAndVisible()
-        case .present(let controller, let animated):
+        case let .present (controller, animated):
             controller.modalPresentationStyle = .fullScreen
             currentViewController?.present(controller, animated: animated, completion: nil)
             currentViewController = controller

@@ -1,5 +1,5 @@
 //
-//  HomeModuleInteractor.swift
+//  HomeInteractor.swift
 //  Freakapp
 //
 //  Created by Adrià Ros on 08/08/2020.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class HomeModuleInteractor: HomeModulePresenterToInteractorProtocol {
+class HomeInteractor: HomePresenterToInteractorProtocol {
     
-    var presenter: HomeModuleInteractorToPresenterProtocol?
+    var presenter: HomeInteractorToPresenterProtocol?
 }

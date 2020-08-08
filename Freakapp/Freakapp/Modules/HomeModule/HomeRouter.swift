@@ -1,5 +1,5 @@
 //
-//  HomeModuleRouter.swift
+//  HomeRouter.swift
 //  Freakapp
 //
 //  Created by Adrià Ros on 08/08/2020.
@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-class HomeModuleRouter: HomeModulePresenterToRouterProtocol {
+class HomeRouter: HomePresenterToRouterProtocol {
     
     var coordinator: CoordinatorProtocol?
     
-    class func createModule(coordinator: CoordinatorProtocol?) -> UIViewController {
-        let view = HomeModuleViewController()
-        let presenter = HomeModulePresenter()
-        let interactor = HomeModuleInteractor()
-        let router = HomeModuleRouter()
+    class func create(coordinator: CoordinatorProtocol?) -> UIViewController {
+        let view = HomeViewController()
+        let presenter = HomePresenter()
+        let interactor = HomeInteractor()
+        let router = HomeRouter()
         
         view.presenter = presenter
         presenter.view = view

@@ -40,8 +40,8 @@ class LaunchModuleTests: XCTestCase {
         // Then
         transition = coordinator.transitionType
         switch transition {
-        case .present(let vc, let animated):
-            XCTAssertTrue(vc is HomeModuleViewController)
+        case let .present(vc, animated):
+            XCTAssertTrue(vc is HomeViewController)
             XCTAssertFalse(animated)
         default:
             break
@@ -54,5 +54,4 @@ class LaunchModuleTests: XCTestCase {
         interactor = presenter?.interactor as? LaunchInteractor
         router = presenter?.router as? LaunchRouter
     }
-
 }

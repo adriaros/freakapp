@@ -31,7 +31,7 @@ class LaunchRouter: LaunchPresenterToRouterProtocol {
     }
     
     func presentHome() {
-        let vc = HomeModuleRouter.createModule(coordinator: coordinator) as! HomeModuleViewController
+        let vc = HomeRouter.create(coordinator: coordinator) as! HomeViewController
         coordinator?.transition(type: .present(vc, false))
     }
 }

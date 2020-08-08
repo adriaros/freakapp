@@ -1,5 +1,5 @@
 //
-//  HomeModuleViewController.swift
+//  HomeViewController.swift
 //  Freakapp
 //
 //  Created by Adrià Ros on 08/08/2020.
@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class HomeModuleViewController: UIViewController {
+class HomeViewController: UIViewController {
     
-    var presenter: HomeModuleViewToPresenterProtocol?
+    var presenter: HomeViewToPresenterProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,6 @@ class HomeModuleViewController: UIViewController {
     }
 }
 
-extension HomeModuleViewController: HomeModulePresenterToViewProtocol {
+extension HomeViewController: HomePresenterToViewProtocol {
 
 }

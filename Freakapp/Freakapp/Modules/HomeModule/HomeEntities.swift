@@ -1,5 +1,5 @@
 //
-//  HomeModuleEntities.swift
+//  HomeEntities.swift
 //  Freakapp
 //
 //  Created by Adrià Ros on 08/08/2020.
