@@ -113,9 +113,9 @@
 		11A533D124C206D200528DAA /* Freakapp */ = {
 			isa = PBXGroup;
 			children = (
-				11A5341824C4BB1C00528DAA /* Coordinator */,
 				11A5341524C4B29000528DAA /* AppCore */,
 				11A5340824C20FAB00528DAA /* LaunchModule */,
+				11A5341824C4BB1C00528DAA /* Coordinator */,
 				11CBCA4724DEB0DA004A90D7 /* Modules */,
 				11A533DB24C206D400528DAA /* Assets.xcassets */,
 				11A533E024C206D400528DAA /* Info.plist */,

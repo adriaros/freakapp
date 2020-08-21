@@ -32,12 +32,15 @@ class HomeModuleTests: XCTestCase {
     func testExample() throws {
         // Given
         createModule()
+        vc?.loadViewIfNeeded()
         
         // When
         vc?.viewDidLoad()
         
         // Then
-        XCTAssertEqual(vc?.view.backgroundColor, .red)
+        XCTAssertEqual(vc?.backgroundImage.image, UIImage(named: "LaunchImage"))
+        XCTAssertEqual(vc?.backgroundImage.contentMode, .scaleAspectFill)
+        XCTAssertEqual(vc?.backgroundImage.alpha, 0.5)
     }
     
     func createModule() {

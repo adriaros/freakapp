@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Freakapp" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundImage" destination="PAU-n6-zH0" id="lke-zB-RdH"/>
                 <outlet property="view" destination="iN0-l3-epB" id="rkM-6g-1l6"/>
             </connections>
         </placeholder>
@@ -16,7 +17,18 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PAU-n6-zH0">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+            </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PAU-n6-zH0" secondAttribute="trailing" id="80W-98-7ER"/>
+                <constraint firstItem="PAU-n6-zH0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Iw2-n0-3hn"/>
+                <constraint firstAttribute="bottom" secondItem="PAU-n6-zH0" secondAttribute="bottom" id="P9d-Dc-Ugm"/>
+                <constraint firstItem="PAU-n6-zH0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QrX-LX-UZK"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="139" y="145"/>
         </view>
