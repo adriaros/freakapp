@@ -42,4 +42,16 @@ class CoordinatorTests: XCTestCase {
         // Then
         XCTAssertTrue(sut?.currentViewController is HomeViewController)
     }
+    
+    func testCoordinatorTransitionTypeTabbar() throws {
+        // Given
+        let home = HomeViewController()
+        let other = UIViewController()
+        
+        // When
+        sut?.transition(type: .tabbar(home, other))
+        
+        // Then
+        XCTAssertTrue(sut?.currentViewController is UITabBarController)
+    }
 }

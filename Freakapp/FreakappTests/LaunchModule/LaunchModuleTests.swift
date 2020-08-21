@@ -40,9 +40,8 @@ class LaunchModuleTests: XCTestCase {
         // Then
         transition = coordinator.transitionType
         switch transition {
-        case let .present(vc, animated):
-            XCTAssertTrue(vc is HomeViewController)
-            XCTAssertFalse(animated)
+        case let .tabbar(home, _):
+            XCTAssertTrue(home is HomeViewController)
         default:
             break
         }

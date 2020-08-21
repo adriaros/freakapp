@@ -24,10 +24,21 @@ final class Coordinator: CoordinatorProtocol {
             let navigation = UINavigationController(rootViewController: controller)
             window?.rootViewController = navigation
             window?.makeKeyAndVisible()
-        case let .present (controller, animated):
+            
+        case let .present(controller, animated):
             controller.modalPresentationStyle = .fullScreen
             currentViewController?.present(controller, animated: animated, completion: nil)
             currentViewController = controller
+            
+        case let .tabbar(first, second):
+            let tabController = UITabBarController()
+            first.tabBarItem = UITabBarItem(tabBarSystemItem: .recents, tag: 0)
+            second.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
+            tabController.viewControllers = [first, second]
+            tabController.selectedIndex = 0
+            currentViewController = tabController
+            window?.rootViewController = tabController
+            window?.makeKeyAndVisible()
         }
     }
 }
