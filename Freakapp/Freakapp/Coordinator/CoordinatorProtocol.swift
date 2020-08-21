@@ -11,6 +11,7 @@ import UIKit
 enum CoorindatorTransitionType: Equatable {
     case launch(UIViewController)
     case present(UIViewController, Bool)
+    case tabbar(UIViewController, UIViewController)
 }
 
 protocol CoordinatorProtocol {
