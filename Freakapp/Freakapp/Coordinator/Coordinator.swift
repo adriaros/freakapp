@@ -10,6 +10,12 @@ import UIKit
 
 final class Coordinator: CoordinatorProtocol {
     
+    private let profileImageSelected = UIImage(named: "tabbar_profile_selected")?.withRenderingMode(.alwaysOriginal)
+    private let profileImageBase = UIImage(named: "tabbar_profile")?.withRenderingMode(.alwaysOriginal)
+    
+    private let homeImageSelected = UIImage(named: "tabbar_home_selected")?.withRenderingMode(.alwaysOriginal)
+    private let homeImageBase = UIImage(named: "tabbar_home")?.withRenderingMode(.alwaysOriginal)
+    
     private var window: UIWindow?
     var currentViewController: UIViewController?
     
@@ -32,8 +38,8 @@ final class Coordinator: CoordinatorProtocol {
             
         case let .tabbar(first, second):
             let tabController = UITabBarController()
-            first.tabBarItem = UITabBarItem(title: "tabbar_item_home".localized, image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
-            second.tabBarItem = UITabBarItem(title: "tabbar_item_profile".localized, image: UIImage(named: "tabbar_profile"), selectedImage: UIImage(named: "tabbar_profile_selected"))
+            first.tabBarItem = UITabBarItem(title: "tabbar_item_home".localized, image: homeImageBase, selectedImage: homeImageSelected)
+            second.tabBarItem = UITabBarItem(title: "tabbar_item_profile".localized, image: profileImageBase, selectedImage: profileImageSelected)
             tabController.viewControllers = [first, second]
             tabController.selectedIndex = 0
             currentViewController = tabController

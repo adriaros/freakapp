@@ -11,6 +11,12 @@ import XCTest
 
 class CoordinatorTests: XCTestCase {
     
+    private let profileImageSelected = UIImage(named: "tabbar_profile_selected")?.withRenderingMode(.alwaysOriginal)
+    private let profileImageBase = UIImage(named: "tabbar_profile")?.withRenderingMode(.alwaysOriginal)
+    
+    private let homeImageSelected = UIImage(named: "tabbar_home_selected")?.withRenderingMode(.alwaysOriginal)
+    private let homeImageBase = UIImage(named: "tabbar_home")?.withRenderingMode(.alwaysOriginal)
+    
     var sut: Coordinator?
 
     override func setUpWithError() throws {
@@ -48,10 +54,18 @@ class CoordinatorTests: XCTestCase {
         let home = HomeViewController()
         let other = UIViewController()
         
+        var current: UITabBarController?
+        
         // When
         sut?.transition(type: .tabbar(home, other))
+        current = sut?.currentViewController as? UITabBarController
         
         // Then
         XCTAssertTrue(sut?.currentViewController is UITabBarController)
+        XCTAssertTrue(current?.viewControllers?.first is HomeViewController)
+        XCTAssertEqual(current?.viewControllers?.first?.tabBarItem.title, "tabbar_item_home".localized)
+        XCTAssertEqual(current?.viewControllers?.first?.tabBarItem.image, homeImageBase)
+        XCTAssertEqual(current?.viewControllers?.last?.tabBarItem.title, "tabbar_item_profile".localized)
+        XCTAssertEqual(current?.viewControllers?.last?.tabBarItem.image, profileImageBase)
     }
 }

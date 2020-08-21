@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "icons8-cat-profile-25 (1).png",
+      "filename" : "icons8-futurama-bender-25.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "icons8-cat-profile-50 (1).png",
+      "filename" : "icons8-futurama-bender-50.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "icons8-cat-profile-75 (1).png",
+      "filename" : "icons8-futurama-bender-75.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "icons8-sheets-25 (1).png",
+      "filename" : "icons8-3d-glasses-25.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "icons8-sheets-50 (1).png",
+      "filename" : "icons8-3d-glasses-50.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "icons8-sheets-75 (1).png",
+      "filename" : "icons8-3d-glasses-75.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
