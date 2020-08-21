@@ -32,8 +32,8 @@ final class Coordinator: CoordinatorProtocol {
             
         case let .tabbar(first, second):
             let tabController = UITabBarController()
-            first.tabBarItem = UITabBarItem(tabBarSystemItem: .recents, tag: 0)
-            second.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
+            first.tabBarItem = UITabBarItem(title: "tabbar_item_home".localized, image: UIImage(named: "tabbar_home"), selectedImage: UIImage(named: "tabbar_home_selected"))
+            second.tabBarItem = UITabBarItem(title: "tabbar_item_profile".localized, image: UIImage(named: "tabbar_profile"), selectedImage: UIImage(named: "tabbar_profile_selected"))
             tabController.viewControllers = [first, second]
             tabController.selectedIndex = 0
             currentViewController = tabController
