@@ -29,7 +29,7 @@ class HomeModuleTests: XCTestCase {
         router = nil
     }
 
-    func testExample() throws {
+    func testHomeModuleViewDidLoad() throws {
         // Given
         createModule()
         vc?.loadViewIfNeeded()
@@ -41,6 +41,7 @@ class HomeModuleTests: XCTestCase {
         XCTAssertEqual(vc?.backgroundImage.image, UIImage(named: "LaunchImage"))
         XCTAssertEqual(vc?.backgroundImage.contentMode, .scaleAspectFill)
         XCTAssertEqual(vc?.backgroundImage.alpha, 0.5)
+        XCTAssertEqual(vc?.tableView.backgroundColor, .clear)
     }
     
     func createModule() {

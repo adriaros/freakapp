@@ -19,6 +19,7 @@ class HomePresenter: HomeViewToPresenterProtocol {
         view?.backgroundImage.contentMode = .scaleAspectFill
         view?.backgroundImage.alpha = 0.5
         view?.backgroundImage.image = UIImage(named: "LaunchImage")
+        view?.tableView.backgroundColor = .clear
     }
 }
 

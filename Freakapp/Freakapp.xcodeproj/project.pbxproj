@@ -23,6 +23,12 @@
 		11A5341724C4B37B00528DAA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5341624C4B37B00528DAA /* main.swift */; };
 		11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5341924C4BB3D00528DAA /* Coordinator.swift */; };
 		11A5341C24C4BB5000528DAA /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5341B24C4BB5000528DAA /* CoordinatorProtocol.swift */; };
+		11AF402B24F1170C006BB256 /* HomeTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF402A24F1170C006BB256 /* HomeTableViewDataSource.swift */; };
+		11AF402D24F11A36006BB256 /* HomeTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF402C24F11A36006BB256 /* HomeTableViewDelegate.swift */; };
+		11AF403124F11AD8006BB256 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF402F24F11AD8006BB256 /* HomeTableViewCell.swift */; };
+		11AF403224F11AD8006BB256 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AF403024F11AD8006BB256 /* HomeTableViewCell.xib */; };
+		11AF403424F11E00006BB256 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF403324F11E00006BB256 /* UIViewExtension.swift */; };
+		11AF403624F1254F006BB256 /* UIViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF403524F1254F006BB256 /* UIViewExtensionTest.swift */; };
 		11CBCA4F24DEB105004A90D7 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4924DEB105004A90D7 /* HomePresenter.swift */; };
 		11CBCA5024DEB105004A90D7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4A24DEB105004A90D7 /* HomeRouter.swift */; };
 		11CBCA5124DEB105004A90D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4B24DEB105004A90D7 /* HomeViewController.swift */; };
@@ -67,6 +73,12 @@
 		11A5341624C4B37B00528DAA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		11A5341924C4BB3D00528DAA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		11A5341B24C4BB5000528DAA /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		11AF402A24F1170C006BB256 /* HomeTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewDataSource.swift; sourceTree = "<group>"; };
+		11AF402C24F11A36006BB256 /* HomeTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewDelegate.swift; sourceTree = "<group>"; };
+		11AF402F24F11AD8006BB256 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		11AF403024F11AD8006BB256 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		11AF403324F11E00006BB256 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		11AF403524F1254F006BB256 /* UIViewExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionTest.swift; sourceTree = "<group>"; };
 		11CBCA4924DEB105004A90D7 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		11CBCA4A24DEB105004A90D7 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		11CBCA4B24DEB105004A90D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				1156ABDC24F047A700BBD53A /* StringExtension.swift */,
+				11AF403324F11E00006BB256 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -118,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */,
+				11AF403524F1254F006BB256 /* UIViewExtensionTest.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -200,6 +214,25 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		11AF402924F116F8006BB256 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				11AF402E24F11AC9006BB256 /* Cells */,
+				11AF402A24F1170C006BB256 /* HomeTableViewDataSource.swift */,
+				11AF402C24F11A36006BB256 /* HomeTableViewDelegate.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		11AF402E24F11AC9006BB256 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11AF402F24F11AD8006BB256 /* HomeTableViewCell.swift */,
+				11AF403024F11AD8006BB256 /* HomeTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		11CBCA4724DEB0DA004A90D7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +244,7 @@
 		11CBCA4824DEB0EE004A90D7 /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
+				11AF402924F116F8006BB256 /* Table */,
 				11CBCA4B24DEB105004A90D7 /* HomeViewController.swift */,
 				11CBCA4924DEB105004A90D7 /* HomePresenter.swift */,
 				11CBCA4D24DEB105004A90D7 /* HomeInteractor.swift */,
@@ -339,6 +373,7 @@
 				11CBCA5624DEB11E004A90D7 /* HomeViewController.xib in Resources */,
 				1156ABD824F046C800BBD53A /* Localizable.strings in Resources */,
 				11A533DF24C206D400528DAA /* LaunchViewController.storyboard in Resources */,
+				11AF403224F11AD8006BB256 /* HomeTableViewCell.xib in Resources */,
 				11A533DC24C206D400528DAA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +394,7 @@
 			files = (
 				11CBCA5224DEB105004A90D7 /* HomeProtocols.swift in Sources */,
 				11A5341424C20FFA00528DAA /* LaunchEntities.swift in Sources */,
+				11AF403424F11E00006BB256 /* UIViewExtension.swift in Sources */,
 				11A5341124C20FFA00528DAA /* LaunchViewController.swift in Sources */,
 				11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */,
 				11CBCA4F24DEB105004A90D7 /* HomePresenter.swift in Sources */,
@@ -366,13 +402,16 @@
 				11A533D324C206D200528DAA /* AppDelegate.swift in Sources */,
 				11A5341224C20FFA00528DAA /* LaunchProtocols.swift in Sources */,
 				11CBCA5124DEB105004A90D7 /* HomeViewController.swift in Sources */,
+				11AF403124F11AD8006BB256 /* HomeTableViewCell.swift in Sources */,
 				11A5341C24C4BB5000528DAA /* CoordinatorProtocol.swift in Sources */,
 				11A5341024C20FFA00528DAA /* LaunchRouter.swift in Sources */,
 				11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */,
+				11AF402B24F1170C006BB256 /* HomeTableViewDataSource.swift in Sources */,
 				11CBCA5024DEB105004A90D7 /* HomeRouter.swift in Sources */,
 				11A5340F24C20FFA00528DAA /* LaunchPresenter.swift in Sources */,
 				1156ABDD24F047A700BBD53A /* StringExtension.swift in Sources */,
 				11CBCA5424DEB105004A90D7 /* HomeEntities.swift in Sources */,
+				11AF402D24F11A36006BB256 /* HomeTableViewDelegate.swift in Sources */,
 				11A5341324C20FFA00528DAA /* LaunchInteractor.swift in Sources */,
 				11CBCA5324DEB105004A90D7 /* HomeInteractor.swift in Sources */,
 			);
@@ -382,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AF403624F1254F006BB256 /* UIViewExtensionTest.swift in Sources */,
 				1156ABE024F0553F00BBD53A /* StringExtensionTest.swift in Sources */,
 				11CBCA5A24DEBD10004A90D7 /* MockCoordinator.swift in Sources */,
 				11CBCA5D24DEC6F6004A90D7 /* LaunchModuleTests.swift in Sources */,

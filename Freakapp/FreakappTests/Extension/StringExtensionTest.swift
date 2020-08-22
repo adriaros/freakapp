@@ -21,7 +21,7 @@ class StringExtensionTest: XCTestCase {
         sut = nil
     }
 
-    func testExample() throws {
+    func testStringExtensionLokalisedString() throws {
         // Given
         let lokalisedString = "Home"
         
