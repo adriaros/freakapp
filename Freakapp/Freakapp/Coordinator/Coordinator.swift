@@ -27,8 +27,7 @@ final class Coordinator: CoordinatorProtocol {
         switch type {
         case let .launch(controller):
             currentViewController = controller
-            let navigation = UINavigationController(rootViewController: controller)
-            window?.rootViewController = navigation
+            window?.rootViewController = controller
             window?.makeKeyAndVisible()
             
         case let .present(controller, animated):

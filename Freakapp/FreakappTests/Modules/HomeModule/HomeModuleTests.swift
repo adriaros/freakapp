@@ -44,6 +44,48 @@ class HomeModuleTests: XCTestCase {
         XCTAssertEqual(vc?.tableView.backgroundColor, .clear)
     }
     
+    func testHomeModuleLoadTableData() throws {
+        // Given
+        createModule()
+        vc?.loadViewIfNeeded()
+        
+        // When
+        vc?.viewDidLoad()
+        
+        // Then
+        XCTAssertEqual(vc?.presenter?.tableDescriptor?.rows.count, 13)
+        for item in vc!.presenter!.tableDescriptor!.rows {
+            switch item {
+            case let .marvel(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_marvel")!)
+            case let .starWars(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_star_wars")!)
+            case let .disney(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_disney")!)
+            case let .studioGhibli(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_ghibli")!)
+            case let .ageOfEmpiresII(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_aoe")!)
+            case let .clashOfClans(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_coc")!)
+            case let .clashRoyale(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_cr")!)
+            case let .dungeonsAndDragons(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_dad")!)
+            case let .fortnite(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_fortnite")!)
+            case let .magicTheGathering(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_magic")!)
+            case let .pokemon(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_pokemon")!)
+            case let .rickAndMorty(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_rick")!)
+            case let .superHeroes(_, _, image):
+                XCTAssertEqual(image, UIImage(named: "home_cell_heroes")!)
+            }
+        }
+    }
+    
     func createModule() {
         vc = HomeRouter.create(coordinator: coordinator) as? HomeViewController
         presenter = vc?.presenter as? HomePresenter

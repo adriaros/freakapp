@@ -19,7 +19,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omU-fh-AkZ">
                         <rect key="frame" x="20" y="30" width="337" height="117"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_cell_marvel" translatesAutoresizingMaskIntoConstraints="NO" id="cvv-Ms-udS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cvv-Ms-udS">
                                 <rect key="frame" x="0.0" y="0.0" width="337" height="117"/>
                             </imageView>
                         </subviews>
@@ -47,7 +47,4 @@
             <point key="canvasLocation" x="177.536231884058" y="139.62053571428569"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="home_cell_marvel" width="3000" height="2000"/>
-    </resources>
 </document>

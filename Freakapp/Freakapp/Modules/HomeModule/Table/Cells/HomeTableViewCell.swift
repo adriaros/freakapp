@@ -19,6 +19,10 @@ class HomeTableViewCell: UITableViewCell {
         configureImage()
     }
     
+    func reset() {
+        cellImageView.image = nil
+    }
+    
     private func configureCell() {
         selectionStyle = .none
         self.backgroundColor = .clear
@@ -27,7 +31,8 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     private func configureImage() {
-        cellImageView.alpha = 0.6
+        cellImageView.alpha = 0.7
+        cellImageView.contentMode = .scaleAspectFill
     }
     
     static var cellType: String {

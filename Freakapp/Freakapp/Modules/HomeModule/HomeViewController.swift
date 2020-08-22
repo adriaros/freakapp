@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         configureTableView()
         presenter?.setupView()
+        presenter?.updateView()
     }
     
     private func configureTableView() {

@@ -12,4 +12,9 @@ import UIKit
 class HomeInteractor: HomePresenterToInteractorProtocol {
     
     var presenter: HomeInteractorToPresenterProtocol?
+    private let descriptor: HomeTableDescriptorProtocol? = HomeTableDescriptor()
+    
+    func loadTableData() {
+        presenter?.didLoadTableData(descriptor)
+    }
 }
