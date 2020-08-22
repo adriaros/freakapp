@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1156ABD824F046C800BBD53A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1156ABDA24F046C800BBD53A /* Localizable.strings */; };
+		1156ABDD24F047A700BBD53A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156ABDC24F047A700BBD53A /* StringExtension.swift */; };
+		1156ABE024F0553F00BBD53A /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */; };
 		11A533D324C206D200528DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A533D224C206D200528DAA /* AppDelegate.swift */; };
 		11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A533D424C206D200528DAA /* SceneDelegate.swift */; };
 		11A533DC24C206D400528DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A533DB24C206D400528DAA /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1156ABD924F046C800BBD53A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1156ABDC24F047A700BBD53A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
 		11A533CF24C206D200528DAA /* Freakapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freakapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A533D224C206D200528DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A533D424C206D200528DAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +98,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1156ABD524F0454900BBD53A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				1156ABDA24F046C800BBD53A /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		1156ABDB24F0479800BBD53A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1156ABDC24F047A700BBD53A /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1156ABDE24F0552A00BBD53A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		11A533C624C206D200528DAA = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +143,8 @@
 		11A533D124C206D200528DAA /* Freakapp */ = {
 			isa = PBXGroup;
 			children = (
+				1156ABDB24F0479800BBD53A /* Extensions */,
+				1156ABD524F0454900BBD53A /* Localization */,
 				11A5341524C4B29000528DAA /* AppCore */,
 				11A5340824C20FAB00528DAA /* LaunchModule */,
 				11A5341824C4BB1C00528DAA /* Coordinator */,
@@ -126,6 +158,7 @@
 		11A533E824C206D400528DAA /* FreakappTests */ = {
 			isa = PBXGroup;
 			children = (
+				1156ABDE24F0552A00BBD53A /* Extension */,
 				11CBCA5824DEBCD5004A90D7 /* Coordinator */,
 				11CBCA5B24DEBF1A004A90D7 /* LaunchModule */,
 				11CBCA6024DECF01004A90D7 /* Modules */,
@@ -304,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11CBCA5624DEB11E004A90D7 /* HomeViewController.xib in Resources */,
+				1156ABD824F046C800BBD53A /* Localizable.strings in Resources */,
 				11A533DF24C206D400528DAA /* LaunchViewController.storyboard in Resources */,
 				11A533DC24C206D400528DAA /* Assets.xcassets in Resources */,
 			);
@@ -337,6 +371,7 @@
 				11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */,
 				11CBCA5024DEB105004A90D7 /* HomeRouter.swift in Sources */,
 				11A5340F24C20FFA00528DAA /* LaunchPresenter.swift in Sources */,
+				1156ABDD24F047A700BBD53A /* StringExtension.swift in Sources */,
 				11CBCA5424DEB105004A90D7 /* HomeEntities.swift in Sources */,
 				11A5341324C20FFA00528DAA /* LaunchInteractor.swift in Sources */,
 				11CBCA5324DEB105004A90D7 /* HomeInteractor.swift in Sources */,
@@ -347,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1156ABE024F0553F00BBD53A /* StringExtensionTest.swift in Sources */,
 				11CBCA5A24DEBD10004A90D7 /* MockCoordinator.swift in Sources */,
 				11CBCA5D24DEC6F6004A90D7 /* LaunchModuleTests.swift in Sources */,
 				11CBCA6324DECF25004A90D7 /* HomeModuleTests.swift in Sources */,
@@ -365,6 +401,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1156ABDA24F046C800BBD53A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1156ABD924F046C800BBD53A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		11A533DD24C206D400528DAA /* LaunchViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

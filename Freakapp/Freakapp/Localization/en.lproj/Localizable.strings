@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Freakapp
+
+  Created by Adrià Ros on 21/08/2020.
+  Copyright © 2020 adria.engineer.ios. All rights reserved.
+*/
+
+"tabbar_item_home" = "Home";
+"tabbar_item_profile" = "Profile";
