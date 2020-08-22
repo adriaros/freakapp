@@ -22,13 +22,57 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cvv-Ms-udS">
                                 <rect key="frame" x="0.0" y="0.0" width="337" height="117"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmS-DW-Fye">
+                                <rect key="frame" x="0.0" y="93.5" width="337" height="23.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsV-Xj-pNr">
+                                        <rect key="frame" x="331" y="0.0" width="0.0" height="23.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="tsV-Xj-pNr" firstAttribute="top" secondItem="HmS-DW-Fye" secondAttribute="top" id="98C-Bq-6pB"/>
+                                    <constraint firstItem="tsV-Xj-pNr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HmS-DW-Fye" secondAttribute="leading" id="QZA-9O-G4b"/>
+                                    <constraint firstAttribute="bottom" secondItem="tsV-Xj-pNr" secondAttribute="bottom" id="WLD-SP-fIG"/>
+                                    <constraint firstAttribute="trailing" secondItem="tsV-Xj-pNr" secondAttribute="trailing" constant="6" id="x97-gZ-8Yi"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brN-ZJ-w3X">
+                                <rect key="frame" x="0.0" y="0.0" width="337" height="23.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZG-7Y-o55">
+                                        <rect key="frame" x="12" y="0.0" width="0.0" height="23.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="FZG-7Y-o55" firstAttribute="leading" secondItem="brN-ZJ-w3X" secondAttribute="leading" constant="12" id="Pl7-vL-d4L"/>
+                                    <constraint firstItem="FZG-7Y-o55" firstAttribute="top" secondItem="brN-ZJ-w3X" secondAttribute="top" id="akU-vl-lIw"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FZG-7Y-o55" secondAttribute="trailing" id="o3w-ff-UyG"/>
+                                    <constraint firstAttribute="bottom" secondItem="FZG-7Y-o55" secondAttribute="bottom" id="vtn-tY-GNO"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="cvv-Ms-udS" firstAttribute="top" secondItem="omU-fh-AkZ" secondAttribute="top" id="26W-AL-v34"/>
+                            <constraint firstItem="HmS-DW-Fye" firstAttribute="height" secondItem="cvv-Ms-udS" secondAttribute="height" multiplier="0.2" id="4ip-IR-nK2"/>
+                            <constraint firstItem="brN-ZJ-w3X" firstAttribute="leading" secondItem="omU-fh-AkZ" secondAttribute="leading" id="FzF-Aa-hmm"/>
+                            <constraint firstAttribute="trailing" secondItem="HmS-DW-Fye" secondAttribute="trailing" id="JoK-Ao-wrt"/>
                             <constraint firstItem="cvv-Ms-udS" firstAttribute="leading" secondItem="omU-fh-AkZ" secondAttribute="leading" id="LGt-UD-wNp"/>
+                            <constraint firstItem="HmS-DW-Fye" firstAttribute="leading" secondItem="omU-fh-AkZ" secondAttribute="leading" id="Vuj-Gz-wC8"/>
+                            <constraint firstItem="brN-ZJ-w3X" firstAttribute="top" secondItem="omU-fh-AkZ" secondAttribute="top" id="ZIx-gI-Ies"/>
+                            <constraint firstAttribute="bottom" secondItem="HmS-DW-Fye" secondAttribute="bottom" id="a2f-zD-fLr"/>
                             <constraint firstAttribute="bottom" secondItem="cvv-Ms-udS" secondAttribute="bottom" id="aqN-2X-fTO"/>
                             <constraint firstAttribute="trailing" secondItem="cvv-Ms-udS" secondAttribute="trailing" id="evx-fd-DEN"/>
+                            <constraint firstAttribute="trailing" secondItem="brN-ZJ-w3X" secondAttribute="trailing" id="m9H-VB-Ai8"/>
+                            <constraint firstItem="brN-ZJ-w3X" firstAttribute="height" secondItem="cvv-Ms-udS" secondAttribute="height" multiplier="0.2" id="ohw-JP-xtn"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -43,8 +87,12 @@
             <connections>
                 <outlet property="cellImageView" destination="cvv-Ms-udS" id="IgG-NP-hiS"/>
                 <outlet property="containerView" destination="omU-fh-AkZ" id="s5A-hr-fLa"/>
+                <outlet property="statusLabel" destination="tsV-Xj-pNr" id="Cpq-mp-h8O"/>
+                <outlet property="statusView" destination="HmS-DW-Fye" id="ImY-YU-H0T"/>
+                <outlet property="titleLabel" destination="FZG-7Y-o55" id="uq0-Vs-hXP"/>
+                <outlet property="titleView" destination="brN-ZJ-w3X" id="8tF-R5-CE7"/>
             </connections>
-            <point key="canvasLocation" x="177.536231884058" y="139.62053571428569"/>
+            <point key="canvasLocation" x="177.536231884058" y="138.95089285714286"/>
         </tableViewCell>
     </objects>
 </document>

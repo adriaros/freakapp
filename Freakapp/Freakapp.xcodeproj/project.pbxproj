@@ -29,6 +29,10 @@
 		11AF403224F11AD8006BB256 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AF403024F11AD8006BB256 /* HomeTableViewCell.xib */; };
 		11AF403424F11E00006BB256 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF403324F11E00006BB256 /* UIViewExtension.swift */; };
 		11AF403624F1254F006BB256 /* UIViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF403524F1254F006BB256 /* UIViewExtensionTest.swift */; };
+		11AF403824F1601C006BB256 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF403724F1601C006BB256 /* UILabelExtension.swift */; };
+		11AF403A24F1610A006BB256 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF403924F1610A006BB256 /* UIFontExtension.swift */; };
+		11AF403C24F16A1A006BB256 /* UILabelExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF403B24F16A1A006BB256 /* UILabelExtensionTest.swift */; };
+		11AF403E24F16B7D006BB256 /* UIFontExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF403D24F16B7D006BB256 /* UIFontExtensionTest.swift */; };
 		11CBCA4F24DEB105004A90D7 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4924DEB105004A90D7 /* HomePresenter.swift */; };
 		11CBCA5024DEB105004A90D7 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4A24DEB105004A90D7 /* HomeRouter.swift */; };
 		11CBCA5124DEB105004A90D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4B24DEB105004A90D7 /* HomeViewController.swift */; };
@@ -79,6 +83,10 @@
 		11AF403024F11AD8006BB256 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		11AF403324F11E00006BB256 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		11AF403524F1254F006BB256 /* UIViewExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionTest.swift; sourceTree = "<group>"; };
+		11AF403724F1601C006BB256 /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		11AF403924F1610A006BB256 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		11AF403B24F16A1A006BB256 /* UILabelExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensionTest.swift; sourceTree = "<group>"; };
+		11AF403D24F16B7D006BB256 /* UIFontExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensionTest.swift; sourceTree = "<group>"; };
 		11CBCA4924DEB105004A90D7 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		11CBCA4A24DEB105004A90D7 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		11CBCA4B24DEB105004A90D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +131,8 @@
 			children = (
 				1156ABDC24F047A700BBD53A /* StringExtension.swift */,
 				11AF403324F11E00006BB256 /* UIViewExtension.swift */,
+				11AF403724F1601C006BB256 /* UILabelExtension.swift */,
+				11AF403924F1610A006BB256 /* UIFontExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -132,6 +142,8 @@
 			children = (
 				1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */,
 				11AF403524F1254F006BB256 /* UIViewExtensionTest.swift */,
+				11AF403B24F16A1A006BB256 /* UILabelExtensionTest.swift */,
+				11AF403D24F16B7D006BB256 /* UIFontExtensionTest.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -395,12 +407,14 @@
 				11CBCA5224DEB105004A90D7 /* HomeProtocols.swift in Sources */,
 				11A5341424C20FFA00528DAA /* LaunchEntities.swift in Sources */,
 				11AF403424F11E00006BB256 /* UIViewExtension.swift in Sources */,
+				11AF403824F1601C006BB256 /* UILabelExtension.swift in Sources */,
 				11A5341124C20FFA00528DAA /* LaunchViewController.swift in Sources */,
 				11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */,
 				11CBCA4F24DEB105004A90D7 /* HomePresenter.swift in Sources */,
 				11A5341724C4B37B00528DAA /* main.swift in Sources */,
 				11A533D324C206D200528DAA /* AppDelegate.swift in Sources */,
 				11A5341224C20FFA00528DAA /* LaunchProtocols.swift in Sources */,
+				11AF403A24F1610A006BB256 /* UIFontExtension.swift in Sources */,
 				11CBCA5124DEB105004A90D7 /* HomeViewController.swift in Sources */,
 				11AF403124F11AD8006BB256 /* HomeTableViewCell.swift in Sources */,
 				11A5341C24C4BB5000528DAA /* CoordinatorProtocol.swift in Sources */,
@@ -423,9 +437,11 @@
 			files = (
 				11AF403624F1254F006BB256 /* UIViewExtensionTest.swift in Sources */,
 				1156ABE024F0553F00BBD53A /* StringExtensionTest.swift in Sources */,
+				11AF403C24F16A1A006BB256 /* UILabelExtensionTest.swift in Sources */,
 				11CBCA5A24DEBD10004A90D7 /* MockCoordinator.swift in Sources */,
 				11CBCA5D24DEC6F6004A90D7 /* LaunchModuleTests.swift in Sources */,
 				11CBCA6324DECF25004A90D7 /* HomeModuleTests.swift in Sources */,
+				11AF403E24F16B7D006BB256 /* UIFontExtensionTest.swift in Sources */,
 				11CBCA5F24DECD14004A90D7 /* CoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

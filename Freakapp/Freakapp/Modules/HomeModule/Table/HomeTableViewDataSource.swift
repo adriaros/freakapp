@@ -20,32 +20,58 @@ extension HomeViewController: UITableViewDataSource {
         guard let data = presenter?.tableDescriptor?.rows else { return cell }
         cell.reset()
         switch data[indexPath.row] {
-        case let .marvel(_, _, image):
+        case let .marvel(title, status, image):
             cell.cellImageView.image = image
-        case let .disney(_, _, image):
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
+        case let .disney(title, status, image):
             cell.cellImageView.image = image
-        case let .starWars(_, _, image):
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
+        case let .starWars(title, status, image):
             cell.cellImageView.image = image
-        case let .studioGhibli(_, _, image):
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
+        case let .studioGhibli(title, status, image):
             cell.cellImageView.image = image
-        case let .ageOfEmpiresII(_, _, image):
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
+        case let .ageOfEmpiresII(title, status, image):
             cell.cellImageView.image = image
-        case let .clashOfClans(_, _, image):
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
+        case let .clashOfClans(title, status, image):
             cell.cellImageView.image = image
-        case let .clashRoyale(_, _, image):
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
+        case let .clashRoyale(title, status, image):
             cell.cellImageView.image = image
-        case let .dungeonsAndDragons(_, _, image):
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
+        case let .dungeonsAndDragons(title, status, image):
             cell.cellImageView.image = image
-        case let .fortnite(_, _, image):
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
+        case let .fortnite(title, status, image):
             cell.cellImageView.image = image
-        case let .magicTheGathering(_, _, image):
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
+        case let .magicTheGathering(title, status, image):
             cell.cellImageView.image = image
-        case let .pokemon(_, _, image):
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
+        case let .pokemon(title, status, image):
             cell.cellImageView.image = image
-        case let .rickAndMorty(_, _, image):
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
+        case let .rickAndMorty(title, status, image):
             cell.cellImageView.image = image
-        case let .superHeroes(_, _, image):
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
+        case let .superHeroes(title, status, image):
             cell.cellImageView.image = image
+            cell.titleLabel.text = title
+            cell.statusLabel.text = status
         }
         return cell
     }
