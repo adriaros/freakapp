@@ -31,6 +31,7 @@ class HomeTableViewCell: UITableViewCell {
     
     func reset() {
         cellImageView.image = nil
+        titleLabel.text = ""
         statusLabel.text = ""
     }
     

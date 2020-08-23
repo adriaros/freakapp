@@ -8,3 +8,18 @@
 
 "tabbar_item_home" = "Home";
 "tabbar_item_profile" = "Profile";
+"home_cell_title_marvel" = "Marvel Univers";
+"home_cell_title_star_wars" = "Star Wars";
+"home_cell_title_disney" = "Disney";
+"home_cell_title_ghibli" = "Studio Ghibili";
+"home_cell_title_aoe2" = "Age of Empires II";
+"home_cell_title_clash_of_clans" = "Clash Of Clans";
+"home_cell_title_clash_royale" = "Clash Royale";
+"home_cell_title_dungeons_and_dragons" = "Dungeons & Dragons";
+"home_cell_title_fortnite" = "Fortnite";
+"home_cell_title_magic" = "Magic The Gathering";
+"home_cell_title_pokemon" = "PoKémon";
+"home_cell_title_rick_and_morty" = "Rick and Morty";
+"home_cell_title_heroes" = "All about super heroes";
+"home_cell_title_wip" = "Work in progress";
+"home_cell_title_soon" = "Coming soon";

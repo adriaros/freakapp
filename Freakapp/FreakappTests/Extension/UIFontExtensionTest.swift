@@ -22,12 +22,34 @@ class UIFontExtensionTest: XCTestCase {
         sut = nil
     }
 
-    func testUIFontExtensionFontType() throws {
+    func testUIFontExtensionAvenirBook12() throws {
         // Given
         let type = UIFont.avenirBook12
         
         // When
         sut = UIFont.avenirBook12
+        
+        // Then
+        XCTAssertEqual(type, sut)
+    }
+    
+    func testUIFontExtensionAvenirHeavy20() throws {
+        // Given
+        let type = UIFont.avenirHeavy20
+        
+        // When
+        sut = UIFont.avenirHeavy20
+        
+        // Then
+        XCTAssertEqual(type, sut)
+    }
+    
+    func testUIFontExtensionTrebuchetBoldItalic20() throws {
+        // Given
+        let type = UIFont.trebuchetBoldItalic20
+        
+        // When
+        sut = UIFont.trebuchetBoldItalic20
         
         // Then
         XCTAssertEqual(type, sut)

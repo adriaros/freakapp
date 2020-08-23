@@ -44,6 +44,19 @@ class HomeModuleTests: XCTestCase {
         XCTAssertEqual(vc?.tableView.backgroundColor, .clear)
     }
     
+    func testHomeModuleviewDidLayoutSubviews() throws {
+        // Given
+        createModule()
+        vc?.loadViewIfNeeded()
+        
+        // When
+        vc?.viewDidLoad()
+        vc?.viewDidLayoutSubviews()
+        
+        // Then
+        XCTAssertEqual(vc?.tableView.rowHeight, vc!.tableView.frame.size.width / 2)
+    }
+    
     func testHomeModuleLoadTableData() throws {
         // Given
         createModule()
@@ -56,32 +69,58 @@ class HomeModuleTests: XCTestCase {
         XCTAssertEqual(vc?.presenter?.tableDescriptor?.rows.count, 13)
         for item in vc!.presenter!.tableDescriptor!.rows {
             switch item {
-            case let .marvel(_, _, image):
+            case let .marvel(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_marvel")!)
-            case let .starWars(_, _, image):
+                XCTAssertEqual(title, "home_cell_title_marvel".localized)
+                XCTAssertEqual(status, "home_cell_title_wip".localized)
+            case let .starWars(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_star_wars")!)
-            case let .disney(_, _, image):
+                XCTAssertEqual(title, "home_cell_title_star_wars".localized)
+                XCTAssertEqual(status, "home_cell_title_soon".localized)
+            case let .disney(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_disney")!)
-            case let .studioGhibli(_, _, image):
+                XCTAssertEqual(title, "home_cell_title_disney".localized)
+                XCTAssertEqual(status, "home_cell_title_soon".localized)
+            case let .studioGhibli(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_ghibli")!)
-            case let .ageOfEmpiresII(_, _, image):
+                XCTAssertEqual(title, "home_cell_title_ghibli".localized)
+                XCTAssertEqual(status, "home_cell_title_soon".localized)
+            case let .ageOfEmpiresII(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_aoe")!)
-            case let .clashOfClans(_, _, image):
+                XCTAssertEqual(title, "home_cell_title_aoe2".localized)
+                XCTAssertEqual(status, "home_cell_title_soon".localized)
+            case let .clashOfClans(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_coc")!)
-            case let .clashRoyale(_, _, image):
+                XCTAssertEqual(title, "home_cell_title_clash_of_clans".localized)
+                XCTAssertEqual(status, "home_cell_title_soon".localized)
+            case let .clashRoyale(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_cr")!)
-            case let .dungeonsAndDragons(_, _, image):
+                XCTAssertEqual(title, "home_cell_title_clash_royale".localized)
+                XCTAssertEqual(status, "home_cell_title_soon".localized)
+            case let .dungeonsAndDragons(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_dad")!)
-            case let .fortnite(_, _, image):
+                XCTAssertEqual(title, "home_cell_title_dungeons_and_dragons".localized)
+                XCTAssertEqual(status, "home_cell_title_soon".localized)
+            case let .fortnite(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_fortnite")!)
-            case let .magicTheGathering(_, _, image):
+                XCTAssertEqual(title, "home_cell_title_fortnite".localized)
+                XCTAssertEqual(status, "home_cell_title_soon".localized)
+            case let .magicTheGathering(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_magic")!)
-            case let .pokemon(_, _, image):
+                XCTAssertEqual(title, "home_cell_title_magic".localized)
+                XCTAssertEqual(status, "home_cell_title_soon".localized)
+            case let .pokemon(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_pokemon")!)
-            case let .rickAndMorty(_, _, image):
+                XCTAssertEqual(title, "home_cell_title_pokemon".localized)
+                XCTAssertEqual(status, "home_cell_title_soon".localized)
+            case let .rickAndMorty(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_rick")!)
-            case let .superHeroes(_, _, image):
+                XCTAssertEqual(title, "home_cell_title_rick_and_morty".localized)
+                XCTAssertEqual(status, "home_cell_title_soon".localized)
+            case let .superHeroes(title, status, image):
                 XCTAssertEqual(image, UIImage(named: "home_cell_heroes")!)
+                XCTAssertEqual(title, "home_cell_title_heroes".localized)
+                XCTAssertEqual(status, "home_cell_title_soon".localized)
             }
         }
     }
