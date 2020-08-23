@@ -20,7 +20,7 @@ class CoordinatorTests: XCTestCase {
     var sut: Coordinator?
 
     override func setUpWithError() throws {
-        sut = Coordinator(UIWindow())
+        sut = Coordinator(nil)
     }
 
     override func tearDownWithError() throws {

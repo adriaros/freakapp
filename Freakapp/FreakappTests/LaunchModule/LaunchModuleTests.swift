@@ -29,7 +29,7 @@ class LaunchModuleTests: XCTestCase {
         router = nil
     }
 
-    func testViewDidAppear() throws {
+    func testLaunchModuleViewDidAppear() throws {
         // Given
         var transition: CoorindatorTransitionType?
         createModule()

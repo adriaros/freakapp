@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "clashofclans-1.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "clashofclans.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "clashofclans-2.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

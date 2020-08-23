@@ -15,13 +15,27 @@ class HomePresenter: HomeViewToPresenterProtocol {
     var interactor: HomePresenterToInteractorProtocol?
     var router: HomePresenterToRouterProtocol?
     
+    var tableDescriptor: HomeTableDescriptorProtocol? {
+        didSet {
+            view?.tableView.reloadData()
+        }
+    }
+    
     func setupView() {
         view?.backgroundImage.contentMode = .scaleAspectFill
         view?.backgroundImage.alpha = 0.5
         view?.backgroundImage.image = UIImage(named: "LaunchImage")
+        view?.tableView.backgroundColor = .clear
+    }
+    
+    func updateView() {
+        interactor?.loadTableData()
     }
 }
 
 extension HomePresenter: HomeInteractorToPresenterProtocol {
     
+    func didLoadTableData(_ data: HomeTableDescriptorProtocol?) {
+        tableDescriptor = data
+    }
 }

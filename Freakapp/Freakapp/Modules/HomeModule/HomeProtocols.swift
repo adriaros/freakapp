@@ -12,20 +12,25 @@ import UIKit
 protocol HomePresenterToViewProtocol: class {
     var presenter: HomeViewToPresenterProtocol? { get set }
     var backgroundImage: UIImageView! { get set }
+    var tableView: UITableView! { get set }
 }
 
 protocol HomeInteractorToPresenterProtocol: class {
+    func didLoadTableData(_ data: HomeTableDescriptorProtocol?)
 }
 
 protocol HomePresenterToInteractorProtocol: class {
     var presenter: HomeInteractorToPresenterProtocol? { get set }
+    func loadTableData()
 }
 
 protocol HomeViewToPresenterProtocol: class {
     var view: HomePresenterToViewProtocol? { get set }
     var interactor: HomePresenterToInteractorProtocol? { get set }
     var router: HomePresenterToRouterProtocol? { get set }
+    var tableDescriptor: HomeTableDescriptorProtocol? { get set }
     func setupView()
+    func updateView()
 }
 
 protocol HomePresenterToRouterProtocol: class {

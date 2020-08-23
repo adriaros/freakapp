@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Freakapp" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundImage" destination="PAU-n6-zH0" id="lke-zB-RdH"/>
+                <outlet property="tableView" destination="fP3-v1-HQf" id="g7u-DF-spi"/>
                 <outlet property="view" destination="iN0-l3-epB" id="rkM-6g-1l6"/>
             </connections>
         </placeholder>
@@ -21,13 +22,21 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PAU-n6-zH0">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                 </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fP3-v1-HQf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="fP3-v1-HQf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1oq-tq-tax"/>
                 <constraint firstAttribute="trailing" secondItem="PAU-n6-zH0" secondAttribute="trailing" id="80W-98-7ER"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fP3-v1-HQf" secondAttribute="trailing" id="DiP-69-5Ht"/>
+                <constraint firstAttribute="bottom" secondItem="fP3-v1-HQf" secondAttribute="bottom" id="EsB-qD-Taw"/>
                 <constraint firstItem="PAU-n6-zH0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Iw2-n0-3hn"/>
                 <constraint firstAttribute="bottom" secondItem="PAU-n6-zH0" secondAttribute="bottom" id="P9d-Dc-Ugm"/>
                 <constraint firstItem="PAU-n6-zH0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QrX-LX-UZK"/>
+                <constraint firstItem="fP3-v1-HQf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TYn-HR-0id"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="139" y="145"/>
