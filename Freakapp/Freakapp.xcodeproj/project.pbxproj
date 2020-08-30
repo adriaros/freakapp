@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110D318724FB8A4F00F1CD68 /* HomeTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D318624FB8A4F00F1CD68 /* HomeTableViewTests.swift */; };
 		1156ABD824F046C800BBD53A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1156ABDA24F046C800BBD53A /* Localizable.strings */; };
 		1156ABDD24F047A700BBD53A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156ABDC24F047A700BBD53A /* StringExtension.swift */; };
 		1156ABE024F0553F00BBD53A /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110D318624FB8A4F00F1CD68 /* HomeTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewTests.swift; sourceTree = "<group>"; };
 		1156ABD924F046C800BBD53A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1156ABDC24F047A700BBD53A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 			children = (
 				11CBCA6224DECF25004A90D7 /* HomeModuleTests.swift */,
 				11AF404124F30BFE006BB256 /* HomeTableViewCellTest.swift */,
+				110D318624FB8A4F00F1CD68 /* HomeTableViewTests.swift */,
 			);
 			path = HomeModule;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110D318724FB8A4F00F1CD68 /* HomeTableViewTests.swift in Sources */,
 				11AF403624F1254F006BB256 /* UIViewExtensionTest.swift in Sources */,
 				1156ABE024F0553F00BBD53A /* StringExtensionTest.swift in Sources */,
 				11AF404224F30BFE006BB256 /* HomeTableViewCellTest.swift in Sources */,
