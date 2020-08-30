@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		110D318724FB8A4F00F1CD68 /* HomeTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D318624FB8A4F00F1CD68 /* HomeTableViewTests.swift */; };
 		110D318C24FB947500F1CD68 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D318B24FB947500F1CD68 /* AppDelegateTests.swift */; };
+		110D318F24FBAA8900F1CD68 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D318E24FBAA8900F1CD68 /* NetworkService.swift */; };
+		110D319224FBB4C600F1CD68 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D319124FBB4C600F1CD68 /* NetworkServiceTests.swift */; };
+		110D319424FBC0FC00F1CD68 /* FakeURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D319324FBC0FC00F1CD68 /* FakeURLProtocol.swift */; };
+		110D319824FBC12C00F1CD68 /* FakeNetworkResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D319724FBC12C00F1CD68 /* FakeNetworkResponses.swift */; };
 		1156ABD824F046C800BBD53A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1156ABDA24F046C800BBD53A /* Localizable.strings */; };
 		1156ABDD24F047A700BBD53A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156ABDC24F047A700BBD53A /* StringExtension.swift */; };
 		1156ABE024F0553F00BBD53A /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */; };
@@ -62,6 +66,10 @@
 /* Begin PBXFileReference section */
 		110D318624FB8A4F00F1CD68 /* HomeTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewTests.swift; sourceTree = "<group>"; };
 		110D318B24FB947500F1CD68 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		110D318E24FBAA8900F1CD68 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		110D319124FBB4C600F1CD68 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		110D319324FBC0FC00F1CD68 /* FakeURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeURLProtocol.swift; sourceTree = "<group>"; };
+		110D319724FBC12C00F1CD68 /* FakeNetworkResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkResponses.swift; sourceTree = "<group>"; };
 		1156ABD924F046C800BBD53A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1156ABDC24F047A700BBD53A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
@@ -132,6 +140,24 @@
 			path = AppCore;
 			sourceTree = "<group>";
 		};
+		110D318D24FBA8EC00F1CD68 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				110D318E24FBAA8900F1CD68 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		110D319024FBB4AD00F1CD68 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				110D319124FBB4C600F1CD68 /* NetworkServiceTests.swift */,
+				110D319324FBC0FC00F1CD68 /* FakeURLProtocol.swift */,
+				110D319724FBC12C00F1CD68 /* FakeNetworkResponses.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 		1156ABD524F0454900BBD53A /* Localization */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +209,7 @@
 		11A533D124C206D200528DAA /* Freakapp */ = {
 			isa = PBXGroup;
 			children = (
+				110D318D24FBA8EC00F1CD68 /* Network */,
 				1156ABDB24F0479800BBD53A /* Extensions */,
 				1156ABD524F0454900BBD53A /* Localization */,
 				11A5341524C4B29000528DAA /* AppCore */,
@@ -198,6 +225,7 @@
 		11A533E824C206D400528DAA /* FreakappTests */ = {
 			isa = PBXGroup;
 			children = (
+				110D319024FBB4AD00F1CD68 /* NetworkService */,
 				110D318824FB944000F1CD68 /* AppCore */,
 				1156ABDE24F0552A00BBD53A /* Extension */,
 				11CBCA5824DEBCD5004A90D7 /* Coordinator */,
@@ -426,6 +454,7 @@
 				11AF403424F11E00006BB256 /* UIViewExtension.swift in Sources */,
 				11AF403824F1601C006BB256 /* UILabelExtension.swift in Sources */,
 				11A5341124C20FFA00528DAA /* LaunchViewController.swift in Sources */,
+				110D318F24FBAA8900F1CD68 /* NetworkService.swift in Sources */,
 				11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */,
 				11CBCA4F24DEB105004A90D7 /* HomePresenter.swift in Sources */,
 				11A5341724C4B37B00528DAA /* main.swift in Sources */,
@@ -457,11 +486,14 @@
 				1156ABE024F0553F00BBD53A /* StringExtensionTest.swift in Sources */,
 				11AF404224F30BFE006BB256 /* HomeTableViewCellTest.swift in Sources */,
 				11AF403C24F16A1A006BB256 /* UILabelExtensionTest.swift in Sources */,
+				110D319424FBC0FC00F1CD68 /* FakeURLProtocol.swift in Sources */,
 				11CBCA5A24DEBD10004A90D7 /* MockCoordinator.swift in Sources */,
 				11CBCA5D24DEC6F6004A90D7 /* LaunchModuleTests.swift in Sources */,
 				11CBCA6324DECF25004A90D7 /* HomeModuleTests.swift in Sources */,
 				11AF403E24F16B7D006BB256 /* UIFontExtensionTest.swift in Sources */,
+				110D319824FBC12C00F1CD68 /* FakeNetworkResponses.swift in Sources */,
 				11CBCA5F24DECD14004A90D7 /* CoordinatorTests.swift in Sources */,
+				110D319224FBB4C600F1CD68 /* NetworkServiceTests.swift in Sources */,
 				110D318C24FB947500F1CD68 /* AppDelegateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
