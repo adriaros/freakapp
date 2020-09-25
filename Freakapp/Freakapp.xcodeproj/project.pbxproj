@@ -16,6 +16,10 @@
 		1156ABD824F046C800BBD53A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1156ABDA24F046C800BBD53A /* Localizable.strings */; };
 		1156ABDD24F047A700BBD53A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156ABDC24F047A700BBD53A /* StringExtension.swift */; };
 		1156ABE024F0553F00BBD53A /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */; };
+		117DE0F3251E34E800C3729D /* MarvelMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0F1251E34E800C3729D /* MarvelMainViewController.swift */; };
+		117DE0F4251E34E800C3729D /* MarvelMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117DE0F2251E34E800C3729D /* MarvelMainViewController.xib */; };
+		117DE0F8251E355300C3729D /* MarvelMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0F7251E355300C3729D /* MarvelMainViewModel.swift */; };
+		117DE0FC251E357500C3729D /* MarvelMainModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0FB251E357500C3729D /* MarvelMainModuleProtocols.swift */; };
 		11A533D324C206D200528DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A533D224C206D200528DAA /* AppDelegate.swift */; };
 		11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A533D424C206D200528DAA /* SceneDelegate.swift */; };
 		11A533DC24C206D400528DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A533DB24C206D400528DAA /* Assets.xcassets */; };
@@ -73,6 +77,10 @@
 		1156ABD924F046C800BBD53A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1156ABDC24F047A700BBD53A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
+		117DE0F1251E34E800C3729D /* MarvelMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainViewController.swift; sourceTree = "<group>"; };
+		117DE0F2251E34E800C3729D /* MarvelMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarvelMainViewController.xib; sourceTree = "<group>"; };
+		117DE0F7251E355300C3729D /* MarvelMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainViewModel.swift; sourceTree = "<group>"; };
+		117DE0FB251E357500C3729D /* MarvelMainModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainModuleProtocols.swift; sourceTree = "<group>"; };
 		11A533CF24C206D200528DAA /* Freakapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freakapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A533D224C206D200528DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A533D424C206D200528DAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +196,17 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		117DE0E8251E32D300C3729D /* MarvelModule */ = {
+			isa = PBXGroup;
+			children = (
+				117DE0F1251E34E800C3729D /* MarvelMainViewController.swift */,
+				117DE0F7251E355300C3729D /* MarvelMainViewModel.swift */,
+				117DE0FB251E357500C3729D /* MarvelMainModuleProtocols.swift */,
+				117DE0F2251E34E800C3729D /* MarvelMainViewController.xib */,
+			);
+			path = MarvelModule;
+			sourceTree = "<group>";
+		};
 		11A533C624C206D200528DAA = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +310,7 @@
 		11CBCA4724DEB0DA004A90D7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				117DE0E8251E32D300C3729D /* MarvelModule */,
 				11CBCA4824DEB0EE004A90D7 /* HomeModule */,
 			);
 			path = Modules;
@@ -429,6 +449,7 @@
 			files = (
 				11CBCA5624DEB11E004A90D7 /* HomeViewController.xib in Resources */,
 				1156ABD824F046C800BBD53A /* Localizable.strings in Resources */,
+				117DE0F4251E34E800C3729D /* MarvelMainViewController.xib in Resources */,
 				11A533DF24C206D400528DAA /* LaunchViewController.storyboard in Resources */,
 				11AF403224F11AD8006BB256 /* HomeTableViewCell.xib in Resources */,
 				11A533DC24C206D400528DAA /* Assets.xcassets in Resources */,
@@ -454,6 +475,7 @@
 				11AF403424F11E00006BB256 /* UIViewExtension.swift in Sources */,
 				11AF403824F1601C006BB256 /* UILabelExtension.swift in Sources */,
 				11A5341124C20FFA00528DAA /* LaunchViewController.swift in Sources */,
+				117DE0FC251E357500C3729D /* MarvelMainModuleProtocols.swift in Sources */,
 				110D318F24FBAA8900F1CD68 /* NetworkService.swift in Sources */,
 				11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */,
 				11CBCA4F24DEB105004A90D7 /* HomePresenter.swift in Sources */,
@@ -463,6 +485,7 @@
 				11AF403A24F1610A006BB256 /* UIFontExtension.swift in Sources */,
 				11CBCA5124DEB105004A90D7 /* HomeViewController.swift in Sources */,
 				11AF403124F11AD8006BB256 /* HomeTableViewCell.swift in Sources */,
+				117DE0F8251E355300C3729D /* MarvelMainViewModel.swift in Sources */,
 				11A5341C24C4BB5000528DAA /* CoordinatorProtocol.swift in Sources */,
 				11A5341024C20FFA00528DAA /* LaunchRouter.swift in Sources */,
 				11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */,
@@ -473,6 +496,7 @@
 				11CBCA5424DEB105004A90D7 /* HomeEntities.swift in Sources */,
 				11AF402D24F11A36006BB256 /* HomeTableViewDelegate.swift in Sources */,
 				11A5341324C20FFA00528DAA /* LaunchInteractor.swift in Sources */,
+				117DE0F3251E34E800C3729D /* MarvelMainViewController.swift in Sources */,
 				11CBCA5324DEB105004A90D7 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

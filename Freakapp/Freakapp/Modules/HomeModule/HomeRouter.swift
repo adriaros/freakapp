@@ -29,4 +29,8 @@ class HomeRouter: HomePresenterToRouterProtocol {
         
         return view
     }
+    
+    func presentMarvelModule() {
+        coordinator?.transition(type: .present(MarvelMainModuleBuilder.create(), true))
+    }
 }

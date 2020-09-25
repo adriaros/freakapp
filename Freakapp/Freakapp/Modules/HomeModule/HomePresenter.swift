@@ -16,9 +16,7 @@ class HomePresenter: HomeViewToPresenterProtocol {
     var router: HomePresenterToRouterProtocol?
     
     var tableDescriptor: HomeTableDescriptorProtocol? {
-        didSet {
-            view?.tableView.reloadData()
-        }
+        didSet { view?.tableView.reloadData() }
     }
     
     func setupView() {
@@ -30,6 +28,10 @@ class HomePresenter: HomeViewToPresenterProtocol {
     
     func updateView() {
         interactor?.loadTableData()
+    }
+    
+    func onMarvel() {
+        router?.presentMarvelModule()
     }
 }
 

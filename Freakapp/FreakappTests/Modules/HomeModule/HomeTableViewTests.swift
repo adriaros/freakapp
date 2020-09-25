@@ -14,7 +14,6 @@ class HomeTableViewTests: XCTestCase {
     var vc: HomeViewController!
     var presenter: HomePresenter!
     var coordinator: MockCoordinator!
-    var sut: HomeTableViewCell!
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,7 +25,6 @@ class HomeTableViewTests: XCTestCase {
         vc = nil
         coordinator = nil
         presenter = nil
-        sut = nil
     }
 
     func testHomeTableViewMarvelCell() throws {
@@ -34,168 +32,90 @@ class HomeTableViewTests: XCTestCase {
         presenter.tableDescriptor = HomeTableDescriptor()
         
         // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as? HomeTableViewCell
+        let cell0 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as! HomeTableViewCell
+        let cell1 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 1, section: 0)) as! HomeTableViewCell
+        let cell2 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 2, section: 0)) as! HomeTableViewCell
+        let cell3 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 3, section: 0)) as! HomeTableViewCell
+        let cell4 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 4, section: 0)) as! HomeTableViewCell
+        let cell5 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 5, section: 0)) as! HomeTableViewCell
+        let cell6 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 6, section: 0)) as! HomeTableViewCell
+        let cell7 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 7, section: 0)) as! HomeTableViewCell
+        let cell8 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 8, section: 0)) as! HomeTableViewCell
+        let cell9 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 9, section: 0)) as! HomeTableViewCell
+        let cell10 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 10, section: 0)) as! HomeTableViewCell
+        let cell11 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 11, section: 0)) as! HomeTableViewCell
+        let cell12 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 12, section: 0)) as! HomeTableViewCell
         
         // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_marvel".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_wip".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_marvel")!)
+        XCTAssertEqual(cell0.titleLabel.text, "home_cell_title_marvel".localized)
+        XCTAssertEqual(cell0.statusLabel.text, "home_cell_title_wip".localized)
+        XCTAssertEqual(cell0.cellImageView.image, UIImage(named: "home_cell_marvel")!)
+        
+        XCTAssertEqual(cell1.titleLabel.text, "home_cell_title_star_wars".localized)
+        XCTAssertEqual(cell1.statusLabel.text, "home_cell_title_soon".localized)
+        XCTAssertEqual(cell1.cellImageView.image, UIImage(named: "home_cell_star_wars")!)
+        
+        XCTAssertEqual(cell2.titleLabel.text, "home_cell_title_disney".localized)
+        XCTAssertEqual(cell2.statusLabel.text, "home_cell_title_soon".localized)
+        XCTAssertEqual(cell2.cellImageView.image, UIImage(named: "home_cell_disney")!)
+        
+        XCTAssertEqual(cell3.titleLabel.text, "home_cell_title_ghibli".localized)
+        XCTAssertEqual(cell3.statusLabel.text, "home_cell_title_soon".localized)
+        XCTAssertEqual(cell3.cellImageView.image, UIImage(named: "home_cell_ghibli")!)
+        
+        XCTAssertEqual(cell4.titleLabel.text, "home_cell_title_aoe2".localized)
+        XCTAssertEqual(cell4.statusLabel.text, "home_cell_title_soon".localized)
+        XCTAssertEqual(cell4.cellImageView.image, UIImage(named: "home_cell_aoe")!)
+        
+        XCTAssertEqual(cell5.titleLabel.text, "home_cell_title_clash_of_clans".localized)
+        XCTAssertEqual(cell5.statusLabel.text, "home_cell_title_soon".localized)
+        XCTAssertEqual(cell5.cellImageView.image, UIImage(named: "home_cell_coc")!)
+        
+        XCTAssertEqual(cell6.titleLabel.text, "home_cell_title_clash_royale".localized)
+        XCTAssertEqual(cell6.statusLabel.text, "home_cell_title_soon".localized)
+        XCTAssertEqual(cell6.cellImageView.image, UIImage(named: "home_cell_cr")!)
+        
+        XCTAssertEqual(cell7.titleLabel.text, "home_cell_title_dungeons_and_dragons".localized)
+        XCTAssertEqual(cell7.statusLabel.text, "home_cell_title_soon".localized)
+        XCTAssertEqual(cell7.cellImageView.image, UIImage(named: "home_cell_dad")!)
+        
+        XCTAssertEqual(cell8.titleLabel.text, "home_cell_title_fortnite".localized)
+        XCTAssertEqual(cell8.statusLabel.text, "home_cell_title_soon".localized)
+        XCTAssertEqual(cell8.cellImageView.image, UIImage(named: "home_cell_fortnite")!)
+        
+        XCTAssertEqual(cell9.titleLabel.text, "home_cell_title_magic".localized)
+        XCTAssertEqual(cell9.statusLabel.text, "home_cell_title_soon".localized)
+        XCTAssertEqual(cell9.cellImageView.image, UIImage(named: "home_cell_magic")!)
+        
+        XCTAssertEqual(cell10.titleLabel.text, "home_cell_title_pokemon".localized)
+        XCTAssertEqual(cell10.statusLabel.text, "home_cell_title_soon".localized)
+        XCTAssertEqual(cell10.cellImageView.image, UIImage(named: "home_cell_pokemon")!)
+        
+        XCTAssertEqual(cell11.titleLabel.text, "home_cell_title_rick_and_morty".localized)
+        XCTAssertEqual(cell11.statusLabel.text, "home_cell_title_soon".localized)
+        XCTAssertEqual(cell11.cellImageView.image, UIImage(named: "home_cell_rick")!)
+        
+        XCTAssertEqual(cell12.titleLabel.text, "home_cell_title_heroes".localized)
+        XCTAssertEqual(cell12.statusLabel.text, "home_cell_title_soon".localized)
+        XCTAssertEqual(cell12.cellImageView.image, UIImage(named: "home_cell_heroes")!)
     }
     
-    func testHomeTableViewStarWarsCell() throws {
+    func testHomeTableViewDidSelectRowAtMarvelCell() throws {
         // Given
         presenter.tableDescriptor = HomeTableDescriptor()
         
         // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 1, section: 0)) as? HomeTableViewCell
+        vc.tableView(vc.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
         
         // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_star_wars".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_star_wars")!)
-    }
-    
-    func testHomeTableViewDisneyCell() throws {
-        // Given
-        presenter.tableDescriptor = HomeTableDescriptor()
-        
-        // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 2, section: 0)) as? HomeTableViewCell
-        
-        // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_disney".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_disney")!)
-    }
-    
-    func testHomeTableViewGhibiliCell() throws {
-        // Given
-        presenter.tableDescriptor = HomeTableDescriptor()
-        
-        // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 3, section: 0)) as? HomeTableViewCell
-        
-        // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_ghibli".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_ghibli")!)
-    }
-    
-    func testHomeTableViewAgeOfEmpires2Cell() throws {
-        // Given
-        presenter.tableDescriptor = HomeTableDescriptor()
-        
-        // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 4, section: 0)) as? HomeTableViewCell
-        
-        // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_aoe2".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_aoe")!)
-    }
-    
-    func testHomeTableViewClashOfClansCell() throws {
-        // Given
-        presenter.tableDescriptor = HomeTableDescriptor()
-        
-        // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 5, section: 0)) as? HomeTableViewCell
-        
-        // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_clash_of_clans".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_coc")!)
-    }
-    
-    func testHomeTableViewClashRoyaleCell() throws {
-        // Given
-        presenter.tableDescriptor = HomeTableDescriptor()
-        
-        // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 6, section: 0)) as? HomeTableViewCell
-        
-        // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_clash_royale".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_cr")!)
-    }
-    
-    func testHomeTableViewDungeonsAndDragonsCell() throws {
-        // Given
-        presenter.tableDescriptor = HomeTableDescriptor()
-        
-        // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 7, section: 0)) as? HomeTableViewCell
-        
-        // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_dungeons_and_dragons".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_dad")!)
-    }
-    
-    func testHomeTableViewFortniteCell() throws {
-        // Given
-        presenter.tableDescriptor = HomeTableDescriptor()
-        
-        // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 8, section: 0)) as? HomeTableViewCell
-        
-        // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_fortnite".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_fortnite")!)
-    }
-    
-    func testHomeTableViewMagicCell() throws {
-        // Given
-        presenter.tableDescriptor = HomeTableDescriptor()
-        
-        // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 9, section: 0)) as? HomeTableViewCell
-        
-        // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_magic".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_magic")!)
-    }
-    
-    func testHomeTableViewPokemonCell() throws {
-        // Given
-        presenter.tableDescriptor = HomeTableDescriptor()
-        
-        // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 10, section: 0)) as? HomeTableViewCell
-        
-        // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_pokemon".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_pokemon")!)
-    }
-    
-    func testHomeTableViewRickAndMortyCell() throws {
-        // Given
-        presenter.tableDescriptor = HomeTableDescriptor()
-        
-        // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 11, section: 0)) as? HomeTableViewCell
-        
-        // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_rick_and_morty".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_rick")!)
-    }
-    
-    func testHomeTableViewHeroesCell() throws {
-        // Given
-        presenter.tableDescriptor = HomeTableDescriptor()
-        
-        // When
-        sut = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 12, section: 0)) as? HomeTableViewCell
-        
-        // Then
-        XCTAssertEqual(sut.titleLabel.text, "home_cell_title_heroes".localized)
-        XCTAssertEqual(sut.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_heroes")!)
+        let transition = coordinator.transitionType
+        switch transition {
+        case let .present(marvel, animated):
+            XCTAssertTrue(marvel is MarvelMainViewController)
+            XCTAssertTrue(animated)
+        default:
+            break
+        }
     }
     
     func createModule() {
