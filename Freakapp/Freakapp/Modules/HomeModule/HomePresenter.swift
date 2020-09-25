@@ -31,7 +31,7 @@ class HomePresenter: HomeViewToPresenterProtocol {
     }
     
     func onMarvel() {
-        router?.presentMarvelModule()
+        router?.pushMarvelModule()
     }
 }
 

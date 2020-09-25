@@ -30,7 +30,7 @@ class HomeRouter: HomePresenterToRouterProtocol {
         return view
     }
     
-    func presentMarvelModule() {
-        coordinator?.transition(type: .present(MarvelMainModuleBuilder.create(), true))
+    func pushMarvelModule() {
+        coordinator?.transition(type: .push(0, MarvelMainModuleBuilder.create(), true))
     }
 }

@@ -62,7 +62,7 @@ class CoordinatorTests: XCTestCase {
         
         // Then
         XCTAssertTrue(sut?.currentViewController is UITabBarController)
-        XCTAssertTrue(current?.viewControllers?.first is HomeViewController)
+        XCTAssertTrue(current?.viewControllers?.first is UINavigationController)
         XCTAssertEqual(current?.viewControllers?.first?.tabBarItem.title, "tabbar_item_home".localized)
         XCTAssertEqual(current?.viewControllers?.first?.tabBarItem.image, homeImageBase)
         XCTAssertEqual(current?.viewControllers?.last?.tabBarItem.title, "tabbar_item_profile".localized)

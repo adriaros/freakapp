@@ -20,6 +20,7 @@
 		117DE0F4251E34E800C3729D /* MarvelMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117DE0F2251E34E800C3729D /* MarvelMainViewController.xib */; };
 		117DE0F8251E355300C3729D /* MarvelMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0F7251E355300C3729D /* MarvelMainViewModel.swift */; };
 		117DE0FC251E357500C3729D /* MarvelMainModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0FB251E357500C3729D /* MarvelMainModuleProtocols.swift */; };
+		117DE102251E3F8400C3729D /* MarvelMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE101251E3F8400C3729D /* MarvelMainModel.swift */; };
 		11A533D324C206D200528DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A533D224C206D200528DAA /* AppDelegate.swift */; };
 		11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A533D424C206D200528DAA /* SceneDelegate.swift */; };
 		11A533DC24C206D400528DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A533DB24C206D400528DAA /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 		117DE0F2251E34E800C3729D /* MarvelMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarvelMainViewController.xib; sourceTree = "<group>"; };
 		117DE0F7251E355300C3729D /* MarvelMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainViewModel.swift; sourceTree = "<group>"; };
 		117DE0FB251E357500C3729D /* MarvelMainModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainModuleProtocols.swift; sourceTree = "<group>"; };
+		117DE101251E3F8400C3729D /* MarvelMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainModel.swift; sourceTree = "<group>"; };
 		11A533CF24C206D200528DAA /* Freakapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freakapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A533D224C206D200528DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A533D424C206D200528DAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				117DE0F1251E34E800C3729D /* MarvelMainViewController.swift */,
 				117DE0F7251E355300C3729D /* MarvelMainViewModel.swift */,
+				117DE101251E3F8400C3729D /* MarvelMainModel.swift */,
 				117DE0FB251E357500C3729D /* MarvelMainModuleProtocols.swift */,
 				117DE0F2251E34E800C3729D /* MarvelMainViewController.xib */,
 			);
@@ -479,6 +482,7 @@
 				110D318F24FBAA8900F1CD68 /* NetworkService.swift in Sources */,
 				11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */,
 				11CBCA4F24DEB105004A90D7 /* HomePresenter.swift in Sources */,
+				117DE102251E3F8400C3729D /* MarvelMainModel.swift in Sources */,
 				11A5341724C4B37B00528DAA /* main.swift in Sources */,
 				11A533D324C206D200528DAA /* AppDelegate.swift in Sources */,
 				11A5341224C20FFA00528DAA /* LaunchProtocols.swift in Sources */,

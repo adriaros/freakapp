@@ -37,5 +37,5 @@ protocol HomeViewToPresenterProtocol: class {
 protocol HomePresenterToRouterProtocol: class {
     var coordinator: CoordinatorProtocol? { get set }
     static func create(coordinator: CoordinatorProtocol?) -> UIViewController
-    func presentMarvelModule()
+    func pushMarvelModule()
 }
