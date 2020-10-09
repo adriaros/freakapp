@@ -13,13 +13,5 @@ protocol CoordinatorProtocol {
     var currentTabBar: UITabBarController? { get }
     func launch(_ controller: UIViewController)
     func tabbar(_ controllers: [UIViewController])
-    func push(_ controller: UIViewController, animated: Bool)
-}
-
-enum NavigationBarLeft {
-    case default_back(UIBarButtonItem)
-}
-
-enum NavigationBarMiddle {
-    case title(text: String)
+    func push(_ controller: UIViewController, button: UIImage?, title: String?, animated: Bool)
 }

@@ -12,16 +12,19 @@ import XCTest
 class CoordinatorTests: XCTestCase {
     
     var sut: Coordinator?
+    var window: UIWindow?
 
     override func setUpWithError() throws {
-        sut = Coordinator(nil)
+        window = UIWindow()
+        sut = Coordinator(window)
     }
 
     override func tearDownWithError() throws {
+        window = nil
         sut = nil
     }
 
-    func testCoordinatorTransitionTypeLaunch() throws {
+    func testCoordinatorLaunch() throws {
         // Given
         let controller = LaunchViewController()
         
@@ -32,7 +35,7 @@ class CoordinatorTests: XCTestCase {
         XCTAssertTrue(sut?.currentViewController is LaunchViewController)
     }
     
-    func testCoordinatorTransitionTypePresent() throws {
+    func testCoordinatorTabbar() throws {
         // Given
         let home = HomeViewController()
         let empty = UIViewController()

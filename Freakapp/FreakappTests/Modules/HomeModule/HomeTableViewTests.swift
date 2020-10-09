@@ -101,21 +101,16 @@ class HomeTableViewTests: XCTestCase {
     }
     
     func testHomeTableViewDidSelectRowAtMarvelCell() throws {
-//        // Given
-//        presenter.tableDescriptor = HomeTableDescriptor()
-//
-//        // When
-//        vc.tableView(vc.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
-//
-//        // Then
-//        let transition = coordinator.transitionType
-//        switch transition {
-//        case let .present(marvel, animated):
-//            XCTAssertTrue(marvel is MarvelMainViewController)
-//            XCTAssertTrue(animated)
-//        default:
-//            break
-//        }
+        // Given
+        presenter.tableDescriptor = HomeTableDescriptor()
+
+        // When
+        vc.tableView(vc.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
+
+        // Then
+        XCTAssertEqual(coordinator.pushButtonImage, ImageAsset.BackButton.marvel.image)
+        XCTAssertEqual(coordinator.pushTitle, "marvel_main_navigation_title".localized)
+        XCTAssertTrue(coordinator.pushAnimated)
     }
     
     func createModule() {

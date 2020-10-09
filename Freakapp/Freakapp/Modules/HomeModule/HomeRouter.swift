@@ -31,6 +31,6 @@ class HomeRouter: HomePresenterToRouterProtocol {
     }
     
     func pushMarvelModule() {
-//        coordinator?.transition(type: .push(0, MarvelMainModuleBuilder.create(), true))
+        coordinator?.push(MarvelMainModuleBuilder.create(), button: ImageAsset.BackButton.marvel.image, title: "marvel_main_navigation_title".localized, animated: true)
     }
 }
