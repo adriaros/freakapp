@@ -8,15 +8,12 @@
 
 import UIKit
 
-enum CoorindatorTransitionType: Equatable {
-    case launch(UIViewController)
-    case present(UIViewController, Bool)
-    case tabbar(UIViewController, UIViewController)
-    case push(Int?, UIViewController, Bool)
-}
-
 protocol CoordinatorProtocol {
-    func transition(type: CoorindatorTransitionType)
+    var currentViewController: UIViewController? { get }
+    var currentTabBar: UITabBarController? { get }
+    func launch(_ controller: UIViewController)
+    func tabbar(_ controllers: [UIViewController])
+    func push(_ controller: UIViewController, animated: Bool)
 }
 
 enum NavigationBarLeft {

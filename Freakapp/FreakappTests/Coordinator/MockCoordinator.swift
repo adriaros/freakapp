@@ -6,14 +6,22 @@
 //  Copyright © 2020 adria.engineer.ios. All rights reserved.
 //
 
-import Foundation
+import UIKit
 @testable import Freakapp
 
 class MockCoordinator: CoordinatorProtocol {
     
-    var transitionType: CoorindatorTransitionType?
+    var currentViewController: UIViewController?
+    var currentTabBar: UITabBarController? = UITabBarController()
+        
+    func launch(_ controller: UIViewController) {
+        currentViewController = controller
+    }
     
-    func transition(type: CoorindatorTransitionType) {
-        transitionType = type
+    func tabbar(_ controllers: [UIViewController]) {
+        currentTabBar?.viewControllers = controllers
+    }
+    
+    func push(_ controller: UIViewController, animated: Bool) {
     }
 }

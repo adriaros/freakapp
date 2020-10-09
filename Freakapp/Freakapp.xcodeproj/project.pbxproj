@@ -21,6 +21,7 @@
 		117DE0F8251E355300C3729D /* MarvelMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0F7251E355300C3729D /* MarvelMainViewModel.swift */; };
 		117DE0FC251E357500C3729D /* MarvelMainModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0FB251E357500C3729D /* MarvelMainModuleProtocols.swift */; };
 		117DE102251E3F8400C3729D /* MarvelMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE101251E3F8400C3729D /* MarvelMainModel.swift */; };
+		119501E52530BEB7008EB28A /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119501E42530BEB7008EB28A /* ImageAsset.swift */; };
 		11A533D324C206D200528DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A533D224C206D200528DAA /* AppDelegate.swift */; };
 		11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A533D424C206D200528DAA /* SceneDelegate.swift */; };
 		11A533DC24C206D400528DAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A533DB24C206D400528DAA /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		117DE0F7251E355300C3729D /* MarvelMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainViewModel.swift; sourceTree = "<group>"; };
 		117DE0FB251E357500C3729D /* MarvelMainModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainModuleProtocols.swift; sourceTree = "<group>"; };
 		117DE101251E3F8400C3729D /* MarvelMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainModel.swift; sourceTree = "<group>"; };
+		119501E42530BEB7008EB28A /* ImageAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
 		11A533CF24C206D200528DAA /* Freakapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freakapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A533D224C206D200528DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11A533D424C206D200528DAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +212,15 @@
 			path = MarvelModule;
 			sourceTree = "<group>";
 		};
+		119501E12530BE7F008EB28A /* ImageAssets */ = {
+			isa = PBXGroup;
+			children = (
+				11A533DB24C206D400528DAA /* Assets.xcassets */,
+				119501E42530BEB7008EB28A /* ImageAsset.swift */,
+			);
+			path = ImageAssets;
+			sourceTree = "<group>";
+		};
 		11A533C624C206D200528DAA = {
 			isa = PBXGroup;
 			children = (
@@ -238,7 +249,7 @@
 				11A5340824C20FAB00528DAA /* LaunchModule */,
 				11A5341824C4BB1C00528DAA /* Coordinator */,
 				11CBCA4724DEB0DA004A90D7 /* Modules */,
-				11A533DB24C206D400528DAA /* Assets.xcassets */,
+				119501E12530BE7F008EB28A /* ImageAssets */,
 				11A533E024C206D400528DAA /* Info.plist */,
 			);
 			path = Freakapp;
@@ -473,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				119501E52530BEB7008EB28A /* ImageAsset.swift in Sources */,
 				11CBCA5224DEB105004A90D7 /* HomeProtocols.swift in Sources */,
 				11A5341424C20FFA00528DAA /* LaunchEntities.swift in Sources */,
 				11AF403424F11E00006BB256 /* UIViewExtension.swift in Sources */,

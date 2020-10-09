@@ -31,20 +31,13 @@ class LaunchModuleTests: XCTestCase {
 
     func testLaunchModuleViewDidAppear() throws {
         // Given
-        var transition: CoorindatorTransitionType?
         createModule()
         
         // When
         vc?.viewDidAppear(true)
         
         // Then
-        transition = coordinator.transitionType
-        switch transition {
-        case let .tabbar(home, _):
-            XCTAssertTrue(home is HomeViewController)
-        default:
-            break
-        }
+        XCTAssertTrue(coordinator.currentTabBar?.viewControllers?[0] is HomeViewController)
     }
     
     func createModule() {

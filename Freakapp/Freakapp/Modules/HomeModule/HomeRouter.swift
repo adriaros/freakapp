@@ -31,6 +31,6 @@ class HomeRouter: HomePresenterToRouterProtocol {
     }
     
     func pushMarvelModule() {
-        coordinator?.transition(type: .push(0, MarvelMainModuleBuilder.create(), true))
+//        coordinator?.transition(type: .push(0, MarvelMainModuleBuilder.create(), true))
     }
 }

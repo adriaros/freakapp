@@ -31,7 +31,7 @@ class LaunchRouter: LaunchPresenterToRouterProtocol {
     }
     
     func presentHome() {
-        let vc = HomeRouter.create(coordinator: coordinator) as! HomeViewController    
-        coordinator?.transition(type: .tabbar(vc, UIViewController()))
+        let home = HomeRouter.create(coordinator: coordinator) as! HomeViewController
+        coordinator?.tabbar([home, UIViewController()])
     }
 }
