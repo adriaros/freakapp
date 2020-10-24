@@ -1,5 +1,5 @@
 //
-//  MarvelMainTableDelegate.swift
+//  MarvelTableDelegate.swift
 //  Freakapp
 //
 //  Created by Adrià Ros on 24/10/2020.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-extension MarvelMainViewController: UITableViewDelegate {
+extension MarvelViewController: UITableViewDelegate {
     
 }

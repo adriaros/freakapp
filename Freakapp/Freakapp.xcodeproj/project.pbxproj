@@ -16,15 +16,17 @@
 		1156ABD824F046C800BBD53A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1156ABDA24F046C800BBD53A /* Localizable.strings */; };
 		1156ABDD24F047A700BBD53A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156ABDC24F047A700BBD53A /* StringExtension.swift */; };
 		1156ABE024F0553F00BBD53A /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */; };
-		117DE0F3251E34E800C3729D /* MarvelMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0F1251E34E800C3729D /* MarvelMainViewController.swift */; };
-		117DE0F4251E34E800C3729D /* MarvelMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117DE0F2251E34E800C3729D /* MarvelMainViewController.xib */; };
-		117DE0F8251E355300C3729D /* MarvelMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0F7251E355300C3729D /* MarvelMainViewModel.swift */; };
-		117DE0FC251E357500C3729D /* MarvelMainModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0FB251E357500C3729D /* MarvelMainModuleProtocols.swift */; };
-		117DE102251E3F8400C3729D /* MarvelMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE101251E3F8400C3729D /* MarvelMainModel.swift */; };
-		1194E7F32544732B000AC056 /* MarvelMainTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194E7F22544732B000AC056 /* MarvelMainTableDataSource.swift */; };
-		1194E7F725447339000AC056 /* MarvelMainTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194E7F625447339000AC056 /* MarvelMainTableDelegate.swift */; };
-		1194E7FB25447393000AC056 /* MarvelMainTableConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194E7FA25447393000AC056 /* MarvelMainTableConfigurator.swift */; };
+		117DE0F3251E34E800C3729D /* MarvelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0F1251E34E800C3729D /* MarvelViewController.swift */; };
+		117DE0F4251E34E800C3729D /* MarvelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117DE0F2251E34E800C3729D /* MarvelViewController.xib */; };
+		117DE0F8251E355300C3729D /* MarvelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0F7251E355300C3729D /* MarvelViewModel.swift */; };
+		117DE0FC251E357500C3729D /* MarvelModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE0FB251E357500C3729D /* MarvelModuleProtocols.swift */; };
+		117DE102251E3F8400C3729D /* MarvelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE101251E3F8400C3729D /* MarvelModel.swift */; };
+		1194E7F32544732B000AC056 /* MarvelTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194E7F22544732B000AC056 /* MarvelTableDataSource.swift */; };
+		1194E7F725447339000AC056 /* MarvelTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194E7F625447339000AC056 /* MarvelTableDelegate.swift */; };
+		1194E7FB25447393000AC056 /* MarvelTableConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194E7FA25447393000AC056 /* MarvelTableConfigurator.swift */; };
 		1194E7FF254477FC000AC056 /* HomeTableConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194E7FE254477FC000AC056 /* HomeTableConfigurator.swift */; };
+		1194E81825448A10000AC056 /* MarvelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194E81625448A10000AC056 /* MarvelTableViewCell.swift */; };
+		1194E81925448A10000AC056 /* MarvelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1194E81725448A10000AC056 /* MarvelTableViewCell.xib */; };
 		119501E52530BEB7008EB28A /* ImageAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119501E42530BEB7008EB28A /* ImageAsset.swift */; };
 		11A533D324C206D200528DAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A533D224C206D200528DAA /* AppDelegate.swift */; };
 		11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A533D424C206D200528DAA /* SceneDelegate.swift */; };
@@ -83,15 +85,17 @@
 		1156ABD924F046C800BBD53A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1156ABDC24F047A700BBD53A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		1156ABDF24F0553F00BBD53A /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
-		117DE0F1251E34E800C3729D /* MarvelMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainViewController.swift; sourceTree = "<group>"; };
-		117DE0F2251E34E800C3729D /* MarvelMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarvelMainViewController.xib; sourceTree = "<group>"; };
-		117DE0F7251E355300C3729D /* MarvelMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainViewModel.swift; sourceTree = "<group>"; };
-		117DE0FB251E357500C3729D /* MarvelMainModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainModuleProtocols.swift; sourceTree = "<group>"; };
-		117DE101251E3F8400C3729D /* MarvelMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainModel.swift; sourceTree = "<group>"; };
-		1194E7F22544732B000AC056 /* MarvelMainTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainTableDataSource.swift; sourceTree = "<group>"; };
-		1194E7F625447339000AC056 /* MarvelMainTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainTableDelegate.swift; sourceTree = "<group>"; };
-		1194E7FA25447393000AC056 /* MarvelMainTableConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelMainTableConfigurator.swift; sourceTree = "<group>"; };
+		117DE0F1251E34E800C3729D /* MarvelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelViewController.swift; sourceTree = "<group>"; };
+		117DE0F2251E34E800C3729D /* MarvelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarvelViewController.xib; sourceTree = "<group>"; };
+		117DE0F7251E355300C3729D /* MarvelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelViewModel.swift; sourceTree = "<group>"; };
+		117DE0FB251E357500C3729D /* MarvelModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelModuleProtocols.swift; sourceTree = "<group>"; };
+		117DE101251E3F8400C3729D /* MarvelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelModel.swift; sourceTree = "<group>"; };
+		1194E7F22544732B000AC056 /* MarvelTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableDataSource.swift; sourceTree = "<group>"; };
+		1194E7F625447339000AC056 /* MarvelTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableDelegate.swift; sourceTree = "<group>"; };
+		1194E7FA25447393000AC056 /* MarvelTableConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableConfigurator.swift; sourceTree = "<group>"; };
 		1194E7FE254477FC000AC056 /* HomeTableConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableConfigurator.swift; sourceTree = "<group>"; };
+		1194E81625448A10000AC056 /* MarvelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableViewCell.swift; sourceTree = "<group>"; };
+		1194E81725448A10000AC056 /* MarvelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarvelTableViewCell.xib; sourceTree = "<group>"; };
 		119501E42530BEB7008EB28A /* ImageAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAsset.swift; sourceTree = "<group>"; };
 		11A533CF24C206D200528DAA /* Freakapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freakapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A533D224C206D200528DAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -212,11 +216,11 @@
 			isa = PBXGroup;
 			children = (
 				1194E7EF25447285000AC056 /* Table */,
-				117DE0F1251E34E800C3729D /* MarvelMainViewController.swift */,
-				117DE0F7251E355300C3729D /* MarvelMainViewModel.swift */,
-				117DE101251E3F8400C3729D /* MarvelMainModel.swift */,
-				117DE0FB251E357500C3729D /* MarvelMainModuleProtocols.swift */,
-				117DE0F2251E34E800C3729D /* MarvelMainViewController.xib */,
+				117DE0F1251E34E800C3729D /* MarvelViewController.swift */,
+				117DE0F7251E355300C3729D /* MarvelViewModel.swift */,
+				117DE101251E3F8400C3729D /* MarvelModel.swift */,
+				117DE0FB251E357500C3729D /* MarvelModuleProtocols.swift */,
+				117DE0F2251E34E800C3729D /* MarvelViewController.xib */,
 			);
 			path = MarvelModule;
 			sourceTree = "<group>";
@@ -224,11 +228,21 @@
 		1194E7EF25447285000AC056 /* Table */ = {
 			isa = PBXGroup;
 			children = (
-				1194E7F22544732B000AC056 /* MarvelMainTableDataSource.swift */,
-				1194E7F625447339000AC056 /* MarvelMainTableDelegate.swift */,
-				1194E7FA25447393000AC056 /* MarvelMainTableConfigurator.swift */,
+				1194E81E25448A20000AC056 /* Cells */,
+				1194E7FA25447393000AC056 /* MarvelTableConfigurator.swift */,
+				1194E7F22544732B000AC056 /* MarvelTableDataSource.swift */,
+				1194E7F625447339000AC056 /* MarvelTableDelegate.swift */,
 			);
 			path = Table;
+			sourceTree = "<group>";
+		};
+		1194E81E25448A20000AC056 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1194E81625448A10000AC056 /* MarvelTableViewCell.swift */,
+				1194E81725448A10000AC056 /* MarvelTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		119501E12530BE7F008EB28A /* ImageAssets */ = {
@@ -481,9 +495,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1194E81925448A10000AC056 /* MarvelTableViewCell.xib in Resources */,
 				11CBCA5624DEB11E004A90D7 /* HomeViewController.xib in Resources */,
 				1156ABD824F046C800BBD53A /* Localizable.strings in Resources */,
-				117DE0F4251E34E800C3729D /* MarvelMainViewController.xib in Resources */,
+				117DE0F4251E34E800C3729D /* MarvelViewController.xib in Resources */,
 				11A533DF24C206D400528DAA /* LaunchViewController.storyboard in Resources */,
 				11AF403224F11AD8006BB256 /* HomeTableViewCell.xib in Resources */,
 				11A533DC24C206D400528DAA /* Assets.xcassets in Resources */,
@@ -504,39 +519,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1194E81825448A10000AC056 /* MarvelTableViewCell.swift in Sources */,
 				119501E52530BEB7008EB28A /* ImageAsset.swift in Sources */,
 				11CBCA5224DEB105004A90D7 /* HomeProtocols.swift in Sources */,
 				1194E7FF254477FC000AC056 /* HomeTableConfigurator.swift in Sources */,
 				11A5341424C20FFA00528DAA /* LaunchEntities.swift in Sources */,
-				1194E7FB25447393000AC056 /* MarvelMainTableConfigurator.swift in Sources */,
+				1194E7FB25447393000AC056 /* MarvelTableConfigurator.swift in Sources */,
 				11AF403424F11E00006BB256 /* UIViewExtension.swift in Sources */,
 				11AF403824F1601C006BB256 /* UILabelExtension.swift in Sources */,
 				11A5341124C20FFA00528DAA /* LaunchViewController.swift in Sources */,
-				117DE0FC251E357500C3729D /* MarvelMainModuleProtocols.swift in Sources */,
-				1194E7F725447339000AC056 /* MarvelMainTableDelegate.swift in Sources */,
+				117DE0FC251E357500C3729D /* MarvelModuleProtocols.swift in Sources */,
+				1194E7F725447339000AC056 /* MarvelTableDelegate.swift in Sources */,
 				110D318F24FBAA8900F1CD68 /* NetworkService.swift in Sources */,
 				11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */,
 				11CBCA4F24DEB105004A90D7 /* HomePresenter.swift in Sources */,
-				117DE102251E3F8400C3729D /* MarvelMainModel.swift in Sources */,
+				117DE102251E3F8400C3729D /* MarvelModel.swift in Sources */,
 				11A5341724C4B37B00528DAA /* main.swift in Sources */,
 				11A533D324C206D200528DAA /* AppDelegate.swift in Sources */,
 				11A5341224C20FFA00528DAA /* LaunchProtocols.swift in Sources */,
 				11AF403A24F1610A006BB256 /* UIFontExtension.swift in Sources */,
 				11CBCA5124DEB105004A90D7 /* HomeViewController.swift in Sources */,
 				11AF403124F11AD8006BB256 /* HomeTableViewCell.swift in Sources */,
-				117DE0F8251E355300C3729D /* MarvelMainViewModel.swift in Sources */,
+				117DE0F8251E355300C3729D /* MarvelViewModel.swift in Sources */,
 				11A5341C24C4BB5000528DAA /* CoordinatorProtocol.swift in Sources */,
 				11A5341024C20FFA00528DAA /* LaunchRouter.swift in Sources */,
 				11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */,
 				11AF402B24F1170C006BB256 /* HomeTableViewDataSource.swift in Sources */,
 				11CBCA5024DEB105004A90D7 /* HomeRouter.swift in Sources */,
 				11A5340F24C20FFA00528DAA /* LaunchPresenter.swift in Sources */,
-				1194E7F32544732B000AC056 /* MarvelMainTableDataSource.swift in Sources */,
+				1194E7F32544732B000AC056 /* MarvelTableDataSource.swift in Sources */,
 				1156ABDD24F047A700BBD53A /* StringExtension.swift in Sources */,
 				11CBCA5424DEB105004A90D7 /* HomeEntities.swift in Sources */,
 				11AF402D24F11A36006BB256 /* HomeTableViewDelegate.swift in Sources */,
 				11A5341324C20FFA00528DAA /* LaunchInteractor.swift in Sources */,
-				117DE0F3251E34E800C3729D /* MarvelMainViewController.swift in Sources */,
+				117DE0F3251E34E800C3729D /* MarvelViewController.swift in Sources */,
 				11CBCA5324DEB105004A90D7 /* HomeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

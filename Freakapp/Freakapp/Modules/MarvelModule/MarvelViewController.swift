@@ -1,5 +1,5 @@
 //
-//  MarvelMainViewController.swift
+//  MarvelViewController.swift
 //  Freakapp
 //
 //  Created by Adrià Ros on 25/09/2020.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class MarvelMainViewController: UIViewController {
+class MarvelViewController: UIViewController {
     
-    var viewModel: MarvelMainViewModelProtocols?
+    var viewModel: MarvelViewModelProtocols?
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {

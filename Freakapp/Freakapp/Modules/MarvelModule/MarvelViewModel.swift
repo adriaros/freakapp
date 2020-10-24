@@ -1,5 +1,5 @@
 //
-//  MarvelMainViewModel.swift
+//  MarvelViewModel.swift
 //  Freakapp
 //
 //  Created by Adrià Ros on 25/09/2020.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class MarvelMainViewModel: MarvelMainViewModelProtocols {
+final class MarvelViewModel: MarvelViewModelProtocols {
     
     
 }
