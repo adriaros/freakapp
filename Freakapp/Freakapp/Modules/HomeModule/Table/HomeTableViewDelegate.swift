@@ -22,7 +22,7 @@ extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let cell = presenter?.tableDescriptor?.rows[indexPath.row] else { return }
-        switch cell {
+        switch cell.type {
         case .marvel:
             presenter?.onMarvel()
         default:
