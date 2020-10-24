@@ -63,6 +63,7 @@
 		11CBCA5D24DEC6F6004A90D7 /* LaunchModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA5C24DEC6F6004A90D7 /* LaunchModuleTests.swift */; };
 		11CBCA5F24DECD14004A90D7 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA5E24DECD14004A90D7 /* CoordinatorTests.swift */; };
 		11CBCA6324DECF25004A90D7 /* HomeModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA6224DECF25004A90D7 /* HomeModuleTests.swift */; };
+		11CF8AEE2544989500E04D9F /* MarvelModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CF8AED2544989500E04D9F /* MarvelModuleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		11CBCA5C24DEC6F6004A90D7 /* LaunchModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModuleTests.swift; sourceTree = "<group>"; };
 		11CBCA5E24DECD14004A90D7 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		11CBCA6224DECF25004A90D7 /* HomeModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleTests.swift; sourceTree = "<group>"; };
+		11CF8AED2544989500E04D9F /* MarvelModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelModuleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,6 +401,7 @@
 		11CBCA6024DECF01004A90D7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				11CF8AEC2544988000E04D9F /* MarvelModule */,
 				11CBCA6124DECF0E004A90D7 /* HomeModule */,
 			);
 			path = Modules;
@@ -412,6 +415,14 @@
 				110D318624FB8A4F00F1CD68 /* HomeTableViewTests.swift */,
 			);
 			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		11CF8AEC2544988000E04D9F /* MarvelModule */ = {
+			isa = PBXGroup;
+			children = (
+				11CF8AED2544989500E04D9F /* MarvelModuleTests.swift */,
+			);
+			path = MarvelModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,6 +576,7 @@
 				11AF403624F1254F006BB256 /* UIViewExtensionTest.swift in Sources */,
 				1156ABE024F0553F00BBD53A /* StringExtensionTest.swift in Sources */,
 				11AF404224F30BFE006BB256 /* HomeTableViewCellTest.swift in Sources */,
+				11CF8AEE2544989500E04D9F /* MarvelModuleTests.swift in Sources */,
 				11AF403C24F16A1A006BB256 /* UILabelExtensionTest.swift in Sources */,
 				110D319424FBC0FC00F1CD68 /* FakeURLProtocol.swift in Sources */,
 				11CBCA5A24DEBD10004A90D7 /* MockCoordinator.swift in Sources */,

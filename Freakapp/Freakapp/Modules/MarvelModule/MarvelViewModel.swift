@@ -11,6 +11,7 @@ import Foundation
 final class MarvelViewModel: MarvelViewModelProtocols {
     
     var view: MarvelViewController?
+    var coordinator: CoordinatorProtocol?
     
     var rows: [MarvelCellConfigurator] = [
         GenericMarvelCell(type: .character, item: MarvelCellModel(title: "",

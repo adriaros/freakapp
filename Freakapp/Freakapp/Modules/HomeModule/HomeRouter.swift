@@ -31,7 +31,7 @@ class HomeRouter: HomePresenterToRouterProtocol {
     }
     
     func pushMarvelModule() {
-        let controller = MarvelModuleBuilder.create()
+        let controller = MarvelModuleBuilder.create(coordinator: coordinator)
         controller.hidesBottomBarWhenPushed = true
         coordinator?.push(controller, button: ImageAsset.BackButton.marvel.image, title: "marvel_main_navigation_title".localized, animated: true)
     }
