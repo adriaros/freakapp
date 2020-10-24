@@ -11,10 +11,13 @@ import UIKit
 class MarvelViewController: UIViewController {
     
     var viewModel: MarvelViewModelProtocols?
+    
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel?.setupView()
         tableView.dataSource = self
         tableView.delegate = self
     }

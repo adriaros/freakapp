@@ -22,7 +22,7 @@ class HomePresenter: HomeViewToPresenterProtocol {
     func setupView() {
         view?.backgroundImage.contentMode = .scaleAspectFill
         view?.backgroundImage.alpha = 0.5
-        view?.backgroundImage.image = UIImage(named: "LaunchImage")
+        view?.backgroundImage.image = ImageAsset.Backgrounds.home.image
         view?.tableView.backgroundColor = .clear
     }
     

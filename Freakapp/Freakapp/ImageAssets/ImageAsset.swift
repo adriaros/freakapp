@@ -10,6 +10,30 @@ import UIKit
 
 enum ImageAsset {
     
+    enum Backgrounds: String {
+        
+        var image: UIImage? {
+            return UIImage(named: self.rawValue)?.withRenderingMode(.alwaysOriginal)
+        }
+        
+        case home = "LaunchImage"
+        case marvel = "marvel_background"
+    }
+    
+    enum MarvelCell: String {
+        
+        var image: UIImage? {
+            return UIImage(named: self.rawValue)?.withRenderingMode(.alwaysOriginal)
+        }
+        
+        case characters = "marvel_characters"
+        case comics = "marvel_comics"
+        case creators = "marvel_creators"
+        case events = "marvel_events"
+        case series = "marvel_series"
+        case stories = "marvel_stories"
+    }
+    
     enum HomeCell: String {
         
         var image: UIImage? {

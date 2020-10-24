@@ -55,7 +55,7 @@ class MarvelTableViewCell: UITableViewCell, MarvelConfigurableCell {
         cellImageView.image = image
     }
     
-    func configure(data model: HomeCellModel) {
+    func configure(data model: MarvelCellModel) {
         reset()
         titleLabel.configure(text: model.title, font: UIFont.trebuchetBoldItalic20, alignment: .left, adjusted: true)
         statusLabel.configure(text: model.status, font: UIFont.avenirBook12, alignment: .right, adjusted: true)

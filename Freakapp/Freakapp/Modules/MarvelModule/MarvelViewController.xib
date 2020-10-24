@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MarvelViewController" customModule="Freakapp" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundImage" destination="dqY-w7-FZJ" id="mx0-SC-hKq"/>
                 <outlet property="tableView" destination="Gkz-4P-th9" id="owE-uQ-ueI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,6 +21,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dqY-w7-FZJ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gkz-4P-th9">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -28,10 +32,14 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dqY-w7-FZJ" secondAttribute="bottom" id="0rC-Ig-zkj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gkz-4P-th9" secondAttribute="trailing" id="64H-h6-Y8m"/>
                 <constraint firstItem="Gkz-4P-th9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DXj-B9-EeP"/>
                 <constraint firstItem="Gkz-4P-th9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Epu-gK-yKk"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Gkz-4P-th9" secondAttribute="bottom" id="spM-ff-iC5"/>
+                <constraint firstItem="dqY-w7-FZJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IgA-Vt-eK9"/>
+                <constraint firstItem="dqY-w7-FZJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="W7K-UZ-oB0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dqY-w7-FZJ" secondAttribute="trailing" id="nw6-gw-fck"/>
+                <constraint firstAttribute="bottom" secondItem="Gkz-4P-th9" secondAttribute="bottom" id="spM-ff-iC5"/>
             </constraints>
             <point key="canvasLocation" x="130" y="98"/>
         </view>

@@ -37,7 +37,7 @@ class HomeModuleTests: XCTestCase {
         vc?.viewDidLoad()
         
         // Then
-        XCTAssertEqual(vc?.backgroundImage.image, UIImage(named: "LaunchImage"))
+        XCTAssertEqual(vc?.backgroundImage.image, ImageAsset.Backgrounds.home.image)
         XCTAssertEqual(vc?.backgroundImage.contentMode, .scaleAspectFill)
         XCTAssertEqual(vc?.backgroundImage.alpha, 0.5)
         XCTAssertEqual(vc?.tableView.backgroundColor, .clear)

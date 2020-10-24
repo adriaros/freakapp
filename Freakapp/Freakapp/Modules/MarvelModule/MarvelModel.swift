@@ -8,20 +8,19 @@
 
 import UIKit
 
-typealias GenericMarvelCell = MarvelTableCellConfigurator<MarvelTableViewCell, HomeCellModel>
+typealias GenericMarvelCell = MarvelTableCellConfigurator<MarvelTableViewCell, MarvelCellModel>
 
-
-struct MarvelModel {
+struct MarvelCellModel {
     let title: String!
     let status: String!
     let image: UIImage!
 }
 
 enum MarvelCellType {
-    case character(MarvelModel)
-    case comics(MarvelModel)
-    case creators(MarvelModel)
-    case events(MarvelModel)
-    case series(MarvelModel)
-    case stories(MarvelModel)
+    case character
+    case comics
+    case creators
+    case events
+    case series
+    case stories
 }
