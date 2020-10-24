@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeTableViewCell: UITableViewCell {
+class HomeTableViewCell: UITableViewCell, HomeConfigurableCell {
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var cellImageView: UIImageView!
@@ -53,5 +53,12 @@ class HomeTableViewCell: UITableViewCell {
         titleLabel.configure(text: title, font: UIFont.trebuchetBoldItalic20, alignment: .left, adjusted: true)
         statusLabel.configure(text: status, font: UIFont.avenirBook12, alignment: .right, adjusted: true)
         cellImageView.image = image
+    }
+    
+    func configure(data model: HomeCellModel) {
+        reset()
+        titleLabel.configure(text: model.title, font: UIFont.trebuchetBoldItalic20, alignment: .left, adjusted: true)
+        statusLabel.configure(text: model.status, font: UIFont.avenirBook12, alignment: .right, adjusted: true)
+        cellImageView.image = model.image
     }
 }

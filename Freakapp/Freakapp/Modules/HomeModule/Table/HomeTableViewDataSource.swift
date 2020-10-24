@@ -19,32 +19,32 @@ extension HomeViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellType, for: indexPath) as! HomeTableViewCell
         guard let data = presenter?.tableDescriptor?.rows else { return cell }
         switch data[indexPath.row] {
-        case let .marvel(title, status, image):
-            cell.configure(title: title, status: status, image: image)
-        case let .disney(title, status, image):
-            cell.configure(title: title, status: status, image: image)
-        case let .starWars(title, status, image):
-            cell.configure(title: title, status: status, image: image)
-        case let .studioGhibli(title, status, image):
-            cell.configure(title: title, status: status, image: image)
-        case let .ageOfEmpiresII(title, status, image):
-            cell.configure(title: title, status: status, image: image)
-        case let .clashOfClans(title, status, image):
-            cell.configure(title: title, status: status, image: image)
-        case let .clashRoyale(title, status, image):
-            cell.configure(title: title, status: status, image: image)
-        case let .dungeonsAndDragons(title, status, image):
-            cell.configure(title: title, status: status, image: image)
-        case let .fortnite(title, status, image):
-            cell.configure(title: title, status: status, image: image)
-        case let .magicTheGathering(title, status, image):
-            cell.configure(title: title, status: status, image: image)
-        case let .pokemon(title, status, image):
-            cell.configure(title: title, status: status, image: image)
-        case let .rickAndMorty(title, status, image):
-            cell.configure(title: title, status: status, image: image)
-        case let .superHeroes(title, status, image):
-            cell.configure(title: title, status: status, image: image)
+        case let .marvel(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
+        case let .disney(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
+        case let .starWars(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
+        case let .studioGhibli(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
+        case let .ageOfEmpiresII(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
+        case let .clashOfClans(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
+        case let .clashRoyale(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
+        case let .dungeonsAndDragons(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
+        case let .fortnite(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
+        case let .magicTheGathering(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
+        case let .pokemon(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
+        case let .rickAndMorty(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
+        case let .superHeroes(model):
+            cell.configure(title: model.title, status: model.status, image: model.image)
         }
         return cell
     }
