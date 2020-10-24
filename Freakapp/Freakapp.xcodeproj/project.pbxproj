@@ -64,6 +64,8 @@
 		11CBCA5F24DECD14004A90D7 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA5E24DECD14004A90D7 /* CoordinatorTests.swift */; };
 		11CBCA6324DECF25004A90D7 /* HomeModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA6224DECF25004A90D7 /* HomeModuleTests.swift */; };
 		11CF8AEE2544989500E04D9F /* MarvelModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CF8AED2544989500E04D9F /* MarvelModuleTests.swift */; };
+		11CF8AF425449EE500E04D9F /* MarvelTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CF8AF325449EE500E04D9F /* MarvelTableViewCellTests.swift */; };
+		11CF8AFA25449F5400E04D9F /* MarvelTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CF8AF925449F5400E04D9F /* MarvelTableViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +140,8 @@
 		11CBCA5E24DECD14004A90D7 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		11CBCA6224DECF25004A90D7 /* HomeModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleTests.swift; sourceTree = "<group>"; };
 		11CF8AED2544989500E04D9F /* MarvelModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelModuleTests.swift; sourceTree = "<group>"; };
+		11CF8AF325449EE500E04D9F /* MarvelTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableViewCellTests.swift; sourceTree = "<group>"; };
+		11CF8AF925449F5400E04D9F /* MarvelTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +425,8 @@
 			isa = PBXGroup;
 			children = (
 				11CF8AED2544989500E04D9F /* MarvelModuleTests.swift */,
+				11CF8AF325449EE500E04D9F /* MarvelTableViewCellTests.swift */,
+				11CF8AF925449F5400E04D9F /* MarvelTableViewTests.swift */,
 			);
 			path = MarvelModule;
 			sourceTree = "<group>";
@@ -574,6 +580,8 @@
 			files = (
 				110D318724FB8A4F00F1CD68 /* HomeTableViewTests.swift in Sources */,
 				11AF403624F1254F006BB256 /* UIViewExtensionTest.swift in Sources */,
+				11CF8AF425449EE500E04D9F /* MarvelTableViewCellTests.swift in Sources */,
+				11CF8AFA25449F5400E04D9F /* MarvelTableViewTests.swift in Sources */,
 				1156ABE024F0553F00BBD53A /* StringExtensionTest.swift in Sources */,
 				11AF404224F30BFE006BB256 /* HomeTableViewCellTest.swift in Sources */,
 				11CF8AEE2544989500E04D9F /* MarvelModuleTests.swift in Sources */,

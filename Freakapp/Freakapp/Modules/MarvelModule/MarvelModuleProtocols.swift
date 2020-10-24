@@ -11,8 +11,9 @@ import UIKit
 protocol MarvelViewModelProtocols {
     var view: MarvelViewController? { get set }
     var coordinator: CoordinatorProtocol? { get set }
-    var rows: [MarvelCellConfigurator] { get }
+    var tableDescriptor: MarvelTableDescriptorProtocol? { get set }
     func setupView()
+    func updateView()
 }
 
 enum MarvelModuleBuilder {

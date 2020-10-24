@@ -26,12 +26,12 @@ enum ImageAsset {
             return UIImage(named: self.rawValue)?.withRenderingMode(.alwaysOriginal)
         }
         
-        case characters = "marvel_characters"
-        case comics = "marvel_comics"
-        case creators = "marvel_creators"
-        case events = "marvel_events"
-        case series = "marvel_series"
-        case stories = "marvel_stories"
+        case characters = "marvel_cell_characters"
+        case comics = "marvel_cell_comics"
+        case creators = "marvel_cell_creators"
+        case events = "marvel_cell_events"
+        case series = "marvel_cell_series"
+        case stories = "marvel_cell_stories"
     }
     
     enum HomeCell: String {

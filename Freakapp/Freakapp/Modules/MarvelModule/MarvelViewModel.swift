@@ -13,31 +13,18 @@ final class MarvelViewModel: MarvelViewModelProtocols {
     var view: MarvelViewController?
     var coordinator: CoordinatorProtocol?
     
-    var rows: [MarvelCellConfigurator] = [
-        GenericMarvelCell(type: .character, item: MarvelCellModel(title: "",
-                                                                  status: "",
-                                                                  image: nil)),
-        GenericMarvelCell(type: .character, item: MarvelCellModel(title: "",
-                                                                  status: "",
-                                                                  image: nil)),
-        GenericMarvelCell(type: .character, item: MarvelCellModel(title: "",
-                                                                  status: "",
-                                                                  image: nil)),
-        GenericMarvelCell(type: .character, item: MarvelCellModel(title: "",
-                                                                  status: "",
-                                                                  image: nil)),
-        GenericMarvelCell(type: .character, item: MarvelCellModel(title: "",
-                                                                  status: "",
-                                                                  image: nil)),
-        GenericMarvelCell(type: .character, item: MarvelCellModel(title: "",
-                                                                  status: "",
-                                                                  image: nil))
-    ]
+    var tableDescriptor: MarvelTableDescriptorProtocol? {
+        didSet { view?.tableView.reloadData() }
+    }
     
     func setupView() {
         view?.backgroundImage.contentMode = .scaleAspectFill
         view?.backgroundImage.alpha = 0.5
         view?.backgroundImage.image = ImageAsset.Backgrounds.marvel.image
         view?.tableView.backgroundColor = .clear
+    }
+    
+    func updateView() {
+        tableDescriptor = MarvelTableDescriptor()
     }
 }

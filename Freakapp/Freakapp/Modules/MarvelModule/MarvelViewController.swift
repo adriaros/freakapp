@@ -17,8 +17,19 @@ class MarvelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
         viewModel?.setupView()
+        viewModel?.updateView()
+    }
+    
+    private func configureTableView() {
+        tableView.register(UINib(nibName: MarvelTableViewCell.cellType, bundle: nil), forCellReuseIdentifier: MarvelTableViewCell.cellType)
         tableView.dataSource = self
         tableView.delegate = self
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView.rowHeight = tableView.frame.size.width / 2
     }
 }

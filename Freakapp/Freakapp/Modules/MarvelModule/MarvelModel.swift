@@ -24,3 +24,31 @@ enum MarvelCellType {
     case series
     case stories
 }
+
+protocol MarvelTableDescriptorProtocol {
+    var rows: [MarvelCellConfigurator] { get }
+}
+
+struct MarvelTableDescriptor: MarvelTableDescriptorProtocol {
+    
+    var rows: [MarvelCellConfigurator] = [
+        GenericMarvelCell(type: .character, item: MarvelCellModel(title: "marvel_cell_character_title".localized,
+                                                                  status: "marvel_cell_title_soon".localized,
+                                                                  image: ImageAsset.MarvelCell.characters.image)),
+        GenericMarvelCell(type: .comics, item: MarvelCellModel(title: "marvel_cell_comics_title".localized,
+                                                                  status: "marvel_cell_title_soon".localized,
+                                                                  image: ImageAsset.MarvelCell.comics.image)),
+        GenericMarvelCell(type: .creators, item: MarvelCellModel(title: "marvel_cell_creators_title".localized,
+                                                                  status: "marvel_cell_title_soon".localized,
+                                                                  image: ImageAsset.MarvelCell.creators.image)),
+        GenericMarvelCell(type: .events, item: MarvelCellModel(title: "marvel_cell_events_title".localized,
+                                                                  status: "marvel_cell_title_soon".localized,
+                                                                  image: ImageAsset.MarvelCell.events.image)),
+        GenericMarvelCell(type: .series, item: MarvelCellModel(title: "marvel_cell_series_title".localized,
+                                                                  status: "marvel_cell_title_soon".localized,
+                                                                  image: ImageAsset.MarvelCell.series.image)),
+        GenericMarvelCell(type: .stories, item: MarvelCellModel(title: "marvel_cell_stories_title".localized,
+                                                                  status: "marvel_cell_title_soon".localized,
+                                                                  image: ImageAsset.MarvelCell.stories.image))
+    ]
+}

@@ -12,7 +12,7 @@ import XCTest
 class MarvelModuleTests: XCTestCase {
     
     var coordinator: MockCoordinator!
-    var viewController: MarvelViewController?
+    var vc: MarvelViewController?
     var viewModel: MarvelViewModelProtocols?
 
     override func setUpWithError() throws {
@@ -21,27 +21,50 @@ class MarvelModuleTests: XCTestCase {
 
     override func tearDownWithError() throws {
         coordinator = nil
-        viewController = nil
+        vc = nil
         viewModel = nil
     }
 
-    func testHomeModuleViewDidLoad() throws {
+    func testMarvelModuleViewDidLoad() throws {
         // Given
         createModule()
         
         // When
-        viewController?.viewDidLoad()
+        vc?.viewDidLoad()
         
         // Then
-        XCTAssertEqual(viewController?.backgroundImage.image, ImageAsset.Backgrounds.marvel.image)
-        XCTAssertEqual(viewController?.backgroundImage.contentMode, .scaleAspectFill)
-        XCTAssertEqual(viewController?.backgroundImage.alpha, 0.5)
-        XCTAssertEqual(viewController?.tableView.backgroundColor, .clear)
+        XCTAssertEqual(vc?.backgroundImage.image, ImageAsset.Backgrounds.marvel.image)
+        XCTAssertEqual(vc?.backgroundImage.contentMode, .scaleAspectFill)
+        XCTAssertEqual(vc?.backgroundImage.alpha, 0.5)
+        XCTAssertEqual(vc?.tableView.backgroundColor, .clear)
+    }
+    
+    func testMarvelModuleviewDidLayoutSubviews() throws {
+        // Given
+        createModule()
+        
+        // When
+        vc?.viewDidLoad()
+        vc?.viewDidLayoutSubviews()
+        
+        // Then
+        XCTAssertEqual(vc?.tableView.rowHeight, vc!.tableView.frame.size.width / 2)
+    }
+    
+    func testMarvelModuleLoadTableData() throws {
+        // Given
+        createModule()
+        
+        // When
+        vc?.viewDidLoad()
+        
+        // Then
+        XCTAssertEqual(vc?.viewModel?.tableDescriptor?.rows.count, 6)
     }
     
     func createModule() {
-        viewController = MarvelModuleBuilder.create(coordinator: coordinator)
-        viewModel = viewController?.viewModel
-        viewController?.loadViewIfNeeded()
+        vc = MarvelModuleBuilder.create(coordinator: coordinator)
+        viewModel = vc?.viewModel
+        vc?.loadViewIfNeeded()
     }
 }
