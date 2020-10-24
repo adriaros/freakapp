@@ -23,38 +23,35 @@ class HomeTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        configureCell()
-        configureImage()
-        configureTitleView()
-        configureStatusView()
+        setup()
+        configure()
     }
     
-    func reset() {
+    private func reset() {
         cellImageView.image = nil
         titleLabel.text = ""
         statusLabel.text = ""
     }
     
-    private func configureCell() {
+    private func setup() {
         selectionStyle = .none
         self.backgroundColor = .clear
         shadow()
     }
     
-    private func configureImage() {
+    private func configure() {
+        titleView.backgroundColor = .white
+        titleView.alpha = 0.8
+        statusView.backgroundColor = .white
+        statusView.alpha = 0.8
         cellImageView.alpha = 0.7
         cellImageView.contentMode = .scaleAspectFill
     }
     
-    private func configureTitleView() {
-        titleView.backgroundColor = .white
-        titleView.alpha = 0.8
-        titleLabel.configure(font: UIFont.trebuchetBoldItalic20, alignment: .left, adjusted: true)
-    }
-    
-    private func configureStatusView() {
-        statusView.backgroundColor = .white
-        statusView.alpha = 0.8
-        statusLabel.configure(font: UIFont.avenirBook12, alignment: .right, adjusted: true)
+    func configure(title: String?, status: String?, image: UIImage?) {
+        reset()
+        titleLabel.configure(text: title, font: UIFont.trebuchetBoldItalic20, alignment: .left, adjusted: true)
+        statusLabel.configure(text: status, font: UIFont.avenirBook12, alignment: .right, adjusted: true)
+        cellImageView.image = image
     }
 }

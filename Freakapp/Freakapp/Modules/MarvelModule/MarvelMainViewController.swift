@@ -11,8 +11,11 @@ import UIKit
 class MarvelMainViewController: UIViewController {
     
     var viewModel: MarvelMainViewModelProtocols?
-
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
     }
 }
