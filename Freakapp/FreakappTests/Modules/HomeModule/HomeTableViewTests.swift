@@ -49,55 +49,55 @@ class HomeTableViewTests: XCTestCase {
         // Then
         XCTAssertEqual(cell0.titleLabel.text, "home_cell_title_marvel".localized)
         XCTAssertEqual(cell0.statusLabel.text, "home_cell_title_wip".localized)
-        XCTAssertEqual(cell0.cellImageView.image, UIImage(named: "home_cell_marvel")!)
+        XCTAssertEqual(cell0.cellImageView.image, ImageAsset.HomeCell.marvel.image)
         
         XCTAssertEqual(cell1.titleLabel.text, "home_cell_title_star_wars".localized)
         XCTAssertEqual(cell1.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(cell1.cellImageView.image, UIImage(named: "home_cell_star_wars")!)
+        XCTAssertEqual(cell1.cellImageView.image, ImageAsset.HomeCell.starWars.image)
         
         XCTAssertEqual(cell2.titleLabel.text, "home_cell_title_disney".localized)
         XCTAssertEqual(cell2.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(cell2.cellImageView.image, UIImage(named: "home_cell_disney")!)
+        XCTAssertEqual(cell2.cellImageView.image, ImageAsset.HomeCell.disney.image)
         
         XCTAssertEqual(cell3.titleLabel.text, "home_cell_title_ghibli".localized)
         XCTAssertEqual(cell3.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(cell3.cellImageView.image, UIImage(named: "home_cell_ghibli")!)
+        XCTAssertEqual(cell3.cellImageView.image, ImageAsset.HomeCell.studioGhibli.image)
         
         XCTAssertEqual(cell4.titleLabel.text, "home_cell_title_aoe2".localized)
         XCTAssertEqual(cell4.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(cell4.cellImageView.image, UIImage(named: "home_cell_aoe")!)
+        XCTAssertEqual(cell4.cellImageView.image, ImageAsset.HomeCell.ageOfEmpiresII.image)
         
         XCTAssertEqual(cell5.titleLabel.text, "home_cell_title_clash_of_clans".localized)
         XCTAssertEqual(cell5.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(cell5.cellImageView.image, UIImage(named: "home_cell_coc")!)
+        XCTAssertEqual(cell5.cellImageView.image, ImageAsset.HomeCell.clashOfClans.image)
         
         XCTAssertEqual(cell6.titleLabel.text, "home_cell_title_clash_royale".localized)
         XCTAssertEqual(cell6.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(cell6.cellImageView.image, UIImage(named: "home_cell_cr")!)
+        XCTAssertEqual(cell6.cellImageView.image, ImageAsset.HomeCell.clashRoyale.image)
         
         XCTAssertEqual(cell7.titleLabel.text, "home_cell_title_dungeons_and_dragons".localized)
         XCTAssertEqual(cell7.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(cell7.cellImageView.image, UIImage(named: "home_cell_dad")!)
+        XCTAssertEqual(cell7.cellImageView.image, ImageAsset.HomeCell.dungeonsAndDragons.image)
         
         XCTAssertEqual(cell8.titleLabel.text, "home_cell_title_fortnite".localized)
         XCTAssertEqual(cell8.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(cell8.cellImageView.image, UIImage(named: "home_cell_fortnite")!)
+        XCTAssertEqual(cell8.cellImageView.image, ImageAsset.HomeCell.fortnite.image)
         
         XCTAssertEqual(cell9.titleLabel.text, "home_cell_title_magic".localized)
         XCTAssertEqual(cell9.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(cell9.cellImageView.image, UIImage(named: "home_cell_magic")!)
+        XCTAssertEqual(cell9.cellImageView.image, ImageAsset.HomeCell.magicTheGathering.image)
         
         XCTAssertEqual(cell10.titleLabel.text, "home_cell_title_pokemon".localized)
         XCTAssertEqual(cell10.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(cell10.cellImageView.image, UIImage(named: "home_cell_pokemon")!)
+        XCTAssertEqual(cell10.cellImageView.image, ImageAsset.HomeCell.pokemon.image)
         
         XCTAssertEqual(cell11.titleLabel.text, "home_cell_title_rick_and_morty".localized)
         XCTAssertEqual(cell11.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(cell11.cellImageView.image, UIImage(named: "home_cell_rick")!)
+        XCTAssertEqual(cell11.cellImageView.image, ImageAsset.HomeCell.rickAndMorty.image)
         
         XCTAssertEqual(cell12.titleLabel.text, "home_cell_title_heroes".localized)
         XCTAssertEqual(cell12.statusLabel.text, "home_cell_title_soon".localized)
-        XCTAssertEqual(cell12.cellImageView.image, UIImage(named: "home_cell_heroes")!)
+        XCTAssertEqual(cell12.cellImageView.image, ImageAsset.HomeCell.superHeroes.image)
     }
     
     func testHomeTableViewDidSelectRowAtMarvelCell() throws {
