@@ -325,9 +325,9 @@
 			isa = PBXGroup;
 			children = (
 				11AF402E24F11AC9006BB256 /* Cells */,
+				1194E7FE254477FC000AC056 /* HomeTableConfigurator.swift */,
 				11AF402A24F1170C006BB256 /* HomeTableViewDataSource.swift */,
 				11AF402C24F11A36006BB256 /* HomeTableViewDelegate.swift */,
-				1194E7FE254477FC000AC056 /* HomeTableConfigurator.swift */,
 			);
 			path = Table;
 			sourceTree = "<group>";
