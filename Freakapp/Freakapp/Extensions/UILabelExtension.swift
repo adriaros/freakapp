@@ -10,7 +10,8 @@ import UIKit
 
 extension UILabel {
     
-    func configure(font: UIFont? = .systemFont(ofSize: 10), color: UIColor? = .black, alignment: NSTextAlignment? = .left, adjusted: Bool? = true) {
+    func configure(text: String?, font: UIFont? = .systemFont(ofSize: 10), color: UIColor? = .black, alignment: NSTextAlignment? = .left, adjusted: Bool? = true) {
+        self.text = text
         self.font = font
         self.textColor = color
         self.textAlignment = alignment!

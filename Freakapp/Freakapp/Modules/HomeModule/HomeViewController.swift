@@ -32,6 +32,16 @@ class HomeViewController: UIViewController {
         super.viewDidLayoutSubviews()
         tableView.rowHeight = tableView.frame.size.width / 2
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
 }
 
 extension HomeViewController: HomePresenterToViewProtocol {

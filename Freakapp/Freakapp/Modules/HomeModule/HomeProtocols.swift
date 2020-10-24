@@ -31,9 +31,11 @@ protocol HomeViewToPresenterProtocol: class {
     var tableDescriptor: HomeTableDescriptorProtocol? { get set }
     func setupView()
     func updateView()
+    func onMarvel()
 }
 
 protocol HomePresenterToRouterProtocol: class {
     var coordinator: CoordinatorProtocol? { get set }
     static func create(coordinator: CoordinatorProtocol?) -> UIViewController
+    func pushMarvelModule()
 }

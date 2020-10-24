@@ -25,15 +25,17 @@ class UILabelExtensionTest: XCTestCase {
 
     func testUILabelExtensionConfigureDefault() throws {
         // Given
+        let text = "test"
         let font: UIFont = .systemFont(ofSize: 10)
         let color: UIColor = .black
         let alignment: NSTextAlignment = .left
         let adjusted: Bool = true
         
         // When
-        sut?.configure()
+        sut?.configure(text: text)
         
         // Then
+        XCTAssertEqual(sut?.text, text)
         XCTAssertEqual(sut?.font, font)
         XCTAssertEqual(sut?.textColor, color)
         XCTAssertEqual(sut?.textAlignment, alignment)
@@ -42,15 +44,17 @@ class UILabelExtensionTest: XCTestCase {
     
     func testUILabelExtensionConfigure() throws {
         // Given
+        let text = "test"
         let font: UIFont = .avenirBook12
         let color: UIColor = .red
         let alignment: NSTextAlignment = .center
         let adjusted: Bool = false
         
         // When
-        sut?.configure(font: font, color: color, alignment: .center, adjusted: adjusted)
+        sut?.configure(text: text, font: font, color: color, alignment: .center, adjusted: adjusted)
         
         // Then
+        XCTAssertEqual(sut?.text, text)
         XCTAssertEqual(sut?.font, font)
         XCTAssertEqual(sut?.textColor, color)
         XCTAssertEqual(sut?.textAlignment, alignment)

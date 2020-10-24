@@ -11,7 +11,7 @@ import XCTest
 
 class HomeTableViewCellTest: XCTestCase {
     
-    var sut: HomeTableViewCell?
+    var sut: HomeTableViewCell!
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -30,27 +30,34 @@ class HomeTableViewCellTest: XCTestCase {
         sut?.awakeFromNib()
         
         // Then
-        XCTAssertEqual(sut?.selectionStyle, UITableViewCell.SelectionStyle.none)
-        XCTAssertEqual(sut?.backgroundColor, .clear)
-        XCTAssertEqual(sut?.cellImageView.contentMode, .scaleAspectFill)
-        XCTAssertEqual(sut?.titleLabel.font, .trebuchetBoldItalic20)
-        XCTAssertEqual(sut?.statusLabel.font, .avenirBook12)
+        XCTAssertEqual(sut.selectionStyle, UITableViewCell.SelectionStyle.none)
+        XCTAssertEqual(sut.backgroundColor, .clear)
+        XCTAssertEqual(sut.cellImageView.contentMode, .scaleAspectFill)
     }
     
-    func testHomeTableViewCellReset() throws {
+    func testHomeTableViewCellConfigure() throws {
         // Given
         sut = Bundle(for: HomeTableViewCell.self).loadNibNamed(HomeTableViewCell.cellType, owner: nil)?.first as? HomeTableViewCell
-        sut?.awakeFromNib()
-        sut?.cellImageView.image = UIImage()
-        sut?.titleLabel.text = "test_title"
-        sut?.statusLabel.text = "test_status"
         
         // When
-        sut?.reset()
+        sut?.awakeFromNib()
+        sut?.configure(title: "test-title", status: "test-status", image: UIImage(named: "home_cell_marvel"))
         
         // Then
-        XCTAssertEqual(sut?.cellImageView.image, nil)
-        XCTAssertEqual(sut?.titleLabel.text, "")
-        XCTAssertEqual(sut?.statusLabel.text, "")
+        XCTAssertEqual(sut.selectionStyle, UITableViewCell.SelectionStyle.none)
+        XCTAssertEqual(sut.backgroundColor, .clear)
+        
+        XCTAssertEqual(sut.titleLabel.text, "test-title")
+        XCTAssertEqual(sut.titleLabel.font, .trebuchetBoldItalic20)
+        XCTAssertEqual(sut.titleLabel.textAlignment, .left)
+        XCTAssertTrue(sut.titleLabel.adjustsFontSizeToFitWidth)
+
+        XCTAssertEqual(sut.statusLabel.text, "test-status")
+        XCTAssertEqual(sut.statusLabel.font, .avenirBook12)
+        XCTAssertEqual(sut.statusLabel.textAlignment, .right)
+        XCTAssertTrue(sut.statusLabel.adjustsFontSizeToFitWidth)
+        
+        XCTAssertEqual(sut.cellImageView.contentMode, .scaleAspectFill)
+        XCTAssertEqual(sut.cellImageView.image, UIImage(named: "home_cell_marvel"))
     }
 }

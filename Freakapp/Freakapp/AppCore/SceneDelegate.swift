@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
         let launcher = LaunchRouter.create(coordinator: coordinator) as! LaunchViewController
-        coordinator?.transition(type: .launch(launcher))
+        coordinator?.launch(launcher)
     }
 
     // Called as the scene is being released by the system.
