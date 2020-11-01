@@ -8,9 +8,14 @@
 
 import UIKit
 
-class TabBarCoordinator: Coordinator {
+protocol TabBarFlow {
+    var tabBarController: TabBarController! { get }
+}
+
+class TabBarCoordinator: Coordinator, TabBarFlow {
     
     private let navigationController: UINavigationController
+    var tabBarController: TabBarController!
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -18,7 +23,7 @@ class TabBarCoordinator: Coordinator {
     
     func start() {
         
-        let tabBarController = TabBarController()
+        tabBarController = TabBarController()
         tabBarController.coordinator = self
         
         let homeNavigationController = UINavigationController()

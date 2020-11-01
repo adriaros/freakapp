@@ -11,16 +11,22 @@ import XCTest
 
 class CoordinatorTests: XCTestCase {
     
+    var sut: AppCoordinator!
+    
     override func setUpWithError() throws {
+        sut = AppCoordinator(window: UIWindow())
     }
 
     override func tearDownWithError() throws {
+        sut = nil
     }
 
     func testCoordinatorLaunch() throws {
         // Given
         
+        
         // When
+        sut.start()
         
         // Then
     }
