@@ -1,15 +1,15 @@
 //
-//  MockCoordinator.swift
+//  MockMarvelCoordinator.swift
 //  FreakappTests
 //
-//  Created by Adrià Ros on 08/08/2020.
+//  Created by Adrià Ros on 01/11/2020.
 //  Copyright © 2020 adria.engineer.ios. All rights reserved.
 //
 
 import UIKit
 @testable import Freakapp
 
-class MockCoordinator: Coordinator {
+class MockMarvelCoordinator: Coordinator, MarvelFlow {
     
     var startCalled: Bool?
     
