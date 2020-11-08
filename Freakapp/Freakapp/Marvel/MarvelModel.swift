@@ -17,7 +17,7 @@ struct MarvelCellModel {
 }
 
 enum MarvelCellType {
-    case character
+    case characters
     case comics
     case creators
     case events
@@ -32,7 +32,7 @@ protocol MarvelTableDescriptorProtocol {
 struct MarvelTableDescriptor: MarvelTableDescriptorProtocol {
     
     var rows: [MarvelCellConfigurator] = [
-        GenericMarvelCell(type: .character, item: MarvelCellModel(title: "marvel_cell_character_title".localized,
+        GenericMarvelCell(type: .characters, item: MarvelCellModel(title: "marvel_cell_characters_title".localized,
                                                                   status: "marvel_cell_title_soon".localized,
                                                                   image: ImageAsset.MarvelCell.characters.image)),
         GenericMarvelCell(type: .comics, item: MarvelCellModel(title: "marvel_cell_comics_title".localized,

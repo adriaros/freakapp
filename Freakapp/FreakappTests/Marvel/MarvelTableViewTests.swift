@@ -38,7 +38,7 @@ class MarvelTableViewTests: XCTestCase {
         let cell5 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 5, section: 0)) as! MarvelTableViewCell
         
         // Then
-        XCTAssertEqual(cell0.titleLabel.text, "marvel_cell_character_title".localized)
+        XCTAssertEqual(cell0.titleLabel.text, "marvel_cell_characters_title".localized)
         XCTAssertEqual(cell0.statusLabel.text, "marvel_cell_title_soon".localized)
         XCTAssertEqual(cell0.cellImageView.image, ImageAsset.MarvelCell.characters.image)
         

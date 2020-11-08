@@ -15,14 +15,14 @@ protocol MarvelConfigurableCell {
 
 protocol MarvelCellConfigurator {
     static var reuseId: String { get }
-    var type: MarvelCellType! { get set }
+    var type: MarvelCellType! { get }
     func configure(cell: UIView)
 }
 
 class MarvelTableCellConfigurator<CellType: MarvelConfigurableCell, DataType>: MarvelCellConfigurator where CellType.DataType == DataType, CellType: UITableViewCell {
     
     static var reuseId: String { return String(describing: CellType.self) }
-    var type: MarvelCellType!
+    let type: MarvelCellType!
     let item: DataType
 
     init(type: MarvelCellType, item: DataType) {
