@@ -73,6 +73,13 @@
 		11CF8AEE2544989500E04D9F /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CF8AED2544989500E04D9F /* MarvelTests.swift */; };
 		11CF8AF425449EE500E04D9F /* MarvelTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CF8AF325449EE500E04D9F /* MarvelTableViewCellTests.swift */; };
 		11CF8AFA25449F5400E04D9F /* MarvelTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CF8AF925449F5400E04D9F /* MarvelTableViewTests.swift */; };
+		11ECD86025584FDE002E83A2 /* CharacterFinderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECD85A25584FDE002E83A2 /* CharacterFinderPresenter.swift */; };
+		11ECD86125584FDE002E83A2 /* CharacterFinderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECD85B25584FDE002E83A2 /* CharacterFinderRouter.swift */; };
+		11ECD86225584FDE002E83A2 /* CharacterFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECD85C25584FDE002E83A2 /* CharacterFinderViewController.swift */; };
+		11ECD86325584FDE002E83A2 /* CharacterFinderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECD85D25584FDE002E83A2 /* CharacterFinderProtocols.swift */; };
+		11ECD86425584FDE002E83A2 /* CharacterFinderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECD85E25584FDE002E83A2 /* CharacterFinderInteractor.swift */; };
+		11ECD86525584FDE002E83A2 /* CharacterFinderEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECD85F25584FDE002E83A2 /* CharacterFinderEntities.swift */; };
+		11ECD86B2558502B002E83A2 /* CharacterFinderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11ECD86A2558502B002E83A2 /* CharacterFinderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +163,13 @@
 		11CF8AED2544989500E04D9F /* MarvelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTests.swift; sourceTree = "<group>"; };
 		11CF8AF325449EE500E04D9F /* MarvelTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableViewCellTests.swift; sourceTree = "<group>"; };
 		11CF8AF925449F5400E04D9F /* MarvelTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableViewTests.swift; sourceTree = "<group>"; };
+		11ECD85A25584FDE002E83A2 /* CharacterFinderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFinderPresenter.swift; sourceTree = "<group>"; };
+		11ECD85B25584FDE002E83A2 /* CharacterFinderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFinderRouter.swift; sourceTree = "<group>"; };
+		11ECD85C25584FDE002E83A2 /* CharacterFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFinderViewController.swift; sourceTree = "<group>"; };
+		11ECD85D25584FDE002E83A2 /* CharacterFinderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFinderProtocols.swift; sourceTree = "<group>"; };
+		11ECD85E25584FDE002E83A2 /* CharacterFinderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFinderInteractor.swift; sourceTree = "<group>"; };
+		11ECD85F25584FDE002E83A2 /* CharacterFinderEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFinderEntities.swift; sourceTree = "<group>"; };
+		11ECD86A2558502B002E83A2 /* CharacterFinderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterFinderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +375,7 @@
 		11A533D124C206D200528DAA /* Freakapp */ = {
 			isa = PBXGroup;
 			children = (
+				11ECD85825584F37002E83A2 /* Characters */,
 				1156ABDB24F0479800BBD53A /* Extensions */,
 				110D318D24FBA8EC00F1CD68 /* Network */,
 				11A5340824C20FAB00528DAA /* Splash */,
@@ -492,6 +507,28 @@
 			path = Marvel;
 			sourceTree = "<group>";
 		};
+		11ECD85825584F37002E83A2 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				11ECD85925584F43002E83A2 /* Finder */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		11ECD85925584F43002E83A2 /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+				11ECD85C25584FDE002E83A2 /* CharacterFinderViewController.swift */,
+				11ECD85A25584FDE002E83A2 /* CharacterFinderPresenter.swift */,
+				11ECD85E25584FDE002E83A2 /* CharacterFinderInteractor.swift */,
+				11ECD85B25584FDE002E83A2 /* CharacterFinderRouter.swift */,
+				11ECD85D25584FDE002E83A2 /* CharacterFinderProtocols.swift */,
+				11ECD85F25584FDE002E83A2 /* CharacterFinderEntities.swift */,
+				11ECD86A2558502B002E83A2 /* CharacterFinderViewController.xib */,
+			);
+			path = Finder;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -577,6 +614,7 @@
 				11CBCA5624DEB11E004A90D7 /* HomeViewController.xib in Resources */,
 				1156ABD824F046C800BBD53A /* Localizable.strings in Resources */,
 				117DE93A254F3BB2003B04A1 /* SplashViewController.xib in Resources */,
+				11ECD86B2558502B002E83A2 /* CharacterFinderViewController.xib in Resources */,
 				117DE0F4251E34E800C3729D /* MarvelViewController.xib in Resources */,
 				11A533DF24C206D400528DAA /* LaunchScreen.storyboard in Resources */,
 				11AF403224F11AD8006BB256 /* HomeTableViewCell.xib in Resources */,
@@ -600,10 +638,12 @@
 			files = (
 				1194E81825448A10000AC056 /* MarvelTableViewCell.swift in Sources */,
 				119501E52530BEB7008EB28A /* ImageAsset.swift in Sources */,
+				11ECD86325584FDE002E83A2 /* CharacterFinderProtocols.swift in Sources */,
 				11CBCA5224DEB105004A90D7 /* HomeProtocols.swift in Sources */,
 				1194E7FF254477FC000AC056 /* HomeTableConfigurator.swift in Sources */,
 				11A5341424C20FFA00528DAA /* SplashEntities.swift in Sources */,
 				1194E7FB25447393000AC056 /* MarvelTableConfigurator.swift in Sources */,
+				11ECD86025584FDE002E83A2 /* CharacterFinderPresenter.swift in Sources */,
 				11AF403424F11E00006BB256 /* UIViewExtension.swift in Sources */,
 				1139ED53254EE83A000093AE /* SplashCoordinator.swift in Sources */,
 				115E379F254F33D900D9F13B /* HomeCoordinator.swift in Sources */,
@@ -613,15 +653,18 @@
 				117DE0FC251E357500C3729D /* MarvelModuleProtocols.swift in Sources */,
 				117DE951254F403D003B04A1 /* MarvelCoordinator.swift in Sources */,
 				1194E7F725447339000AC056 /* MarvelTableDelegate.swift in Sources */,
+				11ECD86225584FDE002E83A2 /* CharacterFinderViewController.swift in Sources */,
 				110D318F24FBAA8900F1CD68 /* NetworkService.swift in Sources */,
 				11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */,
 				11CBCA4F24DEB105004A90D7 /* HomePresenter.swift in Sources */,
 				117DE102251E3F8400C3729D /* MarvelModel.swift in Sources */,
+				11ECD86425584FDE002E83A2 /* CharacterFinderInteractor.swift in Sources */,
 				11A5341724C4B37B00528DAA /* main.swift in Sources */,
 				11A533D324C206D200528DAA /* AppDelegate.swift in Sources */,
 				11A5341224C20FFA00528DAA /* SplashProtocols.swift in Sources */,
 				11AF403A24F1610A006BB256 /* UIFontExtension.swift in Sources */,
 				11CBCA5124DEB105004A90D7 /* HomeViewController.swift in Sources */,
+				11ECD86125584FDE002E83A2 /* CharacterFinderRouter.swift in Sources */,
 				11AF403124F11AD8006BB256 /* HomeTableViewCell.swift in Sources */,
 				117DE0F8251E355300C3729D /* MarvelViewModel.swift in Sources */,
 				11A5341024C20FFA00528DAA /* SplashRouter.swift in Sources */,
@@ -637,6 +680,7 @@
 				11A5341324C20FFA00528DAA /* SplashInteractor.swift in Sources */,
 				117DE0F3251E34E800C3729D /* MarvelViewController.swift in Sources */,
 				11CBCA5324DEB105004A90D7 /* HomeInteractor.swift in Sources */,
+				11ECD86525584FDE002E83A2 /* CharacterFinderEntities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
