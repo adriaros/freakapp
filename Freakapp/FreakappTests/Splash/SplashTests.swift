@@ -45,5 +45,6 @@ class SplashTests: XCTestCase {
         presenter = vc?.presenter as? SplashPresenter
         interactor = presenter?.interactor as? SplashInteractor
         router = presenter?.router as? SplashRouter
+        vc?.loadViewIfNeeded()
     }
 }

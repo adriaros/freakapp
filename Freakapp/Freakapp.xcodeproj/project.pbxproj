@@ -370,7 +370,8 @@
 				11A5340824C20FAB00528DAA /* Splash */,
 				11A5341824C4BB1C00528DAA /* Coordinator */,
 				1139ED5A254F3264000093AE /* TabBar */,
-				11CBCA4724DEB0DA004A90D7 /* Modules */,
+				117DE0E8251E32D300C3729D /* Marvel */,
+				11CBCA4824DEB0EE004A90D7 /* Home */,
 				11A5341524C4B29000528DAA /* App */,
 				1156ABD524F0454900BBD53A /* Localization */,
 				119501E12530BE7F008EB28A /* ImageAssets */,
@@ -388,7 +389,8 @@
 				11CBCA5824DEBCD5004A90D7 /* Coordinator */,
 				1120293E254F4BC0002978A5 /* TabBar */,
 				110D318824FB944000F1CD68 /* App */,
-				11CBCA6024DECF01004A90D7 /* Modules */,
+				11CBCA6124DECF0E004A90D7 /* Home */,
+				11CF8AEC2544988000E04D9F /* Marvel */,
 				11A533EB24C206D400528DAA /* Info.plist */,
 			);
 			path = FreakappTests;
@@ -448,15 +450,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		11CBCA4724DEB0DA004A90D7 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				117DE0E8251E32D300C3729D /* Marvel */,
-				11CBCA4824DEB0EE004A90D7 /* Home */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
 		11CBCA4824DEB0EE004A90D7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,15 +482,6 @@
 				11CBCA5C24DEC6F6004A90D7 /* SplashTests.swift */,
 			);
 			path = Splash;
-			sourceTree = "<group>";
-		};
-		11CBCA6024DECF01004A90D7 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				11CF8AEC2544988000E04D9F /* Marvel */,
-				11CBCA6124DECF0E004A90D7 /* Home */,
-			);
-			path = Modules;
 			sourceTree = "<group>";
 		};
 		11CBCA6124DECF0E004A90D7 /* Home */ = {
