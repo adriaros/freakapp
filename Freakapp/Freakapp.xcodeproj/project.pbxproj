@@ -68,9 +68,7 @@
 		11CBCA5324DEB105004A90D7 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4D24DEB105004A90D7 /* HomeInteractor.swift */; };
 		11CBCA5424DEB105004A90D7 /* HomeEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA4E24DEB105004A90D7 /* HomeEntities.swift */; };
 		11CBCA5624DEB11E004A90D7 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11CBCA5524DEB11E004A90D7 /* HomeViewController.xib */; };
-		11CBCA5A24DEBD10004A90D7 /* MockCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA5924DEBD10004A90D7 /* MockCoordinator.swift */; };
 		11CBCA5D24DEC6F6004A90D7 /* SplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA5C24DEC6F6004A90D7 /* SplashTests.swift */; };
-		11CBCA5F24DECD14004A90D7 /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA5E24DECD14004A90D7 /* AppCoordinatorTests.swift */; };
 		11CBCA6324DECF25004A90D7 /* HomeModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CBCA6224DECF25004A90D7 /* HomeModuleTests.swift */; };
 		11CF8AEE2544989500E04D9F /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CF8AED2544989500E04D9F /* MarvelTests.swift */; };
 		11CF8AF425449EE500E04D9F /* MarvelTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CF8AF325449EE500E04D9F /* MarvelTableViewCellTests.swift */; };
@@ -153,9 +151,7 @@
 		11CBCA4D24DEB105004A90D7 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		11CBCA4E24DEB105004A90D7 /* HomeEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntities.swift; sourceTree = "<group>"; };
 		11CBCA5524DEB11E004A90D7 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		11CBCA5924DEBD10004A90D7 /* MockCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoordinator.swift; sourceTree = "<group>"; };
 		11CBCA5C24DEC6F6004A90D7 /* SplashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTests.swift; sourceTree = "<group>"; };
-		11CBCA5E24DECD14004A90D7 /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 		11CBCA6224DECF25004A90D7 /* HomeModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleTests.swift; sourceTree = "<group>"; };
 		11CF8AED2544989500E04D9F /* MarvelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTests.swift; sourceTree = "<group>"; };
 		11CF8AF325449EE500E04D9F /* MarvelTableViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableViewCellTests.swift; sourceTree = "<group>"; };
@@ -386,7 +382,6 @@
 				1156ABDE24F0552A00BBD53A /* Extension */,
 				110D319024FBB4AD00F1CD68 /* NetworkService */,
 				11CBCA5B24DEBF1A004A90D7 /* Splash */,
-				11CBCA5824DEBCD5004A90D7 /* Coordinator */,
 				1120293E254F4BC0002978A5 /* TabBar */,
 				110D318824FB944000F1CD68 /* App */,
 				11CBCA6124DECF0E004A90D7 /* Home */,
@@ -464,15 +459,6 @@
 				11CBCA5524DEB11E004A90D7 /* HomeViewController.xib */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		11CBCA5824DEBCD5004A90D7 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				11CBCA5924DEBD10004A90D7 /* MockCoordinator.swift */,
-				11CBCA5E24DECD14004A90D7 /* AppCoordinatorTests.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		11CBCA5B24DEBF1A004A90D7 /* Splash */ = {
@@ -668,14 +654,12 @@
 				11CF8AEE2544989500E04D9F /* MarvelTests.swift in Sources */,
 				11AF403C24F16A1A006BB256 /* UILabelExtensionTest.swift in Sources */,
 				110D319424FBC0FC00F1CD68 /* FakeURLProtocol.swift in Sources */,
-				11CBCA5A24DEBD10004A90D7 /* MockCoordinator.swift in Sources */,
 				117DE961254F45F3003B04A1 /* MockHomeCoordinator.swift in Sources */,
 				11CBCA5D24DEC6F6004A90D7 /* SplashTests.swift in Sources */,
 				11CBCA6324DECF25004A90D7 /* HomeModuleTests.swift in Sources */,
 				11AF403E24F16B7D006BB256 /* UIFontExtensionTest.swift in Sources */,
 				117DE96C254F4700003B04A1 /* MockSplashCoordinator.swift in Sources */,
 				110D319824FBC12C00F1CD68 /* FakeNetworkResponses.swift in Sources */,
-				11CBCA5F24DECD14004A90D7 /* AppCoordinatorTests.swift in Sources */,
 				11202940254F4C21002978A5 /* TabBarCoordinatorTests.swift in Sources */,
 				110D319224FBB4C600F1CD68 /* NetworkServiceTests.swift in Sources */,
 				110D318C24FB947500F1CD68 /* AppDelegateTests.swift in Sources */,
