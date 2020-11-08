@@ -12,8 +12,13 @@ import UIKit
 class MockMarvelCoordinator: Coordinator, MarvelFlow {
     
     var startCalled: Bool?
+    var coordinatedToCharacterFinder: Bool?
     
     func start() {
         startCalled = true
+    }
+    
+    func coordinateToCharacterFinder() {
+        coordinatedToCharacterFinder = true
     }
 }

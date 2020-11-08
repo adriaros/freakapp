@@ -14,6 +14,7 @@ protocol MarvelViewModelProtocols {
     var tableDescriptor: MarvelTableDescriptorProtocol? { get set }
     func setupView()
     func updateView()
+    func presentCharacterFinder()
 }
 
 enum MarvelModuleBuilder {

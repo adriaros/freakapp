@@ -9,6 +9,7 @@
 import UIKit
 
 protocol MarvelFlow: class {
+    func coordinateToCharacterFinder()
 }
 
 class MarvelCoordinator: Coordinator, MarvelFlow {
@@ -29,5 +30,10 @@ class MarvelCoordinator: Coordinator, MarvelFlow {
     
     @IBAction func back(_ sender: Any) {
         navigationController.popViewController(animated: true)
+    }
+    
+    func coordinateToCharacterFinder() {
+        let characterFinderViewController = CharactersCoordinator(navigationController: navigationController)
+        coordinate(to: characterFinderViewController)
     }
 }

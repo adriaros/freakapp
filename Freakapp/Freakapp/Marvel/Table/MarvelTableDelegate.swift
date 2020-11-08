@@ -24,7 +24,7 @@ extension MarvelViewController: UITableViewDelegate {
         guard let cell = viewModel?.tableDescriptor?.rows[indexPath.row] else { return }
         switch cell.type {
         case .characters:
-//            presenter?.onMarvel()
+            viewModel?.presentCharacterFinder()
             break 
         default:
             break

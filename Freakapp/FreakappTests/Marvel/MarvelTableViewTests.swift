@@ -16,6 +16,7 @@ class MarvelTableViewTests: XCTestCase {
     var coordinator: MockMarvelCoordinator!
 
     override func setUpWithError() throws {
+        coordinator = MockMarvelCoordinator()
         createTestingModule()
     }
 
@@ -61,6 +62,17 @@ class MarvelTableViewTests: XCTestCase {
         XCTAssertEqual(cell5.titleLabel.text, "marvel_cell_stories_title".localized)
         XCTAssertEqual(cell5.statusLabel.text, "marvel_cell_title_soon".localized)
         XCTAssertEqual(cell5.cellImageView.image, ImageAsset.MarvelCell.stories.image)
+    }
+    
+    func testMarvelTableViewDidSelectRowAtCharactersCell() throws {
+        // Given
+        viewModel.tableDescriptor = MarvelTableDescriptor()
+
+        // When
+        vc.tableView(vc.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
+
+        // Then
+        XCTAssertTrue(coordinator.coordinatedToCharacterFinder!)
     }
     
     func createTestingModule() {

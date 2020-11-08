@@ -27,4 +27,8 @@ final class MarvelViewModel: MarvelViewModelProtocols {
     func updateView() {
         tableDescriptor = MarvelTableDescriptor()
     }
+    
+    func presentCharacterFinder() {
+        coordinator?.coordinateToCharacterFinder()
+    }
 }
