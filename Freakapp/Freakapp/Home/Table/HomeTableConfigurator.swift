@@ -15,14 +15,14 @@ protocol HomeConfigurableCell {
 
 protocol HomeCellConfigurator {
     static var reuseId: String { get }
-    var type: HomeCellType! { get set }
+    var type: HomeCellType! { get }
     func configure(cell: UIView)
 }
 
 class HomeTableCellConfigurator<CellType: HomeConfigurableCell, DataType>: HomeCellConfigurator where CellType.DataType == DataType, CellType: UITableViewCell {
     
     static var reuseId: String { return String(describing: CellType.self) }
-    var type: HomeCellType!
+    let type: HomeCellType!
     let item: DataType
 
     init(type: HomeCellType, item: DataType) {
