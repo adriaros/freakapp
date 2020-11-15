@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterFinderViewController" customModule="Freakapp" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundImage" destination="uCO-BY-nXg" id="1Sy-Vt-wwq"/>
                 <outlet property="view" destination="iN0-l3-epB" id="qeL-ih-x0O"/>
             </connections>
         </placeholder>
@@ -18,8 +19,19 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uCO-BY-nXg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uCO-BY-nXg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="AeW-PF-21f"/>
+                <constraint firstItem="uCO-BY-nXg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NOK-78-dIS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uCO-BY-nXg" secondAttribute="trailing" id="bg5-sG-1X8"/>
+                <constraint firstAttribute="bottom" secondItem="uCO-BY-nXg" secondAttribute="bottom" id="t5x-EY-5b4"/>
+            </constraints>
             <point key="canvasLocation" x="141" y="92"/>
         </view>
     </objects>

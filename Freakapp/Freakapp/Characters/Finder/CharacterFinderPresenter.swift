@@ -14,8 +14,12 @@ class CharacterFinderPresenter: CharacterFinderViewToPresenterProtocol {
     var view: CharacterFinderPresenterToViewProtocol?
     var interactor: CharacterFinderPresenterToInteractorProtocol?
     var router: CharacterFinderPresenterToRouterProtocol?
+    var characterFinderType: CharacterFinderType?
     
     func setupView() {
+        view?.backgroundImage.contentMode = .scaleAspectFill
+        view?.backgroundImage.alpha = 0.5
+        view?.backgroundImage.image = UIImage.characterFinderBackgroundImage[.marvel]
     }
 }
 

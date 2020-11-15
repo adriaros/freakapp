@@ -33,7 +33,7 @@ class MarvelCoordinator: Coordinator, MarvelFlow {
     }
     
     func coordinateToCharacterFinder() {
-        let characterFinderViewController = CharactersCoordinator(navigationController: navigationController)
+        let characterFinderViewController = CharactersCoordinator(navigationController: navigationController, characterFinderType: .marvel)
         coordinate(to: characterFinderViewController)
     }
 }

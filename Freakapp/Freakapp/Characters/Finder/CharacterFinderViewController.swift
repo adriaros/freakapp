@@ -12,6 +12,7 @@ import UIKit
 class CharacterFinderViewController: UIViewController {
     
     var presenter: CharacterFinderViewToPresenterProtocol?
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

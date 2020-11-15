@@ -13,7 +13,7 @@ class CharacterFinderRouter: CharacterFinderPresenterToRouterProtocol {
     
     var coordinator: CharactersFlow?
     
-    class func createModule(coordinator: CharactersFlow?) -> UIViewController {
+    class func createModule(coordinator: CharactersFlow?, type: CharacterFinderType) -> UIViewController {
         
         let view = CharacterFinderViewController()
         let presenter = CharacterFinderPresenter()
@@ -26,6 +26,7 @@ class CharacterFinderRouter: CharacterFinderPresenterToRouterProtocol {
         presenter.interactor = interactor
         interactor.presenter = presenter
         
+        presenter.characterFinderType = type
         router.coordinator = coordinator
         
         return view

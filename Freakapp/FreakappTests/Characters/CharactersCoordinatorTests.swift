@@ -25,7 +25,7 @@ class CharactersCoordinatorTests: XCTestCase {
 
     func testCharactersCoordinatorStart() throws {
         // Given
-        sut = CharactersCoordinator(navigationController: navigator)
+        sut = CharactersCoordinator(navigationController: navigator, characterFinderType: .marvel)
         
         // When
         sut.start()

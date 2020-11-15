@@ -1,5 +1,5 @@
 //
-//  HomeModuleTests.swift
+//  HomeTest.swift
 //  FreakappTests
 //
 //  Created by Adrià Ros on 08/08/2020.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import Freakapp
 
-class HomeModuleTests: XCTestCase {
+class HomeTest: XCTestCase {
     
     var coordinator: MockHomeCoordinator!
     var vc: HomeViewController?
