@@ -1,5 +1,5 @@
 //
-//  NetworkServiceTests.swift
+//  NetworkLayerTests.swift
 //  FreakappTests
 //
 //  Created by Adrià Ros on 30/08/2020.
@@ -10,9 +10,9 @@ import XCTest
 import Foundation
 @testable import Freakapp
 
-class NetworkServiceTests: XCTestCase {
+class NetworkLayerTests: XCTestCase {
     
-    var sut: NetworkService?
+    var sut: NetworkLayer?
     var urlSession: URLSession!
 
     override func setUpWithError() throws {
@@ -22,7 +22,7 @@ class NetworkServiceTests: XCTestCase {
             return configuration
         }()
         urlSession = URLSession(configuration: configuration)
-        sut = NetworkService(session: urlSession)
+        sut = NetworkLayer(session: urlSession)
     }
 
     override func tearDownWithError() throws {
@@ -34,7 +34,7 @@ class NetworkServiceTests: XCTestCase {
         // Given
         weak var e = expectation(description: #function)
         var data: Data?
-        var error: NetworkServiceErrorType?
+        var error: NetworkLayerErrorType?
         
         // When
         sut?.get(path: "", completion: { d, err in
@@ -54,7 +54,7 @@ class NetworkServiceTests: XCTestCase {
         // Given
         weak var e = expectation(description: #function)
         var data: Data?
-        var error: NetworkServiceErrorType?
+        var error: NetworkLayerErrorType?
         
         // When
         sut?.get(path: "error.url@test.com", completion: { d, err in
@@ -74,7 +74,7 @@ class NetworkServiceTests: XCTestCase {
         // Given
         weak var e = expectation(description: #function)
         var data: Data?
-        var error: NetworkServiceErrorType?
+        var error: NetworkLayerErrorType?
         
         // When
         sut?.get(path: "test.200@test.com", completion: { d, err in
@@ -94,7 +94,7 @@ class NetworkServiceTests: XCTestCase {
         // Given
         weak var e = expectation(description: #function)
         var data: Data?
-        var error: NetworkServiceErrorType?
+        var error: NetworkLayerErrorType?
         
         // When
         sut?.get(path: "test.201@test.com", completion: { d, err in
@@ -114,7 +114,7 @@ class NetworkServiceTests: XCTestCase {
         // Given
         weak var e = expectation(description: #function)
         var data: Data?
-        var error: NetworkServiceErrorType?
+        var error: NetworkLayerErrorType?
         
         // When
         sut?.get(path: "test.400@test.com", completion: { d, err in
@@ -127,6 +127,6 @@ class NetworkServiceTests: XCTestCase {
         // Then
         waitForExpectations(timeout: 1, handler: nil)
         XCTAssertTrue(data != nil)
-        XCTAssertEqual(error, nil)
+        XCTAssertEqual(error, .code(400))
     }
 }

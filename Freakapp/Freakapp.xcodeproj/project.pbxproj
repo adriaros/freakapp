@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		110D318724FB8A4F00F1CD68 /* HomeTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D318624FB8A4F00F1CD68 /* HomeTableViewTests.swift */; };
 		110D318C24FB947500F1CD68 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D318B24FB947500F1CD68 /* AppDelegateTests.swift */; };
-		110D318F24FBAA8900F1CD68 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D318E24FBAA8900F1CD68 /* NetworkService.swift */; };
-		110D319224FBB4C600F1CD68 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D319124FBB4C600F1CD68 /* NetworkServiceTests.swift */; };
+		110D318F24FBAA8900F1CD68 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D318E24FBAA8900F1CD68 /* NetworkLayer.swift */; };
+		110D319224FBB4C600F1CD68 /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D319124FBB4C600F1CD68 /* NetworkLayerTests.swift */; };
 		110D319424FBC0FC00F1CD68 /* FakeURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D319324FBC0FC00F1CD68 /* FakeURLProtocol.swift */; };
 		110D319824FBC12C00F1CD68 /* FakeNetworkResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D319724FBC12C00F1CD68 /* FakeNetworkResponses.swift */; };
 		11202940254F4C21002978A5 /* TabBarCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1120293F254F4C21002978A5 /* TabBarCoordinatorTests.swift */; };
@@ -103,8 +103,8 @@
 /* Begin PBXFileReference section */
 		110D318624FB8A4F00F1CD68 /* HomeTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewTests.swift; sourceTree = "<group>"; };
 		110D318B24FB947500F1CD68 /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
-		110D318E24FBAA8900F1CD68 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		110D319124FBB4C600F1CD68 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		110D318E24FBAA8900F1CD68 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		110D319124FBB4C600F1CD68 /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
 		110D319324FBC0FC00F1CD68 /* FakeURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeURLProtocol.swift; sourceTree = "<group>"; };
 		110D319724FBC12C00F1CD68 /* FakeNetworkResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkResponses.swift; sourceTree = "<group>"; };
 		1120293F254F4C21002978A5 /* TabBarCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorTests.swift; sourceTree = "<group>"; };
@@ -214,22 +214,22 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		110D318D24FBA8EC00F1CD68 /* Network */ = {
+		110D318D24FBA8EC00F1CD68 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				110D318E24FBAA8900F1CD68 /* NetworkService.swift */,
+				110D318E24FBAA8900F1CD68 /* NetworkLayer.swift */,
 			);
-			path = Network;
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
-		110D319024FBB4AD00F1CD68 /* NetworkService */ = {
+		110D319024FBB4AD00F1CD68 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
-				110D319124FBB4C600F1CD68 /* NetworkServiceTests.swift */,
+				110D319124FBB4C600F1CD68 /* NetworkLayerTests.swift */,
 				110D319324FBC0FC00F1CD68 /* FakeURLProtocol.swift */,
 				110D319724FBC12C00F1CD68 /* FakeNetworkResponses.swift */,
 			);
-			path = NetworkService;
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 		1120293E254F4BC0002978A5 /* TabBar */ = {
@@ -394,7 +394,7 @@
 			isa = PBXGroup;
 			children = (
 				1156ABDB24F0479800BBD53A /* Extensions */,
-				110D318D24FBA8EC00F1CD68 /* Network */,
+				110D318D24FBA8EC00F1CD68 /* NetworkLayer */,
 				11A5340824C20FAB00528DAA /* Splash */,
 				11A5341824C4BB1C00528DAA /* Coordinator */,
 				1139ED5A254F3264000093AE /* TabBar */,
@@ -413,7 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				1156ABDE24F0552A00BBD53A /* Extension */,
-				110D319024FBB4AD00F1CD68 /* NetworkService */,
+				110D319024FBB4AD00F1CD68 /* NetworkLayer */,
 				11CBCA5B24DEBF1A004A90D7 /* Splash */,
 				1120293E254F4BC0002978A5 /* TabBar */,
 				110D318824FB944000F1CD68 /* App */,
@@ -704,7 +704,7 @@
 				117DE951254F403D003B04A1 /* MarvelCoordinator.swift in Sources */,
 				1194E7F725447339000AC056 /* MarvelTableDelegate.swift in Sources */,
 				11ECD86225584FDE002E83A2 /* CharacterFinderViewController.swift in Sources */,
-				110D318F24FBAA8900F1CD68 /* NetworkService.swift in Sources */,
+				110D318F24FBAA8900F1CD68 /* NetworkLayer.swift in Sources */,
 				11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */,
 				11CBCA4F24DEB105004A90D7 /* HomePresenter.swift in Sources */,
 				117DE102251E3F8400C3729D /* MarvelModel.swift in Sources */,
@@ -761,7 +761,7 @@
 				117DE96C254F4700003B04A1 /* MockSplashCoordinator.swift in Sources */,
 				110D319824FBC12C00F1CD68 /* FakeNetworkResponses.swift in Sources */,
 				11202940254F4C21002978A5 /* TabBarCoordinatorTests.swift in Sources */,
-				110D319224FBB4C600F1CD68 /* NetworkServiceTests.swift in Sources */,
+				110D319224FBB4C600F1CD68 /* NetworkLayerTests.swift in Sources */,
 				110D318C24FB947500F1CD68 /* AppDelegateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

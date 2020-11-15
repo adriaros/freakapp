@@ -31,4 +31,15 @@ class StringExtensionTest: XCTestCase {
         // Then
         XCTAssertEqual(sut, lokalisedString)
     }
+    
+    func testStringExtensionMD5Digest() throws {
+        // Given
+        let MD5DigestString = "0800fc577294c34e0b28ad2839435945"
+        
+        // When
+        sut = "hash".MD5
+        
+        // Then
+        XCTAssertEqual(sut, MD5DigestString)
+    }
 }
