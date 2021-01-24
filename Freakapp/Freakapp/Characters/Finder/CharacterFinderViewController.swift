@@ -13,6 +13,7 @@ class CharacterFinderViewController: UIViewController {
     
     var presenter: CharacterFinderViewToPresenterProtocol?
     @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var testingSwiftUIButton: UIButton!
     
     private let privateKey = "d4a6b63ee073affb7c142d1bd2f3b0701b9b2f52"
     private let publicKey = "a792c0ac92d59769c64f81fb82df0041"
@@ -56,6 +57,10 @@ class CharacterFinderViewController: UIViewController {
 //        Request 9: Offset 800, Limit 100
 //        Request 10: Offset 900, Limit 100
         
+    }
+    
+    @IBAction func onSwiftUITestingButton(_ sender: Any) {
+        presenter?.router?.detail()
     }
 }
 

@@ -31,4 +31,8 @@ class CharacterFinderRouter: CharacterFinderPresenterToRouterProtocol {
         
         return view
     }
+    
+    func detail() {
+        coordinator?.pushToDetail()
+    }
 }

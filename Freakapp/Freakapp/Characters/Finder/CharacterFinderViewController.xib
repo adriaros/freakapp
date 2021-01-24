@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterFinderViewController" customModule="Freakapp" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundImage" destination="uCO-BY-nXg" id="1Sy-Vt-wwq"/>
+                <outlet property="testingSwiftUIButton" destination="FFL-Za-KDt" id="rEx-uw-8z9"/>
                 <outlet property="view" destination="iN0-l3-epB" id="qeL-ih-x0O"/>
             </connections>
         </placeholder>
@@ -23,13 +24,22 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uCO-BY-nXg">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFL-Za-KDt">
+                    <rect key="frame" x="184" y="433" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="onSwiftUITestingButton:" destination="-1" eventType="touchUpInside" id="Rlm-UP-zIK"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="FFL-Za-KDt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6qH-y5-T9i"/>
                 <constraint firstItem="uCO-BY-nXg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="AeW-PF-21f"/>
                 <constraint firstItem="uCO-BY-nXg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NOK-78-dIS"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uCO-BY-nXg" secondAttribute="trailing" id="bg5-sG-1X8"/>
+                <constraint firstItem="FFL-Za-KDt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sJi-mI-9DC"/>
                 <constraint firstAttribute="bottom" secondItem="uCO-BY-nXg" secondAttribute="bottom" id="t5x-EY-5b4"/>
             </constraints>
             <point key="canvasLocation" x="141" y="92"/>

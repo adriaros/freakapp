@@ -50,6 +50,13 @@
 		11A5341424C20FFA00528DAA /* SplashEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5340E24C20FFA00528DAA /* SplashEntities.swift */; };
 		11A5341724C4B37B00528DAA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5341624C4B37B00528DAA /* main.swift */; };
 		11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5341924C4BB3D00528DAA /* Coordinator.swift */; };
+		11AA095225BDD2C90001F8FF /* CharacterDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA094C25BDD2C90001F8FF /* CharacterDetailPresenter.swift */; };
+		11AA095325BDD2C90001F8FF /* CharacterDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA094D25BDD2C90001F8FF /* CharacterDetailRouter.swift */; };
+		11AA095425BDD2C90001F8FF /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA094E25BDD2C90001F8FF /* CharacterDetailViewController.swift */; };
+		11AA095525BDD2C90001F8FF /* CharacterDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA094F25BDD2C90001F8FF /* CharacterDetailProtocols.swift */; };
+		11AA095625BDD2C90001F8FF /* CharacterDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA095025BDD2C90001F8FF /* CharacterDetailInteractor.swift */; };
+		11AA095725BDD2C90001F8FF /* CharacterDetailEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA095125BDD2C90001F8FF /* CharacterDetailEntities.swift */; };
+		11AA095D25BDD3190001F8FF /* CharacterDetailUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA095C25BDD3190001F8FF /* CharacterDetailUI.swift */; };
 		11AF402B24F1170C006BB256 /* HomeTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF402A24F1170C006BB256 /* HomeTableViewDataSource.swift */; };
 		11AF402D24F11A36006BB256 /* HomeTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF402C24F11A36006BB256 /* HomeTableViewDelegate.swift */; };
 		11AF403124F11AD8006BB256 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AF402F24F11AD8006BB256 /* HomeTableViewCell.swift */; };
@@ -148,6 +155,13 @@
 		11A5340E24C20FFA00528DAA /* SplashEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashEntities.swift; sourceTree = "<group>"; };
 		11A5341624C4B37B00528DAA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		11A5341924C4BB3D00528DAA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		11AA094C25BDD2C90001F8FF /* CharacterDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenter.swift; sourceTree = "<group>"; };
+		11AA094D25BDD2C90001F8FF /* CharacterDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailRouter.swift; sourceTree = "<group>"; };
+		11AA094E25BDD2C90001F8FF /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		11AA094F25BDD2C90001F8FF /* CharacterDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailProtocols.swift; sourceTree = "<group>"; };
+		11AA095025BDD2C90001F8FF /* CharacterDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailInteractor.swift; sourceTree = "<group>"; };
+		11AA095125BDD2C90001F8FF /* CharacterDetailEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailEntities.swift; sourceTree = "<group>"; };
+		11AA095C25BDD3190001F8FF /* CharacterDetailUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailUI.swift; sourceTree = "<group>"; };
 		11AF402A24F1170C006BB256 /* HomeTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewDataSource.swift; sourceTree = "<group>"; };
 		11AF402C24F11A36006BB256 /* HomeTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewDelegate.swift; sourceTree = "<group>"; };
 		11AF402F24F11AD8006BB256 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -459,6 +473,20 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		11AA094B25BDD2B00001F8FF /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				11AA094E25BDD2C90001F8FF /* CharacterDetailViewController.swift */,
+				11AA094C25BDD2C90001F8FF /* CharacterDetailPresenter.swift */,
+				11AA095025BDD2C90001F8FF /* CharacterDetailInteractor.swift */,
+				11AA094D25BDD2C90001F8FF /* CharacterDetailRouter.swift */,
+				11AA094F25BDD2C90001F8FF /* CharacterDetailProtocols.swift */,
+				11AA095125BDD2C90001F8FF /* CharacterDetailEntities.swift */,
+				11AA095C25BDD3190001F8FF /* CharacterDetailUI.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		11AF402924F116F8006BB256 /* Table */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,6 +569,7 @@
 			children = (
 				11ECD86E255854DF002E83A2 /* Coordinator */,
 				11ECD85925584F43002E83A2 /* Finder */,
+				11AA094B25BDD2B00001F8FF /* Detail */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -622,7 +651,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = adria.engineer.ios;
 				TargetAttributes = {
 					11A533CE24C206D200528DAA = {
@@ -685,8 +714,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1194E81825448A10000AC056 /* MarvelTableViewCell.swift in Sources */,
+				11AA095325BDD2C90001F8FF /* CharacterDetailRouter.swift in Sources */,
 				119501E52530BEB7008EB28A /* ImageAsset.swift in Sources */,
 				11ECD870255854F1002E83A2 /* CharactersCoordinator.swift in Sources */,
+				11AA095525BDD2C90001F8FF /* CharacterDetailProtocols.swift in Sources */,
 				11ECD86325584FDE002E83A2 /* CharacterFinderProtocols.swift in Sources */,
 				11CBCA5224DEB105004A90D7 /* HomeProtocols.swift in Sources */,
 				1194E7FF254477FC000AC056 /* HomeTableConfigurator.swift in Sources */,
@@ -701,8 +732,10 @@
 				11A5341124C20FFA00528DAA /* SplashViewController.swift in Sources */,
 				1139ED62254F32AA000093AE /* TabBarCoordinator.swift in Sources */,
 				117DE0FC251E357500C3729D /* MarvelModuleProtocols.swift in Sources */,
+				11AA095225BDD2C90001F8FF /* CharacterDetailPresenter.swift in Sources */,
 				117DE951254F403D003B04A1 /* MarvelCoordinator.swift in Sources */,
 				1194E7F725447339000AC056 /* MarvelTableDelegate.swift in Sources */,
+				11AA095D25BDD3190001F8FF /* CharacterDetailUI.swift in Sources */,
 				11ECD86225584FDE002E83A2 /* CharacterFinderViewController.swift in Sources */,
 				110D318F24FBAA8900F1CD68 /* NetworkLayer.swift in Sources */,
 				11A5341A24C4BB3D00528DAA /* Coordinator.swift in Sources */,
@@ -718,7 +751,9 @@
 				11AF403124F11AD8006BB256 /* HomeTableViewCell.swift in Sources */,
 				117DE0F8251E355300C3729D /* MarvelViewModel.swift in Sources */,
 				11A5341024C20FFA00528DAA /* SplashRouter.swift in Sources */,
+				11AA095625BDD2C90001F8FF /* CharacterDetailInteractor.swift in Sources */,
 				11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */,
+				11AA095725BDD2C90001F8FF /* CharacterDetailEntities.swift in Sources */,
 				11AF402B24F1170C006BB256 /* HomeTableViewDataSource.swift in Sources */,
 				11CBCA5024DEB105004A90D7 /* HomeRouter.swift in Sources */,
 				11A5340F24C20FFA00528DAA /* SplashPresenter.swift in Sources */,
@@ -727,6 +762,7 @@
 				11CBCA5424DEB105004A90D7 /* HomeEntities.swift in Sources */,
 				1139ED5C254F3283000093AE /* TabBarController.swift in Sources */,
 				11AF402D24F11A36006BB256 /* HomeTableViewDelegate.swift in Sources */,
+				11AA095425BDD2C90001F8FF /* CharacterDetailViewController.swift in Sources */,
 				11A5341324C20FFA00528DAA /* SplashInteractor.swift in Sources */,
 				117DE0F3251E34E800C3729D /* MarvelViewController.swift in Sources */,
 				11CBCA5324DEB105004A90D7 /* HomeInteractor.swift in Sources */,
@@ -822,6 +858,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -882,6 +919,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

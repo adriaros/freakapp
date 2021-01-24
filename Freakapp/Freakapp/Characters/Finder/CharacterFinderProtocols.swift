@@ -32,4 +32,5 @@ protocol CharacterFinderViewToPresenterProtocol: class {
 protocol CharacterFinderPresenterToRouterProtocol: class {
     var coordinator: CharactersFlow? { get set }
     static func createModule(coordinator: CharactersFlow?, type: CharacterFinderType) -> UIViewController
+    func detail()
 }
