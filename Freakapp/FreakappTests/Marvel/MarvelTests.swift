@@ -27,7 +27,7 @@ class MarvelTests: XCTestCase {
 
     func testMarvelViewDidLoad() throws {
         // Given
-        createTestingModule()
+        createTestingScenario()
         
         // When
         vc?.viewDidLoad()
@@ -41,7 +41,7 @@ class MarvelTests: XCTestCase {
     
     func testMarvelViewDidLayoutSubviews() throws {
         // Given
-        createTestingModule()
+        createTestingScenario()
         
         // When
         vc?.viewDidLoad()
@@ -53,7 +53,7 @@ class MarvelTests: XCTestCase {
     
     func testMarvelLoadTableData() throws {
         // Given
-        createTestingModule()
+        createTestingScenario()
         
         // When
         vc?.viewDidLoad()
@@ -62,7 +62,7 @@ class MarvelTests: XCTestCase {
         XCTAssertEqual(vc?.viewModel?.tableDescriptor?.rows.count, 6)
     }
     
-    func createTestingModule() {
+    func createTestingScenario() {
         vc = MarvelModuleBuilder.create(coordinator: coordinator)
         viewModel = vc?.viewModel
         vc?.loadViewIfNeeded()

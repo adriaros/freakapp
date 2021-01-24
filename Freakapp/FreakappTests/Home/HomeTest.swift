@@ -30,13 +30,13 @@ class HomeTest: XCTestCase {
     }
 
     func testHomeViewDidLoad() throws {
-        // Given
-        createTestingModule()
+        // Given a testing scenario
+        createTestingScenario()
         
-        // When
+        // When the view did load
         vc?.viewDidLoad()
         
-        // Then
+        // Then backgorund image is correct
         XCTAssertEqual(vc?.backgroundImage.image, ImageAsset.Backgrounds.home.image)
         XCTAssertEqual(vc?.backgroundImage.contentMode, .scaleAspectFill)
         XCTAssertEqual(vc?.backgroundImage.alpha, 0.5)
@@ -44,29 +44,29 @@ class HomeTest: XCTestCase {
     }
     
     func testHomeViewDidLayoutSubviews() throws {
-        // Given
-        createTestingModule()
+        // Given a testing scenario
+        createTestingScenario()
         
-        // When
+        // When the view and its views did load
         vc?.viewDidLoad()
         vc?.viewDidLayoutSubviews()
         
-        // Then
+        // Then table rows height is table's width/2
         XCTAssertEqual(vc?.tableView.rowHeight, vc!.tableView.frame.size.width / 2)
     }
     
     func testHomeLoadTableData() throws {
-        // Given
-        createTestingModule()
+        // Given a testing scenario
+        createTestingScenario()
         
-        // When
+        // When the view did load
         vc?.viewDidLoad()
         
-        // Then
+        // Then the number of rows is 13
         XCTAssertEqual(vc?.presenter?.tableDescriptor?.rows.count, 13)
     }
     
-    func createTestingModule() {
+    func createTestingScenario() {
         vc = HomeRouter.create(coordinator: coordinator) as? HomeViewController
         presenter = vc?.presenter as? HomePresenter
         interactor = presenter?.interactor as? HomeInteractor

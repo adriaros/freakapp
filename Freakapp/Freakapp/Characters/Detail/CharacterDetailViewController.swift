@@ -17,10 +17,10 @@ class CharacterDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(contentView.view)
-        setupSwiftUIConstraints()
+        setupUIConstraints()
     }
     
-    fileprivate func setupSwiftUIConstraints() {
+    fileprivate func setupUIConstraints() {
         contentView.view.translatesAutoresizingMaskIntoConstraints = false
         contentView.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         contentView.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true

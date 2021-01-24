@@ -27,10 +27,10 @@ class HomeTableViewTests: XCTestCase {
     }
 
     func testHomeTableViewMarvelCell() throws {
-        // Given
+        // Given a table descriptor
         presenter.tableDescriptor = HomeTableDescriptor()
         
-        // When
+        // When the cells are called
         let cell0 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 0, section: 0)) as! HomeTableViewCell
         let cell1 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 1, section: 0)) as! HomeTableViewCell
         let cell2 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 2, section: 0)) as! HomeTableViewCell
@@ -45,7 +45,7 @@ class HomeTableViewTests: XCTestCase {
         let cell11 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 11, section: 0)) as! HomeTableViewCell
         let cell12 = vc.tableView(vc.tableView, cellForRowAt: IndexPath(row: 12, section: 0)) as! HomeTableViewCell
         
-        // Then
+        // Then the cells have the correct information
         XCTAssertEqual(cell0.titleLabel.text, "home_cell_title_marvel".localized)
         XCTAssertEqual(cell0.statusLabel.text, "home_cell_title_wip".localized)
         XCTAssertEqual(cell0.cellImageView.image, ImageAsset.HomeCell.marvel.image)
@@ -100,13 +100,13 @@ class HomeTableViewTests: XCTestCase {
     }
     
     func testHomeTableViewDidSelectRowAtMarvelCell() throws {
-        // Given
+        // Given a table descriptor
         presenter.tableDescriptor = HomeTableDescriptor()
 
-        // When
+        // When the first row is selected
         vc.tableView(vc.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
 
-        // Then
+        // Then coordinator is called
         XCTAssertTrue(coordinator.coordinateToMarvelCalled!)
     }
     

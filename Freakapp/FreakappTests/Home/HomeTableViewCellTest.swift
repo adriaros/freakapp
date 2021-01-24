@@ -21,27 +21,27 @@ class HomeTableViewCellTest: XCTestCase {
     }
 
     func testHomeTableViewCellAwakeFromNib() throws {
-        // Given
+        // Given the cell
         sut = Bundle(for: HomeTableViewCell.self).loadNibNamed(HomeTableViewCell.cellType, owner: nil)?.first as? HomeTableViewCell
         
-        // When
+        // When the cell is awoken from the nib
         sut?.awakeFromNib()
         
-        // Then
+        // Then the styles are correct
         XCTAssertEqual(sut.selectionStyle, UITableViewCell.SelectionStyle.none)
         XCTAssertEqual(sut.backgroundColor, .clear)
         XCTAssertEqual(sut.cellImageView.contentMode, .scaleAspectFill)
     }
     
     func testHomeTableViewCellConfigure() throws {
-        // Given
+        // Given the cell
         sut = Bundle(for: HomeTableViewCell.self).loadNibNamed(HomeTableViewCell.cellType, owner: nil)?.first as? HomeTableViewCell
         
-        // When
+        // When the cell is configured
         sut?.awakeFromNib()
         sut?.configure(title: "test-title", status: "test-status", image: UIImage(named: "home_cell_marvel"))
         
-        // Then
+        // Then styles and components are correct
         XCTAssertEqual(sut.selectionStyle, UITableViewCell.SelectionStyle.none)
         XCTAssertEqual(sut.backgroundColor, .clear)
         

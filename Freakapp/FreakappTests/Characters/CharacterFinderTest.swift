@@ -7,15 +7,17 @@
 //
 
 import XCTest
+import UIKit
+import SwiftUI
 @testable import Freakapp
 
 class CharacterFinderTest: XCTestCase {
     
     var coordinator: MockCharactersCoordinator!
-    var vc: CharacterFinderViewController?
-    var presenter: CharacterFinderPresenter?
-    var interactor: CharacterFinderInteractor?
-    var router: CharacterFinderRouter?
+    var vc: CharacterFinderViewController!
+    var presenter: CharacterFinderPresenter!
+    var interactor: CharacterFinderInteractor!
+    var router: CharacterFinderRouter!
 
     override func setUpWithError() throws {
         coordinator = MockCharactersCoordinator()
@@ -29,20 +31,13 @@ class CharacterFinderTest: XCTestCase {
         router = nil
     }
 
-    func testExample() throws {
+    func testCharacterFinder() throws {
         // Given
-        createTestingModule()
-        
         // When
-        vc?.viewDidLoad()
-        
         // Then
-        XCTAssertEqual(vc?.backgroundImage.image, ImageAsset.Backgrounds.marvel.image)
-        XCTAssertEqual(vc?.backgroundImage.contentMode, .scaleAspectFill)
-        XCTAssertEqual(vc?.backgroundImage.alpha, 0.5)
     }
     
-    func createTestingModule() {
+    func createTestingScenario() {
         vc = CharacterFinderRouter.createModule(coordinator: coordinator, type: .marvel) as? CharacterFinderViewController
         presenter = vc?.presenter as? CharacterFinderPresenter
         interactor = presenter?.interactor as? CharacterFinderInteractor

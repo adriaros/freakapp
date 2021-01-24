@@ -24,13 +24,13 @@ class HomeCoordinatorTests: XCTestCase {
     }
 
     func testHomeCoordinatorStart() throws {
-        // Given
+        // Given a coordinator
         sut = HomeCoordinator(navigationController: navigator)
         
-        // When
+        // When is started
         sut.start()
         
-        // Then
+        // Then the view controller stack contains the Home view controller in first position
         XCTAssertTrue(navigator.viewControllers.first is HomeViewController)
     }
 }

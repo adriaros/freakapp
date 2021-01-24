@@ -11,7 +11,6 @@ import UIKit
 
 protocol CharacterFinderPresenterToViewProtocol: class {
     var presenter: CharacterFinderViewToPresenterProtocol? { get set }
-    var backgroundImage: UIImageView! { get set }
 }
 
 protocol CharacterFinderInteractorToPresenterProtocol: class {
@@ -26,7 +25,6 @@ protocol CharacterFinderViewToPresenterProtocol: class {
     var interactor: CharacterFinderPresenterToInteractorProtocol? { get set }
     var router: CharacterFinderPresenterToRouterProtocol? { get set }
     var characterFinderType: CharacterFinderType? { get set }
-    func setupView()
 }
 
 protocol CharacterFinderPresenterToRouterProtocol: class {

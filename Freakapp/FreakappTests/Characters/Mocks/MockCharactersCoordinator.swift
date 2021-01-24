@@ -11,9 +11,14 @@ import Foundation
 
 final class MockCharactersCoordinator: Coordinator, CharactersFlow {
 
-    var startCalled: Bool?
+    var startCalled = false
+    var detailCalled = false
 
     func start() {
         startCalled = true
+    }
+    
+    func pushToDetail() {
+        detailCalled = true
     }
 }

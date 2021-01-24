@@ -31,6 +31,7 @@
 		117DE95A254F4550003B04A1 /* MockMarvelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE959254F4550003B04A1 /* MockMarvelCoordinator.swift */; };
 		117DE961254F45F3003B04A1 /* MockHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE960254F45F3003B04A1 /* MockHomeCoordinator.swift */; };
 		117DE96C254F4700003B04A1 /* MockSplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117DE96B254F4700003B04A1 /* MockSplashCoordinator.swift */; };
+		118A0BF825BDDED50024E3AF /* CharacterFinderUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118A0BF725BDDED50024E3AF /* CharacterFinderUI.swift */; };
 		1194E7F32544732B000AC056 /* MarvelTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194E7F22544732B000AC056 /* MarvelTableDataSource.swift */; };
 		1194E7F725447339000AC056 /* MarvelTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194E7F625447339000AC056 /* MarvelTableDelegate.swift */; };
 		1194E7FB25447393000AC056 /* MarvelTableConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1194E7FA25447393000AC056 /* MarvelTableConfigurator.swift */; };
@@ -90,7 +91,6 @@
 		11ECD86325584FDE002E83A2 /* CharacterFinderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECD85D25584FDE002E83A2 /* CharacterFinderProtocols.swift */; };
 		11ECD86425584FDE002E83A2 /* CharacterFinderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECD85E25584FDE002E83A2 /* CharacterFinderInteractor.swift */; };
 		11ECD86525584FDE002E83A2 /* CharacterFinderEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECD85F25584FDE002E83A2 /* CharacterFinderEntities.swift */; };
-		11ECD86B2558502B002E83A2 /* CharacterFinderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11ECD86A2558502B002E83A2 /* CharacterFinderViewController.xib */; };
 		11ECD870255854F1002E83A2 /* CharactersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECD86F255854F1002E83A2 /* CharactersCoordinator.swift */; };
 		11ECD876255857DE002E83A2 /* MarvelCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECD875255857DE002E83A2 /* MarvelCoordinatorTests.swift */; };
 		11ECD87A255859D2002E83A2 /* HomeCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ECD879255859D2002E83A2 /* HomeCoordinatorTests.swift */; };
@@ -132,6 +132,7 @@
 		117DE959254F4550003B04A1 /* MockMarvelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMarvelCoordinator.swift; sourceTree = "<group>"; };
 		117DE960254F45F3003B04A1 /* MockHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeCoordinator.swift; sourceTree = "<group>"; };
 		117DE96B254F4700003B04A1 /* MockSplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSplashCoordinator.swift; sourceTree = "<group>"; };
+		118A0BF725BDDED50024E3AF /* CharacterFinderUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFinderUI.swift; sourceTree = "<group>"; };
 		1194E7F22544732B000AC056 /* MarvelTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableDataSource.swift; sourceTree = "<group>"; };
 		1194E7F625447339000AC056 /* MarvelTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableDelegate.swift; sourceTree = "<group>"; };
 		1194E7FA25447393000AC056 /* MarvelTableConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTableConfigurator.swift; sourceTree = "<group>"; };
@@ -195,7 +196,6 @@
 		11ECD85D25584FDE002E83A2 /* CharacterFinderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFinderProtocols.swift; sourceTree = "<group>"; };
 		11ECD85E25584FDE002E83A2 /* CharacterFinderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFinderInteractor.swift; sourceTree = "<group>"; };
 		11ECD85F25584FDE002E83A2 /* CharacterFinderEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFinderEntities.swift; sourceTree = "<group>"; };
-		11ECD86A2558502B002E83A2 /* CharacterFinderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterFinderViewController.xib; sourceTree = "<group>"; };
 		11ECD86F255854F1002E83A2 /* CharactersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCoordinator.swift; sourceTree = "<group>"; };
 		11ECD875255857DE002E83A2 /* MarvelCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCoordinatorTests.swift; sourceTree = "<group>"; };
 		11ECD879255859D2002E83A2 /* HomeCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorTests.swift; sourceTree = "<group>"; };
@@ -583,7 +583,7 @@
 				11ECD85B25584FDE002E83A2 /* CharacterFinderRouter.swift */,
 				11ECD85D25584FDE002E83A2 /* CharacterFinderProtocols.swift */,
 				11ECD85F25584FDE002E83A2 /* CharacterFinderEntities.swift */,
-				11ECD86A2558502B002E83A2 /* CharacterFinderViewController.xib */,
+				118A0BF725BDDED50024E3AF /* CharacterFinderUI.swift */,
 			);
 			path = Finder;
 			sourceTree = "<group>";
@@ -691,7 +691,6 @@
 				11CBCA5624DEB11E004A90D7 /* HomeViewController.xib in Resources */,
 				1156ABD824F046C800BBD53A /* Localizable.strings in Resources */,
 				117DE93A254F3BB2003B04A1 /* SplashViewController.xib in Resources */,
-				11ECD86B2558502B002E83A2 /* CharacterFinderViewController.xib in Resources */,
 				117DE0F4251E34E800C3729D /* MarvelViewController.xib in Resources */,
 				11A533DF24C206D400528DAA /* LaunchScreen.storyboard in Resources */,
 				11AF403224F11AD8006BB256 /* HomeTableViewCell.xib in Resources */,
@@ -754,6 +753,7 @@
 				11AA095625BDD2C90001F8FF /* CharacterDetailInteractor.swift in Sources */,
 				11A533D524C206D200528DAA /* SceneDelegate.swift in Sources */,
 				11AA095725BDD2C90001F8FF /* CharacterDetailEntities.swift in Sources */,
+				118A0BF825BDDED50024E3AF /* CharacterFinderUI.swift in Sources */,
 				11AF402B24F1170C006BB256 /* HomeTableViewDataSource.swift in Sources */,
 				11CBCA5024DEB105004A90D7 /* HomeRouter.swift in Sources */,
 				11A5340F24C20FFA00528DAA /* SplashPresenter.swift in Sources */,
