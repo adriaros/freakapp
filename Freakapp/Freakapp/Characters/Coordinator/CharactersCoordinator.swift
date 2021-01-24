@@ -36,7 +36,6 @@ final class CharactersCoordinator: Coordinator, CharactersFlow {
     
     func pushToDetail() {
         let detailViewController = CharacterDetailRouter.createModule()
-        detailViewController.hidesBottomBarWhenPushed = true
         detailViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(image: ImageAsset.BackButton.marvel.image, style: .plain, target: self, action: #selector(back(_:)))
         detailViewController.navigationItem.title = "characters_detail_navigation_title".localized
         navigationController.pushViewController(detailViewController, animated: false)
